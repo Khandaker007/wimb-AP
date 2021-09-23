@@ -1,4 +1,17 @@
+@import '../../sass/variables.scss';
+
 .dashboard{
-    color: red;
-    font-size: 20px;
+    padding: 5.8rem;
+    background-color: $color-dark;
+
+    display: grid;
+    grid-template-columns: 32.9rem 1fr;
+    grid-gap: 3rem;
+}
+
+.sidebar{
+    // background-color: blue;
+}
+.main-body{
+    background-color: green;
 }
