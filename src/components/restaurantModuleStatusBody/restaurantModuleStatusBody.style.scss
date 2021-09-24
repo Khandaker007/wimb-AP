@@ -1,0 +1,39 @@
+@import '../../sass/variables.scss';
+@import "../../sass/mixins.scss";
+
+.restaurant-module-status-body {
+    background: $color-grey;
+    font-size: 2.4rem;
+
+    .wrapper {
+        padding: 3.3rem 3.1rem;
+        border-bottom: 0.1rem solid $color-grey-light;
+
+        .content {
+            // background-color: orange;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .main {
+        .content {
+            .main-header {
+                display: flex;
+                font-size: 1.8rem;
+
+                .online-icon {
+                    align-self: baseline;
+                    margin-right: 0.5rem;
+                }
+
+                .more-icon {
+                    margin-left: auto;
+                    margin-right: 2.1rem;
+                }
+            }
+        }
+    }
+}
