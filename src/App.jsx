@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 import Dashboard from './pages/dashboard/dashboard.component'
+import RestaurantModule from "./pages/restaurantModule/restaurantModule.component";
 
 import './App.scss'
 
@@ -9,7 +10,7 @@ function App() {
 
   return (
     <>
-      <Dashboard/>
+      <RestaurantModule />
     </>
   )
 }

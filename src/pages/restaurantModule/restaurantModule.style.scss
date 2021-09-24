@@ -1,0 +1,102 @@
+@import '../../sass/variables.scss';
+@import "../../sass/mixins.scss";
+
+.restaurant-module {
+    // background-color: $color-dark;
+    margin-top: 5.9rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 102.8rem;
+
+    .restaurant-module-body {
+        display: grid;
+        grid-template-columns: 22.5rem 77.7rem;
+        grid-gap: 2.6rem;
+
+        .amazonico-logo {
+            width: 22.5rem;
+            height: 10.1rem;
+        }
+
+        .amazonico-main {
+            padding-left: 3.9rem;
+            padding-right: 3.9rem;
+            background-color: $color-green;
+            @include horizontal-flex-space-between;
+            font-size: 4rem;
+            font-weight: bold;
+
+            .country {
+                margin-left: auto;
+                margin-right: 1.3rem;
+                font-weight: normal;
+            }
+
+            .icon-dropdown{
+                margin-top: 0.5rem;
+                width: 3rem;
+            }
+        }
+
+        .status-menu {
+            font-size: 2.4rem;
+            padding-left: 4.1rem;
+            padding-top: 3.2rem;
+            // background-color: indigo;
+
+            .menu-link {
+                margin-top: 4.1rem;
+                width: 15.8rem;
+                font-size: 1.8rem;
+
+                ul {
+                    // background-color: yellow;
+                    list-style-type: none;
+
+                    li {
+                        margin-bottom: 3.0rem;
+                        // background-color: orange;
+                        display: flex;
+
+                        .number {
+                            text-align: center;
+                            margin-left: auto;
+                            width: 3rem;
+                            border-radius: 50%;    
+                        }
+
+                        .new {
+                            background-color: $color-white;
+                            color: $color-green;
+                        }
+
+                        .confirmed {
+                            background-color: $color-green;
+                            color: $color-white;
+                        }
+
+                        .declined {
+                            background-color: $color-yellow-light;
+                            color: $color-grey;
+                        }
+
+                        .cancelled {
+                            background-color: $color-red-light;
+                            color: $color-white;
+                        }
+                    }
+                    
+                    li:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .status-body {
+            // background-color: gray;
+        }
+    }  
+}
+
+    
