@@ -1,0 +1,52 @@
+@import '../../sass/variables.scss';
+@import "../../sass/mixins.scss";
+
+.contact-item {
+    display: flex;
+    margin-bottom: 1.5rem;
+    // background-color: orange;
+
+    .user-info {
+        display: flex;
+        cursor: pointer;
+
+        .user-dp {
+            margin-right: 1.5rem;
+            width: 4.0rem;
+            height: 4.0rem;
+        }
+        
+        .user-details {
+            font-size: 1.4rem;
+            font-weight: regular;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .user-action {
+        // background-color: black;
+        @include horizontal-flex-space-between;
+        margin-left: auto;
+
+        .action-icon {
+            margin-left: 1.5rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            cursor: pointer;
+
+            &:first-child {
+                margin-left: none;
+            }
+        }
+
+        .mail-icon {
+            height: 1.5rem;
+            margin-bottom: 0.275rem;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: none;
+    }
+}

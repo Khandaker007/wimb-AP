@@ -1,7 +1,7 @@
 @import "../../sass/mixins.scss";
 
 .restaurant-module-header {
-    height: 3.6rem;
+    height: 3.5rem;
     margin-bottom: 1.5rem;
     display: flex;
     // background-color: orange;
@@ -9,6 +9,7 @@
     .wimb-logo {
         width: 4.7rem;
         height: 3.6rem;
+        cursor: pointer;
     }
 
     .restaurant-module-nav-link {
@@ -17,6 +18,10 @@
         @include horizontal-flex-space-between;
         list-style-type: none;
         font-size: 1.8rem;
+
+        li {
+            cursor: pointer;
+        }
     }
 
     .functionalities {
@@ -26,17 +31,20 @@
 
         .search-icon {
             width: 2rem;
-            height: 2rem;        
+            height: 2rem;
+            cursor: pointer;        
         }
 
         .mail-icon {
             width: 2.5rem;
             height: 2.0rem;
+            cursor: pointer;
         }
 
         .notification-icon {
             width: 2.0rem;
             height: 2.5rem;
+            cursor: pointer;
         }
     }
 }

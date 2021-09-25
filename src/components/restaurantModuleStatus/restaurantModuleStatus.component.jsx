@@ -22,14 +22,14 @@ const RestaurantModuleStatus = () => (
                 <li>
                     Declined
                     <div className="declined number">
-                    1
+                        1
                     </div>
                 </li>
                 <li>
-                        Cancelled
-                        <div className="cancelled number">
+                    Cancelled
+                    <div className="cancelled number">
                         1
-                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
