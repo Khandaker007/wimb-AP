@@ -1,0 +1,12 @@
+@import '../../sass/variables.scss';
+@import "../../sass/mixins.scss";
+
+.confirmed-item {
+    display: grid;
+    grid-template-columns: 42.5rem auto;
+
+    .confirmed-icon {
+        margin-left: auto;
+    }
+}
+

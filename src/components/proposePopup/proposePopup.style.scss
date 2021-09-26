@@ -1,0 +1,33 @@
+@import '../../sass/variables.scss';
+@import "../../sass/mixins.scss";
+
+.propose-popup {
+    background-color: $color-grey;
+    max-width: 77.8rem;
+    padding: 3.3rem 3.1rem;
+    border: 0.1rem solid $color-grey-light;
+    font-size: 2.4rem;
+
+    .propose-message {
+        font-size: 1.8rem;
+        font-weight: regular;
+        margin: 3.5rem 0;
+    }
+
+    .propose-tags {
+        font-size: 1.4rem;
+        font-weight: medium;
+        
+        span {
+            border: 1px solid $color-white;
+            padding: 0 0.5rem;
+            margin-right: 1rem;
+            cursor: pointer;
+
+            &:last-child {
+                margin-right: 0rem;
+            }
+        }
+    }
+
+}

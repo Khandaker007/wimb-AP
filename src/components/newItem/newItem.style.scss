@@ -1,0 +1,38 @@
+@import '../../sass/variables.scss';
+@import "../../sass/mixins.scss";
+
+
+.new-item {
+    // background-color: orange;
+    font-weight: medium;
+    display: grid;
+    grid-template-columns: 42.5rem auto;
+    margin-bottom: 1.5rem;
+
+    .new-item-actions {
+        // background-color: orange;
+        display: flex;
+
+        ul {
+            // background-color: indigo;
+            display: flex;
+            list-style-type: none;
+            margin-left: auto;
+
+            li {
+                margin-right: 1.5rem;
+                font-weight: medium;
+                cursor: pointer;
+            }
+
+            .approve {
+                color: $color-primary;
+            }
+
+            .decline {
+                margin-right: 0rem;
+                color: $color-yellow-light;
+            }
+        }
+    }
+}

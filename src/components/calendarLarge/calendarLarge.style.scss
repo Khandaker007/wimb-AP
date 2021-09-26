@@ -1,0 +1,35 @@
+@import '../../sass/variables.scss';
+@import "../../sass/mixins.scss";
+
+.calendar-large {
+    background-color: $color-grey-light;
+    width: 77.8rem;
+    font-size: 0.8rem;
+    font-weight: regular;
+
+    .calendar-large-header {
+        font-size: 1.8rem;
+        font-weight: medium;
+        padding: 2.5rem;
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+        div {
+            margin-left: auto;
+        }
+
+        .calendar-large-navigation {
+            display: flex;
+
+            .month-selector {
+                margin: 0 3.0rem;
+            }
+        }
+
+        .upcoming-reservations {
+            .dropdown-icon-green {
+                margin-left: 1rem;
+            }
+        }
+    }
+}

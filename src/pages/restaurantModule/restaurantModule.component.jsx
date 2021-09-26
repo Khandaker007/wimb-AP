@@ -6,7 +6,7 @@ import "./restaurantModule.style.scss";
 import amazonicoLogo from "../../assets/logo/logo-amazonico.svg";
 
 // ICONS
-import dropdown from "../../assets/icon/dropdown.svg";
+import dropdown from "../../assets/icon/icon-dropdown.svg";
 
 // COMPONENTS
 import RestaurantModuleHeader from "../../components/restaurantModuleHeader/restaurantModuleHeader.component";

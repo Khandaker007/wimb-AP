@@ -4,6 +4,10 @@ import "./restaurantModuleStatusBody.style.scss";
 
 // COMPONENTS
 import ContactItem from "../contactItem/contactItem.component";
+import NewItem from "../newItem/newItem.component";
+import ConfirmedItem from "../confirmedItem/confirmedItem.component";
+import DeclinedItem from "../declinedItem/declinedItem.component";
+import CancelledItem from "../cancelledItem/cancelledItem.component";
 
 // ICONS
 import online from "../../assets/icon/icon-online.svg";
@@ -59,22 +63,30 @@ const RestaurantModuleBody = () => (
         </div>
         <div className="new card">
             <div className="wrapper">
-                New
+                <div className="new-title">New</div>
+                <NewItem />
+                <NewItem />
             </div>
         </div>
         <div className="confirmed card">
             <div className="wrapper">
-                Confirmed
+                <div className="confirmed-title">Confirmed</div>
+                <ConfirmedItem />
+                <ConfirmedItem />
             </div>
         </div>
         <div className="declined card">
             <div className="wrapper">
-                Declined
+            <div className="declined-title">Declined</div>
+                <DeclinedItem />
+                <DeclinedItem />
             </div>
         </div>
         <div className="cancelled card">
             <div className="wrapper">
-                Cancelled
+            <div className="cancelled-title">Cancelled</div>
+                <CancelledItem />
+                <CancelledItem />
             </div>
         </div>
     </div>

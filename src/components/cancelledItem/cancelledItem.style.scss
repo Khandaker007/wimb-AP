@@ -1,0 +1,12 @@
+@import '../../sass/variables.scss';
+@import "../../sass/mixins.scss";
+
+.cancelled-item {
+    display: grid;
+    grid-template-columns: 42.5rem auto;
+
+    .cancelled-icon {
+        margin-left: auto;
+    }
+}
+

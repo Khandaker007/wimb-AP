@@ -3,7 +3,7 @@
 
 .restaurant-module-status-body {
     background: $color-grey;
-    font-size: 2.4rem;
+    font-size: 1.4rem;
 
     .card {
         padding: 3.3rem 3.1rem;
@@ -113,6 +113,66 @@
                         margin-bottom: 3.0rem;
                     }
                 }
+            }
+        }
+    }
+
+    .new {
+        // background-color: violet;
+
+        .wrapper {
+            // background-color: pink;
+
+            .new-title {
+                // background-color: green;
+                font-size: 2.4rem;
+                font-weight: medium;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    .confirmed {
+        // background-color: violet;
+
+        .wrapper {
+            // background-color: pink;
+
+            .confirmed-title {
+                // background-color: green;
+                font-size: 2.4rem;
+                font-weight: medium;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    .declined {
+        // background-color: violet;
+
+        .wrapper {
+            // background-color: pink;
+
+            .declined-title {
+                // background-color: green;
+                font-size: 2.4rem;
+                font-weight: medium;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    .cancelled {
+        // background-color: violet;
+
+        .wrapper {
+            // background-color: pink;
+
+            .cancelled-title {
+                // background-color: green;
+                font-size: 2.4rem;
+                font-weight: medium;
+                margin-bottom: 1.5rem;
             }
         }
     }
