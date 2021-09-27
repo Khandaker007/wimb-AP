@@ -3,7 +3,7 @@
 0 - 430px;       small-phone
 430 - 568px:     medium-phone
 568 - 600px:     phone
-600 - 1000px:     tablet portrait
+600 - 1000px:    tablet portrait
 900 - 1300px:    tablet landscape
 [1300 - 1800px] is where normal style apply
 1800px + :       Big desktop
@@ -40,4 +40,10 @@ $breakpoint arguments choice:
     @if $breakpoint == big-desktop {
         @media (min-width: 112.5em) {@content};
     }
+}
+
+@mixin horizontal-flex-space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

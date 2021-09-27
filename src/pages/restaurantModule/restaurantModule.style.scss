@@ -1,0 +1,48 @@
+@import '../../sass/variables.scss';
+@import "../../sass/mixins.scss";
+
+.restaurant-module {
+    margin-top: 5.9rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 102.8rem;
+
+    .restaurant-module-body {
+        display: grid;
+        grid-template-columns: 22.5rem 77.7rem;
+        grid-gap: 2.6rem;
+
+        .amazonico-logo {
+            width: 22.5rem;
+            height: 10.1rem;
+            cursor: pointer;
+        }
+
+        .amazonico-main {
+            padding-left: 3.9rem;
+            padding-right: 3.9rem;
+            background-color: $color-green;
+            @include horizontal-flex-space-between;
+            font-size: 4rem;
+            font-weight: bold;
+
+            .country {
+                margin-left: auto;
+                margin-right: 1.3rem;
+                font-weight: normal;
+            }
+
+            .icon-dropdown{
+                margin-top: 0.5rem;
+                width: 3rem;
+                cursor: pointer;
+            }
+        }
+
+        .status-body {
+            background-color: $color-grey;
+        }
+    }  
+}
+
+    

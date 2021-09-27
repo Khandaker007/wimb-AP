@@ -1,0 +1,60 @@
+@import '../../sass/variables.scss';
+@import "../../sass/mixins.scss";
+
+.status-menu {
+    font-size: 2.4rem;
+    padding-left: 4.1rem;
+    padding-top: 3.2rem;
+    background-color: $color-grey;
+
+    .menu-link {
+        margin-top: 4.1rem;
+        width: 15.8rem;
+        font-size: 1.8rem;
+
+        ul {
+            // background-color: yellow;
+            list-style-type: none;
+
+            li {
+                margin-bottom: 3.0rem;
+                // background-color: orange;
+                display: flex;
+                cursor: pointer;
+
+                .number {
+                    text-align: center;
+                    margin-left: auto;
+                    width: 3rem;
+                    border-radius: 50%;    
+                }
+
+                .new {
+                    background-color: $color-white;
+                    color: $color-green;
+                }
+
+                .confirmed {
+                    background-color: $color-green;
+                    color: $color-white;
+                }
+
+                .declined {
+                    background-color: $color-yellow-light;
+                    color: $color-grey;
+                }
+
+                .cancelled {
+                    background-color: $color-red-light;
+                    color: $color-white;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            
+            
+        }
+    }
+}

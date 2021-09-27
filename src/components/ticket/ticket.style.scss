@@ -1,0 +1,88 @@
+@import '../../sass/variables.scss';
+@import "../../sass/mixins.scss";
+
+
+.ticket {
+    white-space: nowrap;
+    // background-color: indigo;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 5.5rem auto auto auto auto;
+    row-gap: 0.5rem;
+
+    .city {
+        font-weight: bold;
+    }
+
+    .timer-on-ticket {
+        // background-color: black;
+        color: $color-red-light;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+
+        div {
+            @include horizontal-flex-space-between;
+
+            .timer {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    .time-date-on-ticket {
+        grid-column: span 2;
+    }
+
+    .note-on-ticket {
+        grid-column: span 2;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .tags {
+        grid-column: span 4;
+        display: flex;
+
+        .tag-item {
+            font-size: 1.1rem;
+            padding: 0.25rem 0.75rem; 
+            display: flex;
+            margin-right: 1.25rem;
+
+            img {
+                margin-right: 0.5rem;
+            }
+        }
+        
+        .big-spender {
+            background-color: $color-green-light;
+        }
+
+        .vip {
+            background-color: $color-blue;
+        }
+
+        .booth {
+            background-color: $color-green;
+        }
+
+        .show-more {
+            font-size: 1.2rem;
+            // background-color: black;
+            margin-right: 0rem;
+            padding: 0 0;
+            display: flex;
+            cursor: pointer;
+            
+            .dropdown-icon{
+                margin-left: 0.5rem;
+                margin-right: 0rem;
+                margin-bottom: 0.3rem;
+                width: 1.25rem;
+                // background-color: yellow;
+            }
+        }
+    }
+}

@@ -1,0 +1,179 @@
+@import '../../sass/variables.scss';
+@import "../../sass/mixins.scss";
+
+.restaurant-module-status-body {
+    background: $color-grey;
+    font-size: 1.4rem;
+
+    .card {
+        padding: 3.3rem 3.1rem;
+        border-bottom: 0.1rem solid $color-grey-light;
+
+        .wrapper {
+            // background-color: orange;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .main {
+        .wrapper {
+            .main-header {
+                display: flex;
+                font-size: 1.8rem;
+                // background-color: indigo;
+                margin-bottom: 1.5rem;
+
+                .online-icon {
+                    align-self: baseline;
+                    margin-right: 0.5rem;
+                }
+
+                .more-icon {
+                    margin-left: auto;
+                    margin-right: 2.1rem;
+                    cursor: pointer;
+                }
+
+                .calendar-icon {
+                    cursor: pointer;
+                }
+            }
+
+            .main-content {
+                display: grid;
+                grid-template-columns: auto 30.5rem;
+                
+                .restaurant-info {
+                    // background-color: pink;
+
+                    .tag {
+                        font-size: 1.4rem;
+                        font-weight: medium;
+                        color: $color-primary;
+                        display: flex;
+                        // background-color: yellow;
+                        margin-bottom: 3.5rem;
+
+                        .tag-item {
+                            border: 1px solid $color-primary;
+                            padding: 0 0.75rem;
+                            margin-right: 1.2rem;
+
+                            &:last-child {
+                                margin-right: none;
+                            }
+                        }
+                    }
+
+                    .restaurant-description {
+                        font-size: 1.8rem;
+                        font-weight: regular;
+                        margin-bottom: 4.0rem;
+                    }
+
+                    .restaurant-avg {
+                        font-size: 1.4rem;
+                        font-weight: regular;
+                        margin-bottom: 2.5rem;
+                    }
+
+                    .restaurant-btns {
+                        display: flex;
+
+                        button {
+                            font-size: 1.4rem;
+                            font-weight: medium;
+                            color: $color-white;
+                            background-color: $color-primary;
+                            padding: 0 0.75rem;
+                            border: none;
+                            margin-right: 1rem;
+                            cursor: pointer;
+
+                            &:last-child {
+                                margin-right: none;
+                            }
+                        }
+
+                        .perk-btn {
+                            @include horizontal-flex-space-between;
+                        }
+                    }
+                }
+
+                .contacts {
+                    // background-color: red;
+
+                    .contact-title {
+                        font-size: 2.4rem;
+                        font-weight: medium;
+                        margin-bottom: 3.0rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .new {
+        // background-color: violet;
+
+        .wrapper {
+            // background-color: pink;
+
+            .new-title {
+                // background-color: green;
+                font-size: 2.4rem;
+                font-weight: medium;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    .confirmed {
+        // background-color: violet;
+
+        .wrapper {
+            // background-color: pink;
+
+            .confirmed-title {
+                // background-color: green;
+                font-size: 2.4rem;
+                font-weight: medium;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    .declined {
+        // background-color: violet;
+
+        .wrapper {
+            // background-color: pink;
+
+            .declined-title {
+                // background-color: green;
+                font-size: 2.4rem;
+                font-weight: medium;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    .cancelled {
+        // background-color: violet;
+
+        .wrapper {
+            // background-color: pink;
+
+            .cancelled-title {
+                // background-color: green;
+                font-size: 2.4rem;
+                font-weight: medium;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
