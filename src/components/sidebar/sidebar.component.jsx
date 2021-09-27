@@ -1,6 +1,6 @@
 import React from "react";
 
-import logo from "../../assets/logo/Asset 10@2x.svg";
+import logo from "../../assets/logo/wimb-logo.svg";
 
 // ICON
 import dashboard from '../../assets/icon/icon-dashboard.svg'

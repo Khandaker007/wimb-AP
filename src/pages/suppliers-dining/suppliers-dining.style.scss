@@ -1,0 +1,121 @@
+@import '../../sass/variables.scss';
+
+.suppliers-dining{
+
+    display: grid;
+    grid-template-columns: [filter-start] 15% [filter-end catego-start] 1fr [catego-end calendar-start] 25% [calendar-end];
+    grid-gap: 2rem;
+
+    &__filter{
+        grid-column: filter-start / filter-end;
+        
+        background-color: $color-grey;
+        padding: 2rem;
+
+        .heading{
+            margin-bottom: 3rem;
+        }
+        .side-nav{
+
+            &__item{
+                list-style-type: none;
+                cursor: pointer;
+                &:not(:last-child){
+                    margin-bottom: 1rem;
+                }
+            }
+            &__link{
+                color: $color-white;
+                font-size: 1.4rem;
+                text-decoration: none;
+
+                display: flex;
+            }
+            &__link:hover{
+                color: $color-primary;
+            }
+        }
+    }
+    &__categories{
+        grid-column: catego-start / catego-end;
+
+        background-color: $color-grey;
+        padding: 2rem;
+        
+
+        &--header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            position: static;
+            padding-bottom: 2rem;
+
+            .group{
+                display: flex;
+                gap: .5rem;
+
+                .btn{
+                    background-color: $color-primary;
+                    color: $color-white;
+                    padding: 0 .5rem;
+                    border: none;
+                }
+            }
+        }
+        &--recents{
+            margin-bottom: 2rem;
+            .heading{
+                margin-bottom: 1rem;
+            }
+            .recents-list{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 8rem;
+                grid-gap: 2rem;
+            }
+        }
+        &--all-categories{
+            .heading{
+                margin-bottom: 1rem;
+            }
+            .categorie-list{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 12rem;
+                grid-gap: 2rem;
+            }
+        }
+    }
+    &__all-categories{
+        grid-column: calendar-start / calendar-end;
+
+        background-color: $color-grey;
+
+        &--header{
+            font-size: 2rem;
+            padding: 2rem;
+            border-bottom: 1px solid $color-grey-light;
+
+            display: flex;
+            gap: 1rem;
+
+        }
+        .categorie-list{
+            &__item{
+                padding: 1rem 4.1rem;
+                list-style-type: none;
+                border-bottom: 1px solid $color-grey-light;
+                cursor: pointer;
+            }
+            &__item:hover{
+                background-color: $color-primary;
+            }
+            &__link{
+                font-size: 1.3rem;
+                color: $color-white;
+                text-decoration: none;
+            }
+        }
+    }
+}

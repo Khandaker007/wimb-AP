@@ -1,0 +1,145 @@
+@import '../../sass/variables.scss';
+
+.analytics{
+    display: grid;
+    grid-template-rows: repeat(2, [row-start] min-content [row-end]);
+    grid-template-columns: [lcol-start] 1fr [lcol-end scol-start] 25% [scol-end];
+    grid-gap: 2rem;
+}
+
+.traffic{
+    grid-column: lcol-start / lcol-end;
+    grid-row: row-start 1 / row-end 2;
+
+    background-color: $color-grey;
+
+    padding: 2rem;
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+
+        .heading-date{
+            font-size: 1.2rem;
+        }
+        .drop-down{
+            &__options{
+                padding: .6rem;
+                background-color: transparent;
+                border: none;
+                color: $color-white;
+                cursor: pointer;
+            }
+            &__option{
+                background-color: $color-dark;
+            }
+        }
+    }
+    &__summery{
+        display: flex;
+        justify-content: space-around;
+
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        .traffic-data{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .traffic-number{
+                font-size: 2.5rem;
+            }
+            .increment{
+                color: $color-primary;
+            }
+        }
+    }
+    &__graph{
+        margin-bottom: 2rem;
+        .drop-down{
+            &__options{
+                padding: .6rem;
+                background-color: transparent;
+                border: none;
+                color: $color-white;
+                cursor: pointer;
+            }
+            &__option{
+                background-color: $color-dark;
+            }
+        }
+        .body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: 2px solid $color-white;
+            height: 20rem;
+            font-size: 2rem;
+
+        }
+    }
+    &__tracking-header{
+
+    }
+}
+.calendar{
+    grid-template-columns: scol-start / scol-end;
+    grid-row: row-start 1 / row-end 1;
+
+    background-color: $color-grey;
+    padding: 2rem;
+
+    .calendar-area{
+        // just to stay in strucher
+        border: 2px solid $color-white;
+        height: 30rem;
+
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+.top-eatery{
+    grid-template-columns: scol-start / scol-end;
+    grid-row: row-start 2 / row-end 2;
+
+    background-color: $color-grey;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .eatery{
+        font-size: 1.3rem;
+    }
+    .eatery-type{
+        font-size: 3rem;
+    }
+    .top-category{
+        margin-bottom: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-restaurent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .drop-down{
+        &__options{
+            padding: .6rem;
+            background-color: transparent;
+            border: none;
+            color: $color-white;
+            cursor: pointer;
+        }
+        &__option{
+            background-color: $color-dark;
+        }
+    }
+}

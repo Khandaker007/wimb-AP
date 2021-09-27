@@ -1,0 +1,73 @@
+@import '../../sass/variables.scss';
+
+.requests{
+    display: grid;
+    grid-template-rows: repeat(2, [row-start] min-content [row-end]);
+    grid-template-columns: [communi-start] 1fr [communi-end request-start] 25% [request-end];
+    grid-gap: 2rem;
+
+    &__communication{
+        grid-column: communi-start / communi-end;
+        grid-row: row-start 1 / row-end 2;
+
+        background-color: $color-grey;
+    }
+
+    &__card-requests{
+        grid-column: request-start / request-end;
+        grid-row: row-start 1 / row-end 1;
+
+        background-color: $color-grey;
+
+        &--header{
+            padding: 2rem;
+            border-bottom: 1px solid $color-grey-light;
+
+            display: flex;
+            justify-content: space-between;
+
+            p{
+                font-size: 1.3rem;
+            }
+            .all-card-request{
+                font-size: 1.1rem;
+                text-decoration: none;
+                color: $color-white;
+            }
+            .all-card-request:hover,
+            .all-card-request:active{
+                color: $color-primary;
+            }
+        }
+    }
+
+    &__connect-requests{
+        grid-column: request-start / request-end;
+        grid-row: row-start 2 / row-end 2;
+
+        background-color: $color-grey;
+
+        &--header{
+            padding: 2rem;
+            border-bottom: 1px solid $color-grey-light;
+
+            display: flex;
+            justify-content: space-between;
+
+            p{
+                font-size: 1.3rem;
+            }
+            .all-connect-request{
+                font-size: 1.1rem;
+                text-decoration: none;
+                color: $color-white;
+            }
+            .all-connect-request:hover,
+            .all-connect-request:active{
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,53 @@
+.header{
+    height: 7rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__heading{
+        font-size: 3rem;
+        font-weight: 300;
+        margin-left: 1rem;
+    }
+
+    &__status{
+        width: 30%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--notification{
+
+            .icon{
+                &:not(:last-child){
+                    margin-right: 2rem;
+                }
+            }
+            .icon-search{
+                height: 1.5rem;
+                width: 1.5rem;
+            }
+            .icon-mail{
+                height: 1.5rem;
+                width: 2rem;
+            }
+            .icon-notif{
+                height: 1.938rem;
+                width: 1.5rem;
+            }
+        }
+
+        &--profile{
+            display: flex;
+            align-items: center;
+
+            .image{
+                height: 5rem;
+                border-radius: 50%;
+                margin-left: 1rem;
+            }
+        }
+    }
+}

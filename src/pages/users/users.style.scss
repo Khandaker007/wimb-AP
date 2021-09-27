@@ -1,0 +1,144 @@
+@import '../../sass/variables.scss';
+
+.users{
+    display: grid;
+    grid-template-rows: [row-start] min-content 1fr [row-end];
+    grid-template-columns: [lcol-start] 1fr [lcol-end scol-start] 25% [scol-start];
+    grid-gap: 2rem;
+
+    &__summery{
+        grid-column: lcol-start / lcol-end;
+        background-color: $color-grey;
+
+        padding: 2rem;
+        font-size: 1.2rem;
+
+        display: flex;
+        justify-content: space-between;
+
+        .user-data{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .user-number{
+            font-size: 2.5rem;
+        }
+        .increment{
+            color: $color-primary;
+        }
+    }
+    &__list{
+        grid-column: lcol-start / lcol-end;
+        background-color: $color-grey;
+
+        padding: 2rem;
+
+        .list-header{
+            display: flex;
+            justify-content: space-between;
+            
+            .drop-down{
+                font-size: 1.5rem;
+
+                &__options{
+                    padding: .6rem;
+                    border: none;
+                    background-color: transparent;
+                    color: $color-white;
+                    cursor: pointer;
+                }
+                &__option{
+                    background-color: black;
+                }
+            }
+        }
+        .list-body{
+            font-size: 1.3rem;
+            margin-top: 2rem;
+            &__header{
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+    }
+    &__info{
+        grid-column: scol-start / scol-end;
+        grid-row: row-start / row-end;
+        
+        background-color: $color-grey;
+        padding: 2rem;
+        // letter-spacing: .5px;
+
+        &--user{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+            .image{
+                height: 7rem;
+            }
+            .name{
+                font-size: 1.3rem;
+            }
+            .edit-button{
+                // font-size: 2rem;
+                color: $color-primary;
+            }            
+        }
+        .information{
+            line-height: 1.3;
+            font-size: 1.2rem;
+            .contact{
+                display: flex;
+                justify-content: space-between;
+            }
+            p{
+                &:not(:last-child){
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        .tags{
+            font-size: 1.2rem;
+            margin: 2rem 0;
+            p{
+                margin-bottom: 1rem;
+            }
+            .tags-list{
+                display: flex;
+                justify-content: space-between;
+                .tag{
+                    text-transform: uppercase;
+                    padding: .5rem;
+    
+                    img{
+                        margin-right: .5rem;
+                    }
+                }
+                .tag-big-spender{
+                    background-color: $color-green-light;
+                }
+                .tag-vip{
+                    background-color: $color-purple;
+                }
+                .tag-booth{
+                    background-color: $color-green;
+                }
+            }
+        }
+        .reservation{
+            &__heading{
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+            &__past{
+                font-size: 1.2rem;
+                text-decoration: none;
+                color: $color-primary;
+            }
+        }
+    }
+
+}
+

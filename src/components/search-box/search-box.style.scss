@@ -1,0 +1,23 @@
+@import '../../sass/variables.scss';
+
+.search{
+    position: relative;
+    &__input{
+        height: 3rem;
+        border: none;
+        padding: 0 1rem;
+        border: 2px solid $color-white;                  
+    }
+    &__input:focus{
+        outline: none;
+        border: 2px solid $color-primary;
+    }
+    &__icon{
+        height: 1.5rem;
+
+        position: absolute;
+        right: 8px;
+        top: 8px;
+    }
+
+}

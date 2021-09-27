@@ -1,0 +1,16 @@
+@import '../../sass/variables.scss';
+
+.connect-request{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem  2rem;
+
+    &:not(:last-child){
+        border-bottom: 1px solid $color-grey-light;
+    }
+
+    &__img{
+        height: 3rem;
+        border-radius: 50%;
+    }
+}

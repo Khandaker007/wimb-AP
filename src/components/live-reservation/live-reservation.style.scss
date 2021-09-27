@@ -1,0 +1,18 @@
+@import '../../sass/variables.scss';
+
+.live-reservation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+
+    &__button{
+        font-size: 1.2rem;
+        text-transform: uppercase;
+
+        padding: .3rem;
+        border: none;
+        background-color: $color-primary;
+    }
+}
