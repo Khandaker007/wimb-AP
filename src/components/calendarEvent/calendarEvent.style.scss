@@ -1,0 +1,20 @@
+@import '../../sass/variables.scss';
+@import "../../sass/mixins.scss";
+
+.calendar-event {
+    background-color: $color-primary;
+    font-size: 0.8rem;
+    font-weight: regular;
+    padding: 0 0.75rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.1rem;
+
+    .time-person {
+        // background-color: orange;
+    }
+
+    .event-details {
+        @include horizontal-flex-space-between;
+    }
+}

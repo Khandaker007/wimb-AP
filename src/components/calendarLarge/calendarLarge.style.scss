@@ -4,13 +4,14 @@
 .calendar-large {
     background-color: $color-grey-light;
     width: 77.8rem;
+    padding: 2.5rem;
     font-size: 0.8rem;
     font-weight: regular;
 
     .calendar-large-header {
         font-size: 1.8rem;
         font-weight: medium;
-        padding: 2.5rem;
+        margin-bottom: 3.0rem;
         display: grid;
         grid-template-columns: auto auto auto;
 
@@ -21,14 +22,47 @@
         .calendar-large-navigation {
             display: flex;
 
+            .left-icon {
+                cursor: pointer;
+            }
+
             .month-selector {
                 margin: 0 3.0rem;
+            }
+
+            .right-icon {
+                cursor: pointer;
             }
         }
 
         .upcoming-reservations {
+            cursor: pointer;
+
             .dropdown-icon-green {
                 margin-left: 1rem;
+            }
+        }
+    }
+
+    .calendar-large-body {
+        font-size: 1.4rem;
+        font-weight: medium;
+        display: grid;
+        gap: 1.0rem;
+        grid-template-columns: repeat(7, 1fr);
+        // grid-template-columns: auto auto auto auto auto auto auto;
+        grid-template-rows: 2.0rem repeat(5, 1fr);
+
+        [class ^= "date"] {
+            // background-color: indigo;
+            border: 1px solid $color-white;
+            display: flex;
+            flex-direction: column;
+            
+            span {
+                margin-top: auto;
+                // background-color: orange;
+                padding: 0 0.75rem;
             }
         }
     }
