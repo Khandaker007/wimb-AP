@@ -17,7 +17,7 @@ import event from '../../assets/icon/Icon-events.svg'
 import connect from '../../assets/icon/Icon-connect.svg'
 import navigation from '../../assets/icon/Icon-navigation.svg'
 import system from '../../assets/icon/Icon-settings.svg'
-import arrow from '../../assets/icon/icon-arrow-left.svg'
+import arrow from '../../assets/icon/icon-arrow-right.svg'
 
 import "./sidebar.style.scss";
 

@@ -12,6 +12,8 @@ import dropdown from "../../assets/icon/icon-dropdown.svg";
 import RestaurantModuleHeader from "../../components/restaurantModuleHeader/restaurantModuleHeader.component";
 import RestaurantModuleStatusBody from "../../components/restaurantModuleStatusBody/restaurantModuleStatusBody.component";
 import RestaurantModuleStatus from "../../components/restaurantModuleStatus/restaurantModuleStatus.component";
+import ProposePopop from '../../components/proposePopup/proposePopup.component'
+import CalendarLarge from '../../components/calendarLarge/calendarLarge.component'
 
 
 const RestaurantModule = () => (
@@ -27,6 +29,8 @@ const RestaurantModule = () => (
             <RestaurantModuleStatus />
             <RestaurantModuleStatusBody />
         </div>
+        <ProposePopop/>
+        <CalendarLarge/>
     </div>
 )
 

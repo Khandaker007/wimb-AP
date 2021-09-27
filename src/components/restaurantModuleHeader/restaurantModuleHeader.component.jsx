@@ -3,7 +3,7 @@ import React from 'react';
 import "./restaurantModuleHeader.style.scss";
 
 // LOGO
-import wimbLogo from "../../assets/logo/Asset 10@2x.svg";
+import wimbLogo from "../../assets/logo/wimb-logo.svg";
 
 // ICONS
 import search from "../../assets/icon/icon-search.svg";
