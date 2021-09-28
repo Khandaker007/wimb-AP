@@ -10,16 +10,17 @@ import SuppliersCategories from './pages/suppliers-categories/suppliers-categori
 import SuppliersDining from './pages/suppliers-dining/suppliers-dining.component'
 import Requests from './pages/requests/requests.component'
 import RestaurantModule from "./pages/restaurantModule/restaurantModule.component";
+import LifeStyleManagers from "./pages/lifestyle-managers/lifestyle-managers.component";
 
 
 import './App.scss'
 
 function App() {
   return (
-      // <div className="admin-panel">
-      //   <Sidebar/>
-      //   <div className="admin-panel__body">
-      //       <Header/>
+      <div className="admin-panel">
+        <Sidebar/>
+        <div className="admin-panel__body">
+            <Header/>
             <Switch>
               <Route exact path='/' component={Dashboard}/>
               <Route path='/user' component={Users}/>
@@ -28,9 +29,10 @@ function App() {
               <Route path='/suppliers-dining' component={SuppliersDining}/>
               <Route path='/requests' component={Requests}/>
               <Route path='/restaurant' component={RestaurantModule}/>
+              <Route path='/lifestyle-managers' component={LifeStyleManagers} />
             </Switch>
-      //   </div>
-      // </div>
+        </div>
+      </div>
   )
 }
 
