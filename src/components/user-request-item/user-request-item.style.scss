@@ -1,0 +1,53 @@
+@import '../../sass/variables.scss';
+@import "../../sass/mixins.scss";
+
+.user-request-item {
+    display: grid;
+    grid-template-columns: 5.0rem 19.7rem repeat(3, 1fr);
+    grid-gap: 2.0rem;
+    margin-bottom: 2.5rem;
+
+    .user-title {
+        .user-details {
+            .user-name {
+                margin-right: 1.5rem;
+            }
+        }
+
+        .user-tags {
+            .tag {
+                font-size: 0.85rem;
+                padding: 0.25rem 0.5rem;
+                margin-right: 0.5rem;
+                white-space: nowrap;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            .multi-lingual {
+                background-color: $color-blue;
+            }
+
+            .new {
+                background-color: $color-green;
+            }
+
+            .thousand-plus-requests {
+                background-color: $color-orange;
+            }
+        }
+    }
+
+    .active-requests {
+        font-size: 3.0rem;
+        color: $color-primary;
+        text-align: center;
+    }
+
+    .completed-requests {
+        font-size: 3.0rem;
+        text-align: center;
+    }
+}

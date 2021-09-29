@@ -1,0 +1,111 @@
+@import '../../sass/variables.scss';
+@import "../../sass/mixins.scss";
+
+.lifestyle-managers {
+    // background-color: orange;
+    font-size: 1.4rem;
+    display: grid;
+    grid-template-columns: 1fr 25%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2rem;
+
+    .card {
+        background-color: $color-grey;
+        padding: 2.0rem;
+    }
+
+    .lifestyle-managers-summary {
+        display: flex;
+        align-items: center;
+        .summary-content {
+            // background-color: indigo;
+            width: 80%;
+
+            .lifestyle-managers-title {
+                margin-bottom: 2.0rem;
+                // background-color: violet; 
+            }
+        }
+
+        .requests-data {
+            // background-color: violet;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .requests-no {
+                font-size: 3.0rem;
+            }
+
+            .requests-increment {
+                .increment-percentage {
+                    color: $color-green;
+                }
+            }
+        }
+    }
+
+    .calendar-small {
+        grid-row: span 2;
+    }
+
+    .lifestyle-managers-body {
+        grid-row: span 3;
+
+        .sort-by {
+            // background-color: indigo;
+            text-align: right;
+            cursor: pointer;
+            margin-bottom: 3.0rem;
+            
+            .dropdown-green-icon {
+                margin-left: 0.75rem;
+            }
+        }
+
+        .lifestyle-managers-body-title {
+            // background-color: violet;
+            white-space: nowrap;
+            display: grid;
+            grid-template-columns: 5.0rem 19.7rem repeat(3, 1fr);
+            grid-gap: 2.0rem;
+            margin-bottom: 2.5rem;
+
+            // div {
+            //     background-color: orange;
+            // }
+        }
+    }
+
+    .users-count{
+        grid-row: span 2;
+        // background-color: indigo;
+        padding: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .users-count-content {
+            .total-users {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 2rem;
+
+                .total-users-no {
+                    font-size: 3.0rem;
+                }
+            }
+
+            .new-users {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .new-users-no {
+                    font-size: 3.0rem;
+                }
+            }
+        }
+    }
+}
