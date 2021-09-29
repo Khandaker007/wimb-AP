@@ -1,9 +1,9 @@
 import React from 'react';
 
-import "./calendarLarge.style.scss";
+import "./calendar-large.style.scss";
 
 // COMPONENTS
-import CalendarEvent from "../calendarEvent/calendarEvent.component";
+import CalendarEvent from "../calendar-event/calendar-event.component";
 
 // ICONS
 import left from "../../assets/icon/icon-arrow-left.svg";

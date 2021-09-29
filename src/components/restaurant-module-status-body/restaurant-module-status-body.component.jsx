@@ -1,13 +1,13 @@
 import React from 'react';
 
-import "./restaurantModuleStatusBody.style.scss";
+import "./restaurant-module-status-body.style.scss";
 
 // COMPONENTS
-import ContactItem from "../contactItem/contactItem.component";
-import NewItem from "../newItem/newItem.component";
-import ConfirmedItem from "../confirmedItem/confirmedItem.component";
-import DeclinedItem from "../declinedItem/declinedItem.component";
-import CancelledItem from "../cancelledItem/cancelledItem.component";
+import ContactItem from "../contact-item/contact-item.component";
+import NewItem from "../new-item/new-item.component";
+import ConfirmedItem from "../confirmed-item/confirmed-item.component";
+import DeclinedItem from "../declined-item/declined-item.component";
+import CancelledItem from "../cancelled-item/cancelled-item.component";
 
 // ICONS
 import online from "../../assets/icon/icon-online.svg";

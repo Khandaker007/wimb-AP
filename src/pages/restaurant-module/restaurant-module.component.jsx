@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "./restaurantModule.style.scss";
+import "./restaurant-module.style.scss";
 
 // LOGO
 import amazonicoLogo from "../../assets/logo/logo-amazonico.svg";
@@ -9,11 +9,11 @@ import amazonicoLogo from "../../assets/logo/logo-amazonico.svg";
 import dropdown from "../../assets/icon/icon-dropdown.svg";
 
 // COMPONENTS
-import RestaurantModuleHeader from "../../components/restaurantModuleHeader/restaurantModuleHeader.component";
-import RestaurantModuleStatusBody from "../../components/restaurantModuleStatusBody/restaurantModuleStatusBody.component";
-import RestaurantModuleStatus from "../../components/restaurantModuleStatus/restaurantModuleStatus.component";
-import ProposePopop from '../../components/proposePopup/proposePopup.component'
-import CalendarLarge from '../../components/calendarLarge/calendarLarge.component'
+import RestaurantModuleHeader from "../../components/restaurant-module-header/restaurant-module-header.component";
+import RestaurantModuleStatusBody from "../../components/restaurant-module-status-body/restaurant-module-status-body.component";
+import RestaurantModuleStatus from "../../components/restaurant-module-status/restaurant-module-status.component";
+import ProposePopop from '../../components/propose-popup/propose-popup.component'
+import CalendarLarge from '../../components/calendar-large/calendar-large.component'
 
 
 const RestaurantModule = () => (

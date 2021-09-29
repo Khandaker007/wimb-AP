@@ -9,7 +9,7 @@ import Analytics from './pages/analytics/analytics.component'
 import SuppliersCategories from './pages/suppliers-categories/suppliers-categories.component'
 import SuppliersDining from './pages/suppliers-dining/suppliers-dining.component'
 import Requests from './pages/requests/requests.component'
-import RestaurantModule from "./pages/restaurantModule/restaurantModule.component";
+import RestaurantModule from "./pages/restaurant-module/restaurant-module.component";
 import LifeStyleManagers from "./pages/lifestyle-managers/lifestyle-managers.component";
 
 
@@ -28,12 +28,8 @@ function App() {
               <Route path='/suppliers-categories' component={SuppliersCategories}/>
               <Route path='/suppliers-dining' component={SuppliersDining}/>
               <Route path='/requests' component={Requests}/>
-<<<<<<< HEAD
-              {/* <Route path='/restaurant' component={RestaurantModule}/> */}
-=======
               <Route path='/restaurant' component={RestaurantModule}/>
               <Route path='/lifestyle-managers' component={LifeStyleManagers} />
->>>>>>> lifestyle-managers
             </Switch>
         </div>
       </div>

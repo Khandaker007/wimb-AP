@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "./contactItem.style.scss";
+import "./contact-item.style.scss";
 
 // ICONS
 import call from "../../assets/icon/icon-phone.svg";

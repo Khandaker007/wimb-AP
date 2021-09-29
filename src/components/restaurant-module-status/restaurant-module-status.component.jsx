@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "./restaurantModuleStatus.style.scss";
+import "./restaurant-module-status.style.scss";
 
 const RestaurantModuleStatus = () => (
     <div className="status-menu">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "./proposePopup.style.scss";
+import "./propose-popup.style.scss";
 
 const ProposePopup = () => (
     <div className="propose-popup">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "./calendarEvent.style.scss";
+import "./calendar-event.style.scss";
 
 // ICONS
 import smallStar from "../../assets/icon/icon-small-star.svg";

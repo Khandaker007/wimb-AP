@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "./declinedItem.style.scss";
+import "./declined-item.style.scss";
 
 // COMPONENTS
 import Ticket from "../ticket/ticket.component";

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "./restaurantModuleHeader.style.scss";
+import "./restaurant-module-header.style.scss";
 
 // LOGO
 import wimbLogo from "../../assets/logo/wimb-logo.svg";
