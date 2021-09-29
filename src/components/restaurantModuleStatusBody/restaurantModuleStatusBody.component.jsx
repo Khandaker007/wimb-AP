@@ -11,7 +11,7 @@ import CancelledItem from "../cancelledItem/cancelledItem.component";
 
 // ICONS
 import online from "../../assets/icon/icon-online.svg";
-import more from "../../assets/icon/icon-more.svg";
+import option from "../../assets/icon/icon-option.svg";
 import calendar from "../../assets/icon/icon-calendar.svg";
 import parkerBenefit from "../../assets/icon/Icon-parker-benefit.svg";
 
@@ -22,7 +22,7 @@ const RestaurantModuleBody = () => (
                 <div className="main-header">
                     <img src={online} alt="online-icon" className="online-icon" />
                     <div>Online</div>
-                    <img src={more} alt="more-icon" className="more-icon" />
+                    <img src={option} alt="more-icon" className="more-icon" />
                     <img src={calendar} alt="calendar-icon" className="calendar-icon" />
                 </div>
                 <div className="main-content">

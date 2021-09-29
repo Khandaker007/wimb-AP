@@ -1,0 +1,14 @@
+@import '../../sass/variables.scss';
+
+.drop-down{
+    &__options{
+        padding: .6rem;
+        background-color: transparent;
+        border: none;
+        color: $color-white;
+        cursor: pointer;
+    }
+    &__option{
+        background-color: $color-dark;
+    }
+}

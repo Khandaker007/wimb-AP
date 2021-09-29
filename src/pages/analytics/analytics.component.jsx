@@ -1,5 +1,8 @@
 import React from 'react'
 
+// COIMPONENT
+import Dropdown from '../../components/drop-down/drop-down.component'
+
 import './analytics.style.scss'
 import '../../sass/typography.scss'
 
@@ -11,12 +14,7 @@ const Analytics = () => (
                     <h3 className='heading-3'>Traffic</h3>
                     <p><span>Tuesday 2nd June 2020</span> - <span>Thursday 2nd july 2020</span></p>
                 </div>
-                <div className="drop-down">
-                    <select name="users" id="users" className='drop-down__options'>
-                        <option value="most-recent" className='drop-down__option'>Last 30 Days</option>
-                        <option value="last-month" className='drop-down__option'>Last 7 Days</option>
-                    </select>
-                </div>
+                <Dropdown option1='last 30 days' value1='last-30-days' option2='last 7 days' value2='last-7-days'/>
             </div>
             <div className="traffic__summery">
                 <div className="traffic-data">
@@ -45,12 +43,7 @@ const Analytics = () => (
                     <h3 className="heading-3">
                         Visits
                     </h3>
-                    <div className="drop-down">
-                        <select name="users" id="users" className='drop-down__options'>
-                            <option value="most-recent" className='drop-down__option'>Daily</option>
-                            <option value="last-month" className='drop-down__option'>Monthly</option>
-                        </select>
-                    </div> 
+                    <Dropdown option1='last 30 days' value1='last-30-days' option2='last 7 days' value2='last-7-days'/>
                 </div>
                 <div className="body">
                     graph
@@ -110,12 +103,7 @@ const Analytics = () => (
                 <p className='eatery'>Most Popular Restaurant</p>
                 <span className='eatery-type'>Sushi Samba</span>
             </div>
-            <div className="drop-down">
-                <select name="users" id="users" className='drop-down__options'>
-                    <option value="most-recent" className='drop-down__option'>London</option>
-                    <option value="last-month" className='drop-down__option'>Canada</option>
-                </select>
-            </div>
+            <Dropdown option1='London' value1='london' option2='Canada' value2='canada'/>
         </div>
     </div>
 )

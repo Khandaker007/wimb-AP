@@ -16,10 +16,10 @@ import './App.scss'
 
 function App() {
   return (
-      // <div className="admin-panel">
-      //   <Sidebar/>
-      //   <div className="admin-panel__body">
-      //       <Header/>
+      <div className="admin-panel">
+        <Sidebar/>
+        <div className="admin-panel__body">
+            <Header/>
             <Switch>
               <Route exact path='/' component={Dashboard}/>
               <Route path='/user' component={Users}/>
@@ -27,10 +27,10 @@ function App() {
               <Route path='/suppliers-categories' component={SuppliersCategories}/>
               <Route path='/suppliers-dining' component={SuppliersDining}/>
               <Route path='/requests' component={Requests}/>
-              <Route path='/restaurant' component={RestaurantModule}/>
+              {/* <Route path='/restaurant' component={RestaurantModule}/> */}
             </Switch>
-      //   </div>
-      // </div>
+        </div>
+      </div>
   )
 }
 

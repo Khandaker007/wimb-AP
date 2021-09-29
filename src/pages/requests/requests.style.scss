@@ -11,6 +11,68 @@
         grid-row: row-start 1 / row-end 2;
 
         background-color: $color-grey;
+
+        display:grid;
+        grid-template-columns: [previous-start] 40% [previous-end current-start] 60% [current-end];
+
+        &--previous-chat{
+            border-right: 1px solid $color-grey-light;
+            padding-bottom: 1rem;
+
+            display: flex;
+            flex-direction: column;
+
+            .search-area{
+                padding: 2rem;
+                border-bottom: 1px solid $color-grey-light;
+
+
+                display: flex;
+                justify-content: space-between;
+
+                .edit-btn{
+                    background-color: transparent;
+                    border: 2px solid $color-white;
+                    padding: .4rem;
+                }
+            }
+            .drop-down-box{
+                margin-top: auto;
+            }
+        }
+        &--current-chat{
+            display: grid;
+            grid-template-rows: [header-start] 7.1rem [header-end chat-start] 1fr [chat-end typing-start] 15% [typing-end];
+
+            .chat-header{
+                grid-row: header-start / header-end;
+                
+                padding: 2rem;
+                font-size: 1.3rem;
+                border-bottom: 1px solid $color-grey-light;
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .chat-area{
+                grid-row: chat-start / chat-end;
+            }
+            .text-area{
+                grid-row: typing-start / typing-end;
+
+                background-color: $color-white;
+
+                .text-box{
+                    height: 100%;
+                    border: none;
+                }
+                .submit-btn{
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+        }
     }
 
     &__card-requests{
