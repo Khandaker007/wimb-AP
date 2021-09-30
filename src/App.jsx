@@ -15,6 +15,9 @@ import Events from './pages/events/events.component';
 import SupplierRestaurent from './pages/supplier-restaurent/supplier-restaurent.component'
 import Connect from './pages/connect/connect.component';
 import PerksOrBenefits from './pages/perks-or-benefits/perks-or-benefits.component';
+import GeoLocationMap from './pages/geo-location-map/geo-location-map.component';
+import GeoLocationMapRegion from './pages/geo-location-map-region/geo-location-map-region.component';
+import GeoLocationMapSubRegion from './pages/geo-location-map-subregion/geo-location-map-subregion.component';
 
 
 import './App.scss'
@@ -24,7 +27,7 @@ function App() {
       <div className="admin-panel">
         <MainSidebar/>
            <div className="admin-panel__body">
-               <Header/>
+            <Header/>
             <Switch>
               <Route exact path='/' component={Dashboard}/>
               <Route path='/user' component={Users}/>
@@ -39,6 +42,9 @@ function App() {
               <Route path='/connect' component={Connect} />
               <Route path='/perks-or-benefits' component={PerksOrBenefits} />
               <Route path='/restaurant-module' component={RestaurantModule}/>
+              <Route path='/geo-location-map' component={GeoLocationMap}/>
+              <Route path='/geo-location-map-region' component={GeoLocationMapRegion}/>
+              <Route path='/geo-location-map-subregion' component={GeoLocationMapSubRegion}/>
             </Switch>
         </div>
       </div>
