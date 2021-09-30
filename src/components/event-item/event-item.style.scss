@@ -1,0 +1,25 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+.event-item {
+    background-color: black;
+    font-size: 1.4rem;
+
+    img {
+        width: 20.9rem;
+    }
+
+    .title-btn-wrapper {
+        @include horizontal-flex-space-between;
+
+        .details-btn {
+            font-size: 1.0rem;
+            background-color: yellow;
+            border: none;
+            color: $color-white;
+            background: $color-primary;
+            padding: 0.3rem 0.75rem;
+            margin-left: auto;
+        }
+    }
+}

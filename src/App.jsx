@@ -11,7 +11,7 @@ import SuppliersDining from './pages/suppliers-dining/suppliers-dining.component
 import Requests from './pages/requests/requests.component'
 import RestaurantModule from "./pages/restaurant-module/restaurant-module.component";
 import LifeStyleManagers from "./pages/lifestyle-managers/lifestyle-managers.component";
-
+import Events from './pages/events/events.component';
 
 import './App.scss'
 
@@ -30,6 +30,7 @@ function App() {
               <Route path='/requests' component={Requests}/>
               <Route path='/restaurant' component={RestaurantModule}/>
               <Route path='/lifestyle-managers' component={LifeStyleManagers} />
+              <Route path='/events' component={Events} />
             </Switch>
         </div>
       </div>
