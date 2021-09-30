@@ -1,8 +1,6 @@
 import React from 'react'
 
 // COMPONENTS
-import Sidebar from '../../components/sidebar/sidebar.component';
-import Header from '../../components/header/header.component';
 import TeamMember from '../../components/team-member/team-member.component';
 
 // LOGO

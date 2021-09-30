@@ -42,7 +42,7 @@
         }
         &--current-chat{
             display: grid;
-            grid-template-rows: [header-start] 7.1rem [header-end chat-start] 1fr [chat-end typing-start] 15% [typing-end];
+            grid-template-rows: [header-start] 7.1rem [header-end chat-start] 1fr [chat-end typing-start] 10% [typing-end];
 
             .chat-header{
                 grid-row: header-start / header-end;
@@ -57,19 +57,30 @@
             }
             .chat-area{
                 grid-row: chat-start / chat-end;
+
+                padding: 2rem;
+                font-size: 1.3rem;
             }
             .text-area{
                 grid-row: typing-start / typing-end;
 
                 background-color: $color-white;
+                padding-right: 1rem;
+
+                display: flex;
+                align-items: center;
+
 
                 .text-box{
                     height: 100%;
+                    width: 100%;
                     border: none;
+                    padding: 1rem;
                 }
                 .submit-btn{
                     background-color: transparent;
                     border: none;
+                    cursor: pointer;
                 }
             }
         }

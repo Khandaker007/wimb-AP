@@ -1,0 +1,28 @@
+@import '../../sass/variables.scss';
+
+.chat-box-self{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 2rem;
+    &__message{
+        background-color: $color-white;
+        color: $color-dark;
+        padding: 1rem;
+        margin-right: 2rem;
+
+    }
+    &__image{
+        height: 4rem;
+        border-radius: 50%;
+    }
+    .pointer{
+        height: 3rem;
+        width: 2rem;
+        background-color: $color-white;
+        clip-path: polygon(0 0, 100% 50%, 0 100%);
+        position: relative;
+        right: 6.8rem;
+        overflow: hidden;
+    }
+    
+}
