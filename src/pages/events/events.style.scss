@@ -7,13 +7,10 @@
     grid-template-columns: 1fr 25%;
     grid-gap: 2rem;
     padding: 2rem;
-
-    div {
-        background: $color-grey;
-    }
-
+    
     .events-body {
         padding: 2rem;
+        background: $color-grey;
 
         .events-body-most-popular {
             @include horizontal-flex-space-between;
@@ -54,6 +51,9 @@
         .events-body-ending-soon-title {
             margin-top: 3.0rem;
         }
+    }
+    .calendar-small{
+        background: $color-grey;
     }
 
 }
