@@ -6,6 +6,8 @@ import ConnectRequest from "../../components/connect-request/connect-request.com
 import SearchBox from '../../components/search-box/search-box.component'
 import ChatBox from "../../components/chat-box/chat-box.component";
 import Dropdown from "../../components/drop-down/drop-down.component";
+import ChatBoxSelf from "../../components/chat-box-self/chat-box-self.component";
+import ChatBoxOther from "../../components/chat-box-other/chat-box-other.component";
 
 // ICON
 import edit from '../../assets/icon/Icon-material-create.svg'
@@ -40,10 +42,11 @@ const Requests = () => (
                     <img src={option} alt="option icon" />
                 </div>
                 <div className="chat-area">
-                    chat area
+                    <ChatBoxSelf/>
+                    <ChatBoxOther/>
                 </div>
                 <div className="text-area">
-                    <textarea className='text-box'>Say something</textarea>
+                    <textarea className='text-box' placeholder='Say something...'/>
                     <button type='submit' value='submit' className='submit-btn'>
                         <img src={rightDirection} alt=""/>
                     </button>
