@@ -30,7 +30,10 @@ function App() {
               <Route path='/requests' component={Requests}/>
               <Route path='/restaurant' component={RestaurantModule}/>
               <Route path='/lifestyle-managers' component={LifeStyleManagers} />
+<<<<<<< Updated upstream
               <Route path='/events' component={Events} />
+=======
+>>>>>>> Stashed changes
             </Switch>
         </div>
       </div>
