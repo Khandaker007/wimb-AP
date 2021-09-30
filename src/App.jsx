@@ -11,18 +11,33 @@ import SuppliersDining from './pages/suppliers-dining/suppliers-dining.component
 import Requests from './pages/requests/requests.component'
 import RestaurantModule from "./pages/restaurant-module/restaurant-module.component";
 import LifeStyleManagers from "./pages/lifestyle-managers/lifestyle-managers.component";
+<<<<<<< 6ff6487dd1113d2bba766647936c2eaf8023247c
 import Events from './pages/events/events.component';
+<<<<<<< HEAD
 import SupplierRestaurent from './pages/supplier-restaurent/supplier-restaurent.component'
 
+=======
+=======
+import SupplierRestaurent from './pages/supplier-restaurent/supplier-restaurent.component'
+
+>>>>>>> request page completed
+>>>>>>> ninad
 
 import './App.scss'
 
 function App() {
   return (
+<<<<<<< HEAD
       <div className="admin-panel">
         <MainSidebar/>
         <div className="admin-panel__body">
             <Header/>
+=======
+      // <div className="admin-panel">
+      //   <MainSidebar/>
+      //   <div className="admin-panel__body">
+      //       <Header/>
+>>>>>>> ninad
             <Switch>
               <Route exact path='/' component={Dashboard}/>
               <Route path='/user' component={Users}/>
@@ -34,10 +49,13 @@ function App() {
               <Route path='/restaurant' component={RestaurantModule}/>
               {/* <Route path='/restaurant' component={RestaurantModule}/> */}
               <Route path='/lifestyle-managers' component={LifeStyleManagers} />
+<<<<<<< 6ff6487dd1113d2bba766647936c2eaf8023247c
               <Route path='/events' component={Events} />
+=======
+>>>>>>> request page completed
             </Switch>
-        </div>
-      </div>
+      //   </div>
+      // </div>
   )
 }
 

@@ -1,7 +1,15 @@
 import React from 'react';
 
+<<<<<<< 6ff6487dd1113d2bba766647936c2eaf8023247c:src/pages/restaurant-module/restaurant-module.component.jsx
 import "./restaurant-module.style.scss";
+<<<<<<< HEAD
 import '../../sass/typography.scss'
+=======
+=======
+import "./restaurantModule.style.scss";
+import '../../sass/typography.scss'
+>>>>>>> request page completed:src/pages/restaurantModule/restaurantModule.component.jsx
+>>>>>>> ninad
 
 // LOGO
 import amazonicoLogo from "../../assets/logo/logo-amazonico.svg";
@@ -10,12 +18,24 @@ import amazonicoLogo from "../../assets/logo/logo-amazonico.svg";
 import dropdown from "../../assets/icon/icon-dropdown.svg";
 
 // COMPONENTS
+<<<<<<< 6ff6487dd1113d2bba766647936c2eaf8023247c:src/pages/restaurant-module/restaurant-module.component.jsx
 import RestaurantModuleHeader from "../../components/restaurant-module-header/restaurant-module-header.component";
 import RestaurantModuleStatusBody from "../../components/restaurant-module-status-body/restaurant-module-status-body.component";
 import RestaurantModuleStatus from "../../components/restaurant-module-status/restaurant-module-status.component";
 import ProposePopop from '../../components/propose-popup/propose-popup.component'
 import CalendarLarge from '../../components/calendar-large/calendar-large.component'
+<<<<<<< HEAD
 import Dropdown from '../../components/drop-down/drop-down.component';
+=======
+=======
+import RestaurantModuleHeader from "../../components/restaurantModuleHeader/restaurantModuleHeader.component";
+import RestaurantModuleStatusBody from "../../components/restaurantModuleStatusBody/restaurantModuleStatusBody.component";
+import RestaurantModuleStatus from "../../components/restaurantModuleStatus/restaurantModuleStatus.component";
+import ProposePopop from '../../components/proposePopup/proposePopup.component'
+import CalendarLarge from '../../components/calendarLarge/calendarLarge.component'
+import Dropdown from '../../components/drop-down/drop-down.component';
+>>>>>>> request page completed:src/pages/restaurantModule/restaurantModule.component.jsx
+>>>>>>> ninad
 
 
 const RestaurantModule = () => (
