@@ -1,23 +1,21 @@
 @import '../../sass/variables.scss';
 @import '../../sass/mixins.scss';
 
-.event-item {
-    background-color: black;
-    font-size: 1.4rem;
+.item {
+    font-size: 1.3rem;
 
-    img {
-        width: 20.9rem;
+    &__image {
+        width: 100%;
     }
 
     .title-btn-wrapper {
         @include horizontal-flex-space-between;
 
-        .details-btn {
+        .item-btn {
             font-size: 1.0rem;
-            background-color: yellow;
-            border: none;
             color: $color-white;
-            background: $color-primary;
+            background-color: $color-primary;
+            border: none;
             padding: 0.3rem 0.75rem;
             margin-left: auto;
         }

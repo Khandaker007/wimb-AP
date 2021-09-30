@@ -2,58 +2,44 @@
 @import "../../sass/mixins.scss";
 
 .events {
-    font-size: 1.8rem;
     display: grid;
-    grid-template-columns: 1fr 25%;
+    grid-template-columns: [main-start] 1fr [main-end calendar-start] 25% [calendar-end];
     grid-gap: 2rem;
-    padding: 2rem;
     
-    .events-body {
+    &__main {
+        grid-column: main-start / main-end;
+
         padding: 2rem;
         background: $color-grey;
 
-        .events-body-most-popular {
-            @include horizontal-flex-space-between;
-            // margin-bottom: 1.5rem;
+        &--header{
+            margin-bottom: 1rem;
 
-            .events-body-functionalities {
-                display: flex;
-                gap: 0.5rem;
-
-                .btn {
-                    background-color: $color-primary;
-                    color: $color-white;
-                    padding: 0 .5rem;
-                    border: none;
-                }
-            }
+            display: flex;
+            justify-content: flex-end;
+            gap: .5rem;
         }
-
-        .event-item-wrapper {
-            margin-top: 1.5rem;
-            // background-color: violet;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 1.5rem;
-            position: relative;
-
-            .arrow-right-icon {
-                position: absolute;
-                right: 0.75rem;
-                top: 35%; 
-            }
-        }
-
-        .events-body-upcoming-title {
-            margin-top: 3.0rem;
-        }
-
-        .events-body-ending-soon-title {
-            margin-top: 3.0rem;
+        &--btn {
+            background-color: $color-primary;
+            color: $color-white;
+            padding: 0 .5rem;
+            border: none;
         }
     }
-    .calendar-small{
+    &__calendar{
+        grid-column: calendar-start / calendar-end;
+
         background: $color-grey;
+        padding: 2rem;
+
+        .calendar-component{
+            border: 1px solid $color-white;
+            height: 25rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
 }

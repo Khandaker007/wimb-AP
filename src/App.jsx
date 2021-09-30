@@ -31,9 +31,9 @@ function App() {
               <Route path='/supplier-restaurent' component={SupplierRestaurent} />
               <Route path='/requests' component={Requests}/>
               <Route path='/restaurant' component={RestaurantModule}/>
-              {/* <Route path='/restaurant' component={RestaurantModule}/> */}
               <Route path='/lifestyle-managers' component={LifeStyleManagers} />
               <Route path='/events' component={Events} />
+              <Route path='/restaurant-module' component={RestaurantModule}/>
             </Switch>
         </div>
       </div>

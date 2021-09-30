@@ -1,0 +1,35 @@
+@import '../../sass/variables.scss';
+
+.item-wrapper{
+    &:not(:last-child){
+        margin-bottom: 2rem;
+    }
+    .items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+
+        position: relative;
+    }
+
+    .swipe-btn{
+        background-color: transparent;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+
+        position: absolute;
+        height: 3.5rem;
+        width: 3.5rem;
+        right: 1rem;
+        top: 30%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swipe-btn:hover{
+        background-color: rgba($color: #000000, $alpha: .5);
+    }
+}
