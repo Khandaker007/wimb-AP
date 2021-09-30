@@ -9,7 +9,7 @@ import Analytics from './pages/analytics/analytics.component'
 import SuppliersCategories from './pages/suppliers-categories/suppliers-categories.component'
 import SuppliersDining from './pages/suppliers-dining/suppliers-dining.component'
 import Requests from './pages/requests/requests.component'
-import RestaurantModule from "./pages/restaurant-module/restaurant-module.component";
+import RestaurantModule from "./pages/restaurant-module/restaurant-module.component.jsx~Stashed changes";
 import LifeStyleManagers from "./pages/lifestyle-managers/lifestyle-managers.component";
 import Events from './pages/events/events.component';
 
@@ -30,10 +30,7 @@ function App() {
               <Route path='/requests' component={Requests}/>
               <Route path='/restaurant' component={RestaurantModule}/>
               <Route path='/lifestyle-managers' component={LifeStyleManagers} />
-<<<<<<< Updated upstream
               <Route path='/events' component={Events} />
-=======
->>>>>>> Stashed changes
             </Switch>
         </div>
       </div>
