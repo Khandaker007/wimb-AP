@@ -13,6 +13,9 @@ import RestaurantModule from "./pages/restaurant-module/restaurant-module.compon
 import LifeStyleManagers from "./pages/lifestyle-managers/lifestyle-managers.component";
 import Events from './pages/events/events.component';
 import SupplierRestaurent from './pages/supplier-restaurent/supplier-restaurent.component'
+import Connect from './pages/connect/connect.component';
+import PerksOrBenefits from './pages/perks-or-benefits/perks-or-benefits.component';
+
 
 import './App.scss'
 
@@ -33,6 +36,8 @@ function App() {
               <Route path='/restaurant' component={RestaurantModule}/>
               <Route path='/lifestyle-managers' component={LifeStyleManagers} />
               <Route path='/events' component={Events} />
+              <Route path='/connect' component={Connect} />
+              <Route path='/perks-or-benefits' component={PerksOrBenefits} />
               <Route path='/restaurant-module' component={RestaurantModule}/>
             </Switch>
         </div>

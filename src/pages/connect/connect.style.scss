@@ -1,0 +1,45 @@
+@import '../../sass/variables.scss';
+@import "../../sass/mixins.scss";
+
+.connect {
+    display: grid;
+    grid-template-columns: [main-start] 1fr [main-end calendar-start] 25% [calendar-end];
+    grid-gap: 2rem;
+    
+    &__main {
+        grid-column: main-start / main-end;
+
+        padding: 2rem;
+        background: $color-grey;
+
+        &--header{
+            margin-bottom: 1rem;
+
+            display: flex;
+            justify-content: flex-end;
+            gap: .5rem;
+        }
+        &--btn {
+            background-color: $color-primary;
+            color: $color-white;
+            padding: 0 .5rem;
+            border: none;
+        }
+    }
+    &__calendar{
+        grid-column: calendar-start / calendar-end;
+
+        background: $color-grey;
+        padding: 2rem;
+
+        .calendar-component{
+            border: 1px solid $color-white;
+            height: 25rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+}
