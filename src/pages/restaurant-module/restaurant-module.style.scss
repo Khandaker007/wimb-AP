@@ -1,48 +1,43 @@
 @import '../../sass/variables.scss';
 @import "../../sass/mixins.scss";
 
-.restaurant-module {
-    margin-top: 5.9rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 102.8rem;
 
-    .restaurant-module-body {
-        display: grid;
-        grid-template-columns: 22.5rem 77.7rem;
-        grid-gap: 2.6rem;
+.restaurent-module{
+    display: grid;
+    grid-template-columns: [col-1-start] 50rem [col-1end col-2-start] 1fr [col-2-end];
+    grid-template-rows: repeat(3, [row-start] min-content [row-end]);
+    grid-gap: 2rem;
 
-        .amazonico-logo {
-            width: 22.5rem;
-            height: 10.1rem;
-            cursor: pointer;
+    padding: 2rem 10rem 0 10rem;
+
+    &__header{
+        grid-column: col-1-start / col-2-end;
+        grid-row: row-start 2 / row-end 2;
+    }
+    &__logo{
+        grid-column: col-1-start / col-1-end;
+        grid-row: row-start 1 / row-end 1;
+
+        background-color: blue;
+
+        .logo{
+            height: 8rem;
         }
+    }
+    &__sub-header{
+        grid-column: col-2-start / col-2-end;
+        grid-row: row-start 2 / row-end 2;
 
-        .amazonico-main {
-            padding-left: 3.9rem;
-            padding-right: 3.9rem;
-            background-color: $color-green;
-            @include horizontal-flex-space-between;
-            font-size: 4rem;
-            font-weight: bold;
-
-            .country {
-                margin-left: auto;
-                margin-right: 1.3rem;
-                font-weight: normal;
-            }
-
-            .icon-dropdown{
-                margin-top: 0.5rem;
-                width: 3rem;
-                cursor: pointer;
-            }
-        }
-
-        .status-body {
-            background-color: $color-grey;
-        }
-    }  
+        display: flex;
+    }
+    &__side-bar{
+        grid-column: col-1-start / col-1-end;
+        grid-row: row-start 3 / row-end 3;
+    }
+    &__body{
+        grid-column: col-2-start / col-2-end;
+        grid-row: row-start 3 / row-end 3;
+    }
 }
 
     

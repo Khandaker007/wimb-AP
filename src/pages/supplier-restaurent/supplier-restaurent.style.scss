@@ -1,0 +1,44 @@
+@import '../../sass/variables.scss';
+
+.supplier-restaurent{
+    display: grid;
+    grid-template-columns: [edit-start] 15% [edit-end body-start] 1fr [body-end categorie-start] 25% [categorie-end];
+    grid-gap: 2rem;
+
+    &__sidebar{
+        grid-template-columns: edit-start / edit-end;
+
+        background-color: $color-grey;
+        padding: 2rem;
+
+        .heading{
+            margin-bottom: 3rem;
+        }
+        .side-nav{
+
+            &__item{
+                list-style-type: none;
+                cursor: pointer;
+                &:not(:last-child){
+                    margin-bottom: 1rem;
+                }
+            }
+            &__link{
+                color: $color-white;
+                font-size: 1.4rem;
+                text-decoration: none;
+
+                display: flex;
+            }
+            &__link:hover{
+                color: $color-primary;
+            }
+        }
+    }
+    &__body{
+        grid-template-columns: body-start / body-end;
+    }
+    &__categories{
+        grid-template-columns: categorie-start / categorie-end;
+    }
+}

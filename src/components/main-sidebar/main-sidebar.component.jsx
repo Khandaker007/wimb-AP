@@ -19,9 +19,9 @@ import navigation from '../../assets/icon/Icon-navigation.svg'
 import system from '../../assets/icon/Icon-settings.svg'
 import arrow from '../../assets/icon/icon-arrow-right.svg'
 
-import "./sidebar.style.scss";
+import "./main-sidebar.style.scss";
 
-const Sidebar = () => (
+const MainSidebar = () => (
   <div className="sidebar">
     <div className="sidebar__header">
       <img src={logo} alt="logo" className="sidebar__logo" />
@@ -132,4 +132,4 @@ const Sidebar = () => (
   </div>
 );
 
-export default Sidebar;
+export default MainSidebar;
