@@ -5,9 +5,9 @@ import "./item.style.scss";
 // IMAGES
 import SushiMasterClass from '../../assets/image/shushi-masterclass.png';
 
-const Item = ({itemName}) => (
+const Item = ({itemName, image}) => (
     <div className="item">
-        <img src={SushiMasterClass} alt="sushi-master-class" className="item__image" />
+        <img src={image} alt="sushi-master-class" className="item__image" />
         <div className="title-btn-wrapper">
             <span className="item-title">{itemName}</span>
             <button className="item-btn">DETAILS</button>

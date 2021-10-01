@@ -13,15 +13,28 @@ import RestaurantModule from "./pages/restaurant-module/restaurant-module.compon
 import LifeStyleManagers from "./pages/lifestyle-managers/lifestyle-managers.component";
 import Events from './pages/events/events.component';
 import SupplierRestaurent from './pages/supplier-restaurent/supplier-restaurent.component'
+import Connect from './pages/connect/connect.component';
+import PerksOrBenefits from './pages/perks-or-benefits/perks-or-benefits.component';
+import GeoLocationMap from './pages/geo-location-map/geo-location-map.component';
+import GeoLocationMapRegion from './pages/geo-location-map-region/geo-location-map-region.component';
+import GeoLocationMapSubRegion from './pages/geo-location-map-subregion/geo-location-map-subregion.component';
+
 
 import './App.scss'
 
 function App() {
   return (
+<<<<<<< HEAD
       // <div className="admin-panel">
       //   <MainSidebar/>
       //      <div className="admin-panel__body">
       //          <Header/>
+=======
+      <div className="admin-panel">
+        <MainSidebar/>
+           <div className="admin-panel__body">
+            <Header/>
+>>>>>>> dewan
             <Switch>
               <Route exact path='/' component={Dashboard}/>
               <Route path='/user' component={Users}/>
@@ -33,7 +46,12 @@ function App() {
               <Route path='/restaurant' component={RestaurantModule}/>
               <Route path='/lifestyle-managers' component={LifeStyleManagers} />
               <Route path='/events' component={Events} />
+              <Route path='/connect' component={Connect} />
+              <Route path='/perks-or-benefits' component={PerksOrBenefits} />
               <Route path='/restaurant-module' component={RestaurantModule}/>
+              <Route path='/geo-location-map' component={GeoLocationMap}/>
+              <Route path='/geo-location-map-region' component={GeoLocationMapRegion}/>
+              <Route path='/geo-location-map-subregion' component={GeoLocationMapSubRegion}/>
             </Switch>
       //   </div>
       // </div>

@@ -1,0 +1,16 @@
+@import '../../sass/variables.scss';
+@import "../../sass/mixins.scss";
+
+.location-item {
+    @include horizontal-flex-space-between;
+    font-size: 1.4rem;
+    cursor: pointer;
+
+    .location-item-details {
+        display: flex;
+    }
+
+    .location-members {
+        color: $color-grey-light;
+    }
+}

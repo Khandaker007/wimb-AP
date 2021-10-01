@@ -1,0 +1,8 @@
+@import '../../sass/variables.scss';
+@import "../../sass/mixins.scss";
+
+.geo-location-map {
+    background-color: $color-grey;
+    font-size: 1.8rem;
+    min-height: 60.0rem;
+}
