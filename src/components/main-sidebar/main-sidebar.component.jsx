@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo/wimb-logo.svg";
 
 // ICON
-import dashboard from '../../assets/icon/icon-dashboard.svg'
+// import dashboard from '../../assets/icon/icon-dashboard.svg'
 import users from '../../assets/icon/Icon-users.svg'
 import star from '../../assets/icon/Icon-star.svg'
 import onboarding from '../../assets/icon/Icon-onboarding.svg'
@@ -32,7 +32,7 @@ const MainSidebar = () => (
       <ul className="side-nav">
         <li className="side-nav__item">
           <Link to='/' className="side-nav__link">
-            <img src={dashboard} alt="" className="side-nav__icon" />
+            <img src={users} alt="" className="side-nav__icon" />
             <span>Dashboard</span>
             <img src={arrow} alt="" className="arrow" />
           </Link>
