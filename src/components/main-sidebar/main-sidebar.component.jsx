@@ -4,21 +4,21 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo/wimb-logo.svg";
 
 // ICON
-import dashboard from '../../assets/icon/icon-dashboard.svg'
-import users from '../../assets/icon/Icon-users.svg'
-import star from '../../assets/icon/Icon-star.svg'
-import onboarding from '../../assets/icon/Icon-onboarding.svg'
-import suppliers from '../../assets/icon/Icon-suppliers.svg'
-import categorie from '../../assets/icon/Icon-category.svg'
-import analytic from '../../assets/icon/Icon-analytic.svg'
-import report from '../../assets/icon/Icon-report.svg'
-import request from '../../assets/icon/Icon-request.svg'
-import wplus from '../../assets/icon/Icon-parker-benefit.svg'
-import event from '../../assets/icon/Icon-events.svg'
-import connect from '../../assets/icon/Icon-connect.svg'
-import navigation from '../../assets/icon/Icon-navigation.svg'
-import system from '../../assets/icon/Icon-settings.svg'
-import arrow from '../../assets/icon/icon-arrow-right.svg'
+// import dashboard from '../../assets/icon/icon-dashboard.svg'
+// import users from '../../assets/icon/Icon-users.svg'
+// import star from '../../assets/icon/Icon-star.svg'
+// import onboarding from '../../assets/icon/Icon-onboarding.svg'
+// import suppliers from '../../assets/icon/Icon-suppliers.svg'
+// import categorie from '../../assets/icon/Icon-category.svg'
+// import analytic from '../../assets/icon/Icon-analytic.svg'
+// import report from '../../assets/icon/Icon-report.svg'
+// import request from '../../assets/icon/Icon-request.svg'
+// import wplus from '../../assets/icon/Icon-parker-benefit.svg'
+// import event from '../../assets/icon/Icon-events.svg'
+// import connect from '../../assets/icon/Icon-connect.svg'
+// import navigation from '../../assets/icon/Icon-navigation.svg'
+// import system from '../../assets/icon/Icon-settings.svg'
+// import arrow from '../../assets/icon/icon-arrow-right.svg'
 
 import "./main-sidebar.style.scss";
 
