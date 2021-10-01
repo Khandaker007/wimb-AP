@@ -2,59 +2,49 @@
 @import "../../sass/mixins.scss";
 
 .status-menu {
-    font-size: 2.4rem;
-    padding-left: 4.1rem;
-    padding-top: 3.2rem;
+    padding: 2rem;
     background-color: $color-grey;
 
-    .menu-link {
-        margin-top: 4.1rem;
-        width: 15.8rem;
-        font-size: 1.8rem;
-
-        ul {
-            // background-color: yellow;
+    .nav{
+        font-size: 1.3rem;
+        &__item{
             list-style-type: none;
-
-            li {
-                margin-bottom: 3.0rem;
-                // background-color: orange;
-                display: flex;
-                cursor: pointer;
-
-                .number {
-                    text-align: center;
-                    margin-left: auto;
-                    width: 3rem;
-                    border-radius: 50%;    
-                }
-
-                .new {
-                    background-color: $color-white;
-                    color: $color-green;
-                }
-
-                .confirmed {
-                    background-color: $color-green;
-                    color: $color-white;
-                }
-
-                .declined {
-                    background-color: $color-yellow-light;
-                    color: $color-grey;
-                }
-
-                .cancelled {
-                    background-color: $color-red-light;
-                    color: $color-white;
-                }
-
-                &:last-child {
-                    margin-bottom: 0;
-                }
+            &:not(:last-child){
+                margin-bottom: 1.5rem;
             }
-            
+
+            display: flex;
+            justify-content: space-between;
+        }
+        &__link{
+            text-decoration: none;
+            color: $color-white;
+        }
+        .counter{
+            height: 2.2rem;
+            width: 2.2rem;
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
             
         }
-    }
+        .counter-color-new{
+            background-color: $color-white;
+            color: $color-primary;
+        }
+        .counter-color-confirmed{
+            background-color: $color-primary;
+            color: $color-white;
+        }
+        .counter-color-declined{
+            background-color: $color-yellow-light;
+            color: $color-dark;
+        }
+        .counter-color-cancelled{
+            background-color: $color-red-light;
+            color: $color-white;
+        }
+    }    
 }

@@ -18,10 +18,10 @@ import './App.scss'
 
 function App() {
   return (
-      <div className="admin-panel">
-        <MainSidebar/>
-           <div className="admin-panel__body">
-               <Header/>
+      // <div className="admin-panel">
+      //   <MainSidebar/>
+      //      <div className="admin-panel__body">
+      //          <Header/>
             <Switch>
               <Route exact path='/' component={Dashboard}/>
               <Route path='/user' component={Users}/>
@@ -35,8 +35,8 @@ function App() {
               <Route path='/events' component={Events} />
               <Route path='/restaurant-module' component={RestaurantModule}/>
             </Switch>
-        </div>
-      </div>
+      //   </div>
+      // </div>
   )
 }
 
