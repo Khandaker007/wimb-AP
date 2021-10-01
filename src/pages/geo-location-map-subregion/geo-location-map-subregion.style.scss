@@ -1,7 +1,7 @@
 @import '../../sass/variables.scss';
 @import "../../sass/mixins.scss";
 
-.map {
+.geo-location-map-region {
     display: grid;
     grid-template-columns: [lcol-start] 1fr [lcol-end scol-start] 25% [scol-end];
     grid-gap: 2rem;
@@ -13,5 +13,54 @@
 
     &__details {
         background-color: $color-grey;
+        padding: 2rem;
+
+        .region {
+            @include horizontal-flex-space-between;
+            margin-bottom: 1.5rem;
+            // background-color: violet;
+
+            .city {
+                // background-color: indigo;
+
+                .active-guests {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .time-period {
+                // background-color: indigo;
+                text-align: right;
+                .last-updated {
+                    font-size: 1.4rem;
+                    color: $color-grey-light;
+                }
+            }
+        }
+        
+        .map-small {
+            background-color: $color-grey-light;
+            height: 20.0rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .most-popular-locations {
+            // background-color: violet;
+
+            .attraction-type {
+                margin-top: 1.5rem;
+                font-size: 1.4rem;
+
+                .attraction-type-title {
+                    margin-bottom: 1.25rem;
+                }
+
+                .location-attractions-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+            }
+        }
     }
 }
