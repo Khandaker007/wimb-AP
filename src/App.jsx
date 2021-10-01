@@ -24,17 +24,10 @@ import './App.scss'
 
 function App() {
   return (
-<<<<<<< HEAD
-      // <div className="admin-panel">
-      //   <MainSidebar/>
-      //      <div className="admin-panel__body">
-      //          <Header/>
-=======
       <div className="admin-panel">
         <MainSidebar/>
            <div className="admin-panel__body">
             <Header/>
->>>>>>> dewan
             <Switch>
               <Route exact path='/' component={Dashboard}/>
               <Route path='/user' component={Users}/>
@@ -53,8 +46,8 @@ function App() {
               <Route path='/geo-location-map-region' component={GeoLocationMapRegion}/>
               <Route path='/geo-location-map-subregion' component={GeoLocationMapSubRegion}/>
             </Switch>
-      //   </div>
-      // </div>
+        </div>
+       </div>
   )
 }
 
