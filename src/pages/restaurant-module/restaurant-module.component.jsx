@@ -1,7 +1,5 @@
 import React from 'react';
 
-import "./restaurant-module.style.scss";
-import '../../sass/typography.scss'
 
 // LOGO
 import amazonicoLogo from "../../assets/logo/logo-amazonico.svg";
@@ -19,7 +17,14 @@ import RestaurantModuleStatus from "../../components/restaurant-module-status/re
 import ProposePopop from '../../components/propose-popup/propose-popup.component'
 import CalendarLarge from '../../components/calendar-large/calendar-large.component'
 import Dropdown from '../../components/drop-down/drop-down.component';
+import ContactItem from '../../components/contact-item/contact-item.component'
+import NewItem from '../../components/new-item/new-item.component'
+import ConfirmedItem from '../../components/confirmed-item/confirmed-item.component'
+import DeclinedItem from '../../components/declined-item/declined-item.component'
+import CancelledItem from '../../components/cancelled-item/cancelled-item.component'
 
+import "./restaurant-module.style.scss";
+import '../../sass/typography.scss'
 
 const RestaurantModule = () => (
     <div className="restaurant-module">
@@ -53,7 +58,7 @@ const RestaurantModule = () => (
                         </a>
                     </div>
                 </div>
-                <div className="restaurant-module__body--main-content">
+                <div className="restaurant-module__body--main-content section">
                     <div className="restaurant-info">
                         <div className="tag">
                             <p className="tag-item">Restaurant</p>
@@ -61,7 +66,7 @@ const RestaurantModule = () => (
                             <p className="tag-item">Shushi</p>
                             <p className="tag-item">London</p>
                         </div>
-                        <p>Luxe rainforest-themed restaurant 
+                        <p className='pb-1'>Luxe rainforest-themed restaurant 
                             for Latin American flavours & sushi, 
                             with a glass-fronted kitchen.
                         </p>
@@ -76,8 +81,26 @@ const RestaurantModule = () => (
                         </div>
                     </div>
                     <div className="contact">
-
+                        <h3 className='heading-3 pb-2'>Contact</h3>
+                        <ContactItem/>
+                        <ContactItem/>
+                        <ContactItem/>
                     </div>
+                </div>
+                <div className="restaurant-module__body--main-new section">
+                    <h3 className='heading-3 pb-1'>New</h3>
+                    <NewItem/>
+                    <NewItem/>
+                </div>
+                <div className="restaurant-module__body--main-confirmed section">
+                    <h3 className='heading-3 pb-1'>Confirmed</h3>
+                    <ConfirmedItem/>
+                    <ConfirmedItem/>
+                </div>
+                <div className="restaurant-module__body--main-declined section">
+                    <h3 className='heading-3 pb-1'>Declined</h3>
+                    <DeclinedItem/>
+                    <DeclinedItem/>
                 </div>
             </div>
         </div>

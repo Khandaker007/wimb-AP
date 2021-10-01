@@ -40,19 +40,20 @@
     &__side-bar{
         grid-column: col-1-start / col-1-end;
         grid-row: row-start 3 / row-end 3;
+        background-color: $color-grey;
     }
     &__body{
+        background-color: $color-grey;
+
         grid-column: col-2-start / col-2-end;
         grid-row: row-start 3 / row-end 3;
-
-        background-color: $color-grey;
-        padding: 2rem;
 
         &--main{
 
         }
         &--main-header{
             font-size: 1.3rem;
+            padding: 2rem;
 
             display: flex;
             justify-content: space-between;
@@ -75,12 +76,16 @@
             }
         }
         &--main-content{
+                        
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 3rem;
+
             .restaurant-info{
-                background-color: hotpink;
                 font-size: 1.2rem;
                 .tag {
                     color: $color-primary;
-                    margin-bottom: 3.5rem;
+                    margin-bottom: 3rem;
 
                     display: flex;
                     gap: 1rem;
@@ -91,7 +96,7 @@
                     }
                 }
                 .group-btn{
-                    background-color: indigo;
+                    margin-top: 3rem;
                     .btn {
                         color: $color-white;
                         background-color: $color-primary;
@@ -104,6 +109,25 @@
                         }
                     }
                 }
+            }
+            .contact{
+
+            }
+
+        }
+        &--main-new{
+            font-size: 1.2rem;
+        }
+        &--main-confirmed{
+            font-size: 1.2rem;
+        }
+        &--main-declined{
+            font-size: 1.2rem;
+        }
+        .section{
+            padding: 2rem;
+            &:not(:last-child){
+                border-bottom: 1px solid $color-grey-light;
             }
         }
     }

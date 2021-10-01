@@ -1,47 +1,17 @@
 @import '../../sass/variables.scss';
 
 .sidebar{
-    padding: 0 1.7rem;
     &__header{
+        height: 6rem;
+
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-
-    &__nav{
-        margin-top: 4.6rem;
-
-        .side-nav{
-            &__item{
-                list-style-type: none;
-                &:not(:last-child){
-                    margin-bottom: 2rem;
-                }
-            }
-            
-            &__link{
-                color: $color-white;
-                font-size: 1.4rem;
-                text-decoration: none;
-                list-style-type: none;
-
-                
-                display: flex;
-                align-items: center;
-                gap: 1.3rem;
-
-                .arrow{
-                    margin-left: auto;
-                    height: 1.2rem;
-                }
-            }
+        
+        .logo{
+            height: 4rem;
         }
     }
-
-    &__logo{
-        height: 5rem;
-    }
-
     &__nav-icon{
         &,
         &::before,
@@ -66,4 +36,40 @@
         &::before{top: -.8rem;}
         &::after{top: .8rem;}
     }
+
+    &__nav{
+        margin-top: 4.6rem;
+
+        .side-nav{
+            &__item{
+                list-style-type: none;
+                &:not(:last-child){
+                    margin-bottom: 1.5rem;
+                }
+            }
+            
+            
+            &__link{
+                color: $color-white;
+                font-size: 1.4rem;
+                text-decoration: none;
+                list-style-type: none;
+
+                
+                display: flex;
+                align-items: center;
+                gap: 1.3rem;
+
+                .arrow{
+                    margin-left: auto;
+                    height: 1.2rem;
+                }
+            }
+        }
+    }
+
+    &__logo{
+        height: 5rem;
+    }
+
 }

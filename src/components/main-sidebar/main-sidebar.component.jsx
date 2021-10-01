@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import logo from "../../assets/logo/wimb-logo.svg";
 
@@ -24,108 +25,108 @@ import "./main-sidebar.style.scss";
 const MainSidebar = () => (
   <div className="sidebar">
     <div className="sidebar__header">
-      <img src={logo} alt="logo" className="sidebar__logo" />
+      <img src={logo} alt="logo" className="logo" />
       <span className="sidebar__nav-icon">&nbsp;</span>
     </div>
     <nav className="sidebar__nav">
       <ul className="side-nav">
         <li className="side-nav__item">
-          <a href="" className="side-nav__link">
+          <Link to='/' className="side-nav__link">
             <img src={dashboard} alt="" className="side-nav__icon" />
             <span>Dashboard</span>
             <img src={arrow} alt="" className="arrow" />
-          </a>
+          </Link>
         </li>
         <li className="side-nav__item">
-          <a href="" className="side-nav__link">
+          <Link to='/user' className="side-nav__link">
             <img src={users} alt="" className="side-nav__icon" />
             <span>Users</span>
             <img src={arrow} alt="" className="arrow" />
-          </a>
+          </Link>
         </li>
         <li className="side-nav__item">
-          <a href="" className="side-nav__link">
+          <Link to='/lifestyle-managers' className="side-nav__link">
             <img src={star} alt="" className="side-nav__icon" />
             <span>Lifestyle Managers</span>
             <img src={arrow} alt="" className="arrow" />
-          </a>
+          </Link>
         </li>
         <li className="side-nav__item">
-          <a href="" className="side-nav__link">
+          <Link to='' className="side-nav__link">
             <img src={onboarding} alt="" className="side-nav__icon" />
             <span>Onboarding</span>
             <img src={arrow} alt="" className="arrow" />
-          </a>
+          </Link>
         </li>
         <li className="side-nav__item">
-          <a href="" className="side-nav__link">
+          <Link to='/suppliers-categories' className="side-nav__link">
             <img src={suppliers} alt="" className="side-nav__icon" />
             <span>Suppliers</span>
             <img src={arrow} alt="" className="arrow" />
-          </a>
+          </Link>
         </li>
         <li className="side-nav__item">
-          <a href="" className="side-nav__link">
+          <Link to='' className="side-nav__link">
             <img src={categorie} alt="" className="side-nav__icon" />
             <span>Categories</span>
             <img src={arrow} alt="" className="arrow" />
-          </a>
+          </Link>
         </li>
         <li className="side-nav__item">
-          <a href="" className="side-nav__link">
+          <Link to='/analytics' className="side-nav__link">
             <img src={analytic} alt="" className="side-nav__icon" />
             <span>Analytics</span>
             <img src={arrow} alt="" className="arrow" />
-          </a>
+          </Link>
         </li>
         <li className="side-nav__item">
-          <a href="" className="side-nav__link">
+          <Link to='' className="side-nav__link">
             <img src={report} alt="" className="side-nav__icon" />
             <span>Reports</span>
             <img src={arrow} alt="" className="arrow" />
-          </a>
+          </Link>
         </li>
         <li className="side-nav__item">
-          <a href="" className="side-nav__link">
+          <Link to='/requests' className="side-nav__link">
             <img src={request} alt="" className="side-nav__icon" />
             <span>Requests</span>
             <img src={arrow} alt="" className="arrow" />
-          </a>
+          </Link>
         </li>
         <li className="side-nav__item">
-          <a href="" className="side-nav__link">
+          <Link to='/perks-or-benefits' className="side-nav__link">
             <img src={wplus} alt="" className="side-nav__icon" />
             <span>Perks/Benefits</span>
             <img src={arrow} alt="" className="arrow" />
-          </a>
+          </Link>
         </li>
         <li className="side-nav__item">
-          <a href="" className="side-nav__link">
+          <Link to='/events' className="side-nav__link">
             <img src={event} alt="" className="side-nav__icon" />
             <span>Events</span>
             <img src={arrow} alt="" className="arrow" />
-          </a>
+          </Link>
         </li>
         <li className="side-nav__item">
-          <a href="" className="side-nav__link">
+          <Link to='/connect' className="side-nav__link">
             <img src={connect} alt="" className="side-nav__icon" />
             <span>Connect</span>
             <img src={arrow} alt="" className="arrow" />
-          </a>
+          </Link>
         </li>
         <li className="side-nav__item">
-          <a href="" className="side-nav__link">
+          <Link to='/geo-location-map-region' className="side-nav__link">
             <img src={navigation} alt="" className="side-nav__icon" />
             <span>Geo Location Map</span>
             <img src={arrow} alt="" className="arrow" />
-          </a>
+          </Link>
         </li>
         <li className="side-nav__item">
-          <a href="" className="side-nav__link">
+          <Link to='' className="side-nav__link">
             <img src={system} alt="" className="side-nav__icon" />
             <span>System</span>
             <img src={arrow} alt="" className="arrow" />
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

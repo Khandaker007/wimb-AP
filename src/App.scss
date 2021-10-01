@@ -27,6 +27,13 @@ body{
     background-color: $color-dark;
 
     display: grid;
-    grid-template-columns: 28rem 1fr;
+    grid-template-columns: [sidebar-start] 20% [sidebar-end body-start] 1fr [body-end];
     grid-gap: 3rem;
+
+    &__sidebar{
+        grid-column: sidebar-start / sidebar-end;
+    }
+    &__body{
+        grid-column: body-start / body-end;
+    }
 }

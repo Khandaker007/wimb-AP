@@ -1,5 +1,5 @@
 .header{
-    height: 7rem;
+    height: 6rem;
 
     display: flex;
     justify-content: space-between;
@@ -12,11 +12,10 @@
     }
 
     &__status{
-        width: 30%;
-
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 4rem;
 
         &--notification{
 
@@ -44,7 +43,7 @@
             align-items: center;
 
             .image{
-                height: 5rem;
+                height: 4rem;
                 border-radius: 50%;
                 margin-left: 1rem;
             }
