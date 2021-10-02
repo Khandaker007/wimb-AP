@@ -18,6 +18,7 @@ import PerksOrBenefits from './pages/perks-or-benefits/perks-or-benefits.compone
 import GeoLocationMap from './pages/geo-location-map/geo-location-map.component';
 import GeoLocationMapRegion from './pages/geo-location-map-region/geo-location-map-region.component';
 import GeoLocationMapSubRegion from './pages/geo-location-map-subregion/geo-location-map-subregion.component';
+import Login from './pages/login/login.component'
 
 
 import './App.scss'
@@ -47,6 +48,7 @@ function App() {
             <Route path='/geo-location-map' component={GeoLocationMap}/>
             <Route path='/geo-location-map-region' component={GeoLocationMapRegion}/>
             <Route path='/geo-location-map-subregion' component={GeoLocationMapSubRegion}/>
+            <Route path='/login' component={Login}/>
           </Switch>
         </div>
       </div>
