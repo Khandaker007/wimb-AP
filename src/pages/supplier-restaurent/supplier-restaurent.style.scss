@@ -67,8 +67,9 @@
                     color: $color-primary;
                     margin-bottom: 3rem;
 
-                    display: flex;
-                    gap: 1rem;
+                    display: grid;
+                    grid-template-columns: repeat(4, min-content);
+                    grid-gap: 1rem;
 
                     .tag-item {
                         border: 1px solid $color-primary;
@@ -132,6 +133,13 @@
         &--menu{
             padding: 1rem 2rem;
 
+            .heading-menu{
+                margin-bottom: 2rem;
+
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
             .menu-image{
                 max-width: 55rem;
             }

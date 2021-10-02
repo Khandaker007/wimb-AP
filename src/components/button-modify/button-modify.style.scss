@@ -1,0 +1,15 @@
+@import '../../sass/variables.scss';
+
+.edit-button{
+    background-color: transparent;
+    border: none;
+    color: $color-primary;
+    cursor: pointer;
+}
+
+.margin-bottom{
+    margin-bottom: 1rem;
+}
+.inline{
+    display: inline;
+}

@@ -5,6 +5,7 @@ import arrow from '../../assets/icon/icon-arrow-right.svg'
 import InsideSidebar from "../../components/inside-sidebar/inside-sidebar.component";
 import CategorieSidebar from "../../components/categorie-sidebar/categorie-sidebar.component";
 import ContactItem from "../../components/contact-item/contact-item.component";
+import ButtonModify from "../../components/button-modify/button-modify.component";
 
 // IMAGE
 import logo from '../../assets/image/supplier-restaurant/logo.png'
@@ -36,12 +37,18 @@ const SupplierRestaurent = () => (
                         <p className="tag-item">Latin</p>
                         <p className="tag-item">Shushi</p>
                         <p className="tag-item">London</p>
+                        <ButtonModify buttonName='Add/Remove'/>
                     </div>
-                    <p className='pb-1'>Luxe rainforest-themed restaurant 
+
+                    <p>Luxe rainforest-themed restaurant 
                         for Latin American flavours & sushi, 
                         with a glass-fronted kitchen.
                     </p>
+                    <ButtonModify buttonName='Edit' marginBottom/>
+
                     <p>Average Main: <span>£28</span></p>
+                    <ButtonModify buttonName='Edit' inline/>
+
                     <div className="group-btn">
                         <button className='btn btn-perk'>
                             {/* <img src={parkerBenefit} alt="icon" /> */}
@@ -73,7 +80,10 @@ const SupplierRestaurent = () => (
                 </div>
             </div>
             <div className="supplier-restaurant__main--menu">
-                <h3 className='heading-3 pb-2'>Menu</h3>
+                <div className="heading-menu">
+                    <h3 className='heading-3'>Menu</h3>
+                    <ButtonModify buttonName='Add/Remove'/>
+                </div>
                 <img src={menu} alt="menu image" className='menu-image'/>
             </div>
         </div>
