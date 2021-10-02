@@ -1,6 +1,6 @@
 @import '../../sass/variables.scss';
 
-.supplier-restaurent{
+.supplier-restaurant{
     display: grid;
     grid-template-columns: [edit-start] 15% [edit-end body-start] 1fr [body-end categorie-start] 25% [categorie-end];
     grid-gap: 2rem;
@@ -35,8 +35,107 @@
             }
         }
     }
-    &__body{
+    &__main{
         grid-template-columns: body-start / body-end;
+
+        background-color: $color-grey;
+
+        &--header{
+            padding: 2rem 2rem 1rem 2rem;
+
+            display: flex;
+            justify-content: space-between;
+
+            .btn-done{
+                background-color: $color-primary;
+                border: none;
+                color: $color-white;
+                padding: 0 .5rem;
+                cursor: pointer;
+            }
+        }
+        &--content{
+            padding: 1rem 2rem;
+            
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 3rem;
+
+            .restaurant-info{
+                font-size: 1.2rem;
+                .tag {
+                    color: $color-primary;
+                    margin-bottom: 3rem;
+
+                    display: flex;
+                    gap: 1rem;
+
+                    .tag-item {
+                        border: 1px solid $color-primary;
+                        padding: 0 0.75rem;
+                    }
+                }
+                .group-btn{
+                    margin-top: 3rem;
+                    .btn {
+                        color: $color-white;
+                        background-color: $color-primary;
+                        text-decoration: none;
+                        border: none;
+                        padding: .3rem .7rem;
+
+                        &:not(:last-child){
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+            .contact{
+            }
+
+        }
+        &--image-upload{
+            padding: 1rem 2rem;
+
+            .image-group{
+                display: flex;
+                gap: 2rem;
+
+                &__align{
+                    display: grid;
+                    grid-template-columns: repeat(4, 10rem);
+                    grid-template-rows: repeat(2, 10rem);
+                    grid-gap: 1rem;
+
+                    .image{
+                        height: 10rem;
+                        width: 10rem;
+                        background-size: cover;
+                    }
+                }
+                .upload-btn{
+                    height: 10rem;
+                    width: 10rem;
+                    font-size: 4rem;
+                    font-weight: 600;
+                    background-color: transparent;
+                    border: 2px solid $color-white;
+                    color: $color-white;
+                    cursor: pointer;
+                }
+                .upload-btn:hover{
+                    border: 2px solid $color-primary;
+                    // color: $color-primary;
+                }
+            }
+        }
+        &--menu{
+            padding: 1rem 2rem;
+
+            .menu-image{
+                max-width: 55rem;
+            }
+        }
     }
     &__categories{
         grid-template-columns: categorie-start / categorie-end;

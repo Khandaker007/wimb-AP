@@ -2,47 +2,45 @@
 @import "../../sass/mixins.scss";
 
 .contact-item {
-    display: flex;
     margin-bottom: 1.5rem;
-    // background-color: orange;
+    display: flex;
+    justify-content: space-between;
 
-    .user-info {
+    &__info {
         display: flex;
         cursor: pointer;
 
-        .user-dp {
+        &--image {
             margin-right: 1.5rem;
-            width: 4.0rem;
-            height: 4.0rem;
+            height: 3.5rem;
         }
         
-        .user-details {
-            font-size: 1.4rem;
+        &--details {
+            font-size: 1.2rem;
             font-weight: regular;
             display: flex;
             flex-direction: column;
         }
     }
 
-    .user-action {
-        // background-color: black;
-        @include horizontal-flex-space-between;
-        margin-left: auto;
+    &__action {
 
+        display: flex;
+        gap: 1rem;
         .action-icon {
-            margin-left: 1.5rem;
-            width: 1.5rem;
-            height: 1.5rem;
-            cursor: pointer;
-
-            &:first-child {
-                margin-left: none;
-            }
+            
         }
-
+        .call-icon {
+            height: 1.3rem;
+            width: 1.3rem;
+        }
         .mail-icon {
             height: 1.5rem;
-            margin-bottom: 0.275rem;
+            width: 1.5rem;
+        }
+        .mail-icon{
+            height: 1.5rem;
+            width: 1.5rem;
         }
     }
 
