@@ -1,0 +1,181 @@
+@import '../../sass/variables.scss';
+
+.events-sushi-masterclass{
+    display: grid;
+    grid-template-columns: [edit-start] 15% [edit-end body-start] 1fr [body-end categorie-start] 25% [categorie-end];
+    grid-gap: 2rem;
+
+    &__sidebar{
+        grid-template-columns: edit-start / edit-end;
+
+        background-color: $color-grey;
+        padding: 2rem;
+
+        .heading{
+            margin-bottom: 3rem;
+        }
+        .side-nav{
+
+            &__item{
+                list-style-type: none;
+                cursor: pointer;
+                &:not(:last-child){
+                    margin-bottom: 1rem;
+                }
+            }
+            &__link{
+                color: $color-white;
+                font-size: 1.4rem;
+                text-decoration: none;
+
+                display: flex;
+            }
+            &__link:hover{
+                color: $color-primary;
+            }
+        }
+    }
+    &__main{
+        grid-template-columns: body-start / body-end;
+
+        background-color: $color-grey;
+
+        &--header{
+            padding: 2rem 2rem 1rem 2rem;
+
+            display: flex;
+            justify-content: space-between;
+
+            .heading-2 {
+                .sushi-samba-title {
+                    font-size: 1.8rem;
+                }
+            }
+
+            .btn-done{
+                background-color: $color-primary;
+                border: none;
+                color: $color-white;
+                padding: 0 .5rem;
+                cursor: pointer;
+            }
+        }
+        &--content{
+            padding: 1rem 2rem;
+            
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 3rem;
+
+            .restaurant-info{
+                font-size: 1.2rem;
+                .tag {
+                    color: $color-primary;
+                    margin-bottom: 3rem;
+
+                    display: grid;
+                    grid-template-columns: repeat(4, min-content);
+                    grid-gap: 1rem;
+
+                    .tag-item {
+                        border: 1px solid $color-primary;
+                        padding: 0 0.75rem;
+                        white-space: nowrap;
+                    }
+                }
+                .group-btn{
+                    margin-top: 3rem;
+                    .btn {
+                        color: $color-white;
+                        background-color: $color-primary;
+                        text-decoration: none;
+                        border: none;
+                        padding: .3rem .7rem;
+
+                        &:not(:last-child){
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+            .contact{
+            }
+
+        }
+        &--image-upload{
+            padding: 1rem 2rem;
+
+            .image-group{
+                display: flex;
+                gap: 2rem;
+
+                &__align{
+                    display: grid;
+                    grid-template-columns: repeat(4, 10rem);
+                    grid-template-rows: repeat(2, 10rem);
+                    grid-gap: 1rem;
+
+                    .image{
+                        height: 10rem;
+                        width: 10rem;
+                        background-size: cover;
+                    }
+                }
+                .upload-btn{
+                    height: 10rem;
+                    width: 10rem;
+                    font-size: 4rem;
+                    font-weight: 600;
+                    background-color: transparent;
+                    border: 2px solid $color-white;
+                    color: $color-white;
+                    cursor: pointer;
+                }
+                .upload-btn:hover{
+                    border: 2px solid $color-primary;
+                    // color: $color-primary;
+                }
+            }
+        }
+        &--dates{
+            padding: 1rem 2rem;
+
+            .heading-3{
+                margin-bottom: 2rem;
+            }
+            
+            .reservation-details {
+                font-size: 1.4rem;
+
+                .reservation-month {
+                    margin-bottom: 1rem;
+                }
+
+                .reservation-dates {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+
+                    .days {
+                        list-style-type: none;
+
+                        
+                        .dates {
+                            cursor: pointer;
+                        }                        
+                        
+                        .close {
+                            color: $color-red-light;
+                        }
+                        
+                        .open {
+                            color: $color-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__categories{
+        grid-template-columns: categorie-start / categorie-end;
+    }
+}

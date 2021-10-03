@@ -12,6 +12,7 @@ import Requests from './pages/requests/requests.component'
 import RestaurantModule from "./pages/restaurant-module/restaurant-module.component.jsx";
 import LifeStyleManagers from "./pages/lifestyle-managers/lifestyle-managers.component";
 import Events from './pages/events/events.component';
+import EventsSushiMasterClass from './pages/events-sushi-masterclass/events-sushi-masterclass.component';
 import SupplierRestaurent from './pages/supplier-restaurent/supplier-restaurent.component'
 import Connect from './pages/connect/connect.component';
 import PerksOrBenefits from './pages/perks-or-benefits/perks-or-benefits.component';
@@ -42,6 +43,7 @@ function App() {
             <Route path='/restaurant' component={RestaurantModule}/>
             <Route path='/lifestyle-managers' component={LifeStyleManagers} />
             <Route path='/events' component={Events} />
+            <Route path='/events-sushi-masterclass' component={EventsSushiMasterClass} />
             <Route path='/connect' component={Connect} />
             <Route path='/perks-or-benefits' component={PerksOrBenefits} />
             <Route path='/restaurant-module' component={RestaurantModule}/>
