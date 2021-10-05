@@ -15,6 +15,7 @@ import Events from './pages/events/events.component';
 import EventsSushiMasterClass from './pages/events-sushi-masterclass/events-sushi-masterclass.component';
 import SupplierRestaurent from './pages/supplier-restaurent/supplier-restaurent.component'
 import Connect from './pages/connect/connect.component';
+import ConnectCliveJackson from './pages/connect-clive-jackson/connect-clive-jackson.component';
 import PerksOrBenefits from './pages/perks-or-benefits/perks-or-benefits.component';
 import GeoLocationMap from './pages/geo-location-map/geo-location-map.component';
 import GeoLocationMapRegion from './pages/geo-location-map-region/geo-location-map-region.component';
@@ -45,6 +46,7 @@ function App() {
             <Route path='/events' component={Events} />
             <Route path='/events-sushi-masterclass' component={EventsSushiMasterClass} />
             <Route path='/connect' component={Connect} />
+            <Route path='/connect-clive-jackson' component={ConnectCliveJackson} />
             <Route path='/perks-or-benefits' component={PerksOrBenefits} />
             <Route path='/restaurant-module' component={RestaurantModule}/>
             <Route path='/geo-location-map' component={GeoLocationMap}/>
