@@ -13,7 +13,7 @@ const ConnectCliveJacksonSidebar = () => (
         </div>
         <ul className="side-nav">
             <li className="side-nav__item">
-                <a href="#" className="side-nav__link"> Sustainability Take Off’ Clive Jackson</a>
+                <a href="#" className="side-nav__link">Sustainability Take Off’ Clive Jackson</a>
             </li>
             <li className="side-nav__item">
                 <a href="#" className="side-nav__link">Connect</a>

@@ -17,6 +17,7 @@ import SupplierRestaurent from './pages/supplier-restaurent/supplier-restaurent.
 import Connect from './pages/connect/connect.component';
 import ConnectCliveJackson from './pages/connect-clive-jackson/connect-clive-jackson.component';
 import PerksOrBenefits from './pages/perks-or-benefits/perks-or-benefits.component';
+import PerksOrBenefitsPersonalShopping from './pages/perks-or-benefits-personal-shopping/perks-or-benefits-personal-shopping.component';
 import GeoLocationMap from './pages/geo-location-map/geo-location-map.component';
 import GeoLocationMapRegion from './pages/geo-location-map-region/geo-location-map-region.component';
 import GeoLocationMapSubRegion from './pages/geo-location-map-subregion/geo-location-map-subregion.component';
@@ -48,6 +49,7 @@ function App() {
             <Route path='/connect' component={Connect} />
             <Route path='/connect-clive-jackson' component={ConnectCliveJackson} />
             <Route path='/perks-or-benefits' component={PerksOrBenefits} />
+            <Route path='/perks-or-benefits-personal-shopping' component={PerksOrBenefitsPersonalShopping} />
             <Route path='/restaurant-module' component={RestaurantModule}/>
             <Route path='/geo-location-map' component={GeoLocationMap}/>
             <Route path='/geo-location-map-region' component={GeoLocationMapRegion}/>

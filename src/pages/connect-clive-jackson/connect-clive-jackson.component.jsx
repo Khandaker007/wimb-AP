@@ -2,7 +2,7 @@ import React from "react";
 
 //COMPONENTS
 import InsideSidebar from "../../components/inside-sidebar/inside-sidebar.component";
-import ConnectCliveJacksonSidebar from "../../components/connect-clive-jackson-sidebar/connect-clive-jackson-sidebar";
+import ConnectCliveJacksonSidebar from "../../components/connect-clive-jackson-sidebar/connect-clive-jackson-sidebar.component";
 import ButtonModify from "../../components/button-modify/button-modify.component";
 
 // IMAGE

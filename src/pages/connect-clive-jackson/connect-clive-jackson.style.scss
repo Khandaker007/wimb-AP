@@ -45,6 +45,12 @@
             padding: 2rem 2rem 1rem 2rem;
             display: flex;
             justify-content: space-between;
+
+            .connect-details {
+                .name-position {
+                    font-size: 1.5rem;
+                }
+            }
             
             .btn-done{
                 background-color: $color-primary;
@@ -123,23 +129,23 @@
 
             .image-group{
                 display: flex;
-                gap: 2rem;
+                gap: 1rem;
 
                 &__align{
                     display: grid;
-                    grid-template-columns: repeat(4, 10rem);
-                    grid-template-rows: repeat(2, 10rem);
+                    grid-template-columns: repeat(4, 8rem);
+                    grid-template-rows: repeat(2, 8rem);
                     grid-gap: 1rem;
 
                     .image{
-                        height: 10rem;
-                        width: 10rem;
+                        height: 8rem;
+                        width: 8rem;
                         background-size: cover;
                     }
                 }
                 .upload-btn{
-                    height: 10rem;
-                    width: 10rem;
+                    height: 8rem;
+                    width: 8rem;
                     font-size: 4rem;
                     font-weight: 600;
                     background-color: transparent;
