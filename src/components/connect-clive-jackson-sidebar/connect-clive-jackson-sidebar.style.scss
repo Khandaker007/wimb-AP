@@ -1,0 +1,42 @@
+@import '../../sass/variables.scss';
+
+.connect-clive-jackson-sidebar{
+    background-color: $color-grey;
+
+    &__header{
+        font-size: 2rem;
+        padding: 2rem;
+        border-bottom: 1px solid $color-grey-light;
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        img{
+            height: 1.5rem;
+        }
+
+    }
+
+    .side-nav{
+
+        &__item{
+            padding: 1rem 4.1rem;
+            list-style-type: none;
+            // white-space: nowrap;
+            cursor: pointer;
+            &:not(:last-child){
+                border-bottom: 1px solid $color-grey-light;
+            }
+        }
+        &__item:hover{
+            background-color: $color-primary;
+        }
+        &__link{
+            font-size: 1.3rem;
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
+    
+}
