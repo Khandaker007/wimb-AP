@@ -2,5 +2,55 @@
 @import "../../sass/mixins.scss";
 
 .report {
-    
+    font-size: 1.4rem;
+    display: grid;
+    grid-template-columns: [live-start] 1fr [live-end calendar-start] 25% [calendar-end];
+    grid-gap: 2rem;
+
+    &--main {
+        background-color: $color-grey;
+        padding: 2rem;
+        
+        &__header {
+            @include horizontal-flex-space-between;
+            margin-bottom: 2rem;
+            .live {
+                display: inline;
+            }
+        }
+
+        &__body {
+            height: 50rem;
+            // background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .live-reports {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+
+                .report-block {
+                    background-color: $color-primary;
+                    border: 1px solid $color-primary;
+                    height: 20rem;
+
+                    &:hover {
+                        border: 1px solid lightblue;
+                    }
+                }
+
+                .first-block {
+                    grid-row: span 2;
+                    height: 40.0rem;
+                }
+            }
+        }
+    }
+
+    &--sidebar {
+        background-color: $color-grey;
+        padding: 2rem;
+    }
 }
