@@ -89,17 +89,6 @@
     background-color: $color-grey;
     padding: 2rem;
 
-    .calendar-area{
-        // just to stay in strucher
-        border: 2px solid $color-white;
-        height: 30rem;
-
-        font-size: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
 }
 .top-eatery{
     grid-template-columns: scol-start / scol-end;

@@ -87,7 +87,7 @@ const SupplierRestaurent = () => (
                 <img src={menu} alt="menu image" className='menu-image'/>
             </div>
         </div>
-        <div className="supplier-restaurent__categories">
+        <div className="supplier-restaurant__categories">
             <CategorieSidebar/>
         </div>
     </div>

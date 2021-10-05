@@ -94,18 +94,10 @@
         padding: 2rem;
 
         .calendar-area{
-            // just to stay in strucher
-            border: 2px solid $color-white;
-            height: 30rem;
-            margin-bottom: 2rem;
-    
-            font-size: 2rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            margin-bottom: 4rem;
         }
         .text{
-            font-size: 1.2rem;
+            font-size: 1.15rem;
         }
     }
 }

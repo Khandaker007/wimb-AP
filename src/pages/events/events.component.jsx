@@ -5,6 +5,7 @@ import "./events.style.scss";
 // COMPONENTS
 import SearchBox from '../../components/search-box/search-box.component';
 import ItemWrapper from '../../components/item-wrapper/item-wrapper.component';
+import CustomCalendar from '../../components/calendar/calendar.component';
 
 // IMAGES
 import SushiMasterClass from '../../assets/image/shushi-masterclass.png';
@@ -25,7 +26,7 @@ const Events = () => (
         </div>
         <div className="events__calendar">
             <div className="calendar-component">
-                calendar
+                <CustomCalendar/>
             </div>
         </div>
     </div>

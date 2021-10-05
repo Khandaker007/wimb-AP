@@ -5,6 +5,7 @@ import "./perks-or-benefits.style.scss";
 // COMPONENTS
 import SearchBox from '../../components/search-box/search-box.component';
 import ItemWrapper from '../../components/item-wrapper/item-wrapper.component';
+import CustomCalendar from '../../components/calendar/calendar.component'
 
 // IMAGES
 import PersonalShopping from '../../assets/image/personal-shopping.png';
@@ -24,8 +25,8 @@ const PerksOrBenefits = () => (
             </div>
         </div>
         <div className="perks-or-benefits__calendar">
-            <div className="calendar-component">
-                calendar
+            <div className="calendar-area">
+                <CustomCalendar/>
             </div>
         </div>
     </div>

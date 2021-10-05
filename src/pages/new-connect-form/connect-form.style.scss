@@ -1,0 +1,46 @@
+@import '../../sass/variables.scss';
+
+.connect-form{
+    display: grid;
+    grid-template-columns: [edit-start] 15% [edit-end body-start] 1fr [body-end categorie-start] 25% [categorie-end];
+    grid-gap: 2rem;
+
+    &__sidebar{
+        background-color: $color-grey;
+    }
+    &__main{
+        background-color: $color-grey;
+
+        &--header{
+            padding: 2rem;
+        }
+        &--form{
+            padding: 1rem 2rem;
+
+            .form-align{
+                display: grid;
+                grid-template-columns: repeat(2, [col-start] 1fr [col-end]);
+                grid-column-gap: 7rem;
+
+                .title-align{
+                    grid-column: col-start 1 / col-end 2;
+                    margin-bottom: 1rem;
+                }
+                .category-align{
+                    grid-column: col-start 1 / col-end 1;
+                    margin-bottom: 1rem;
+                }
+                .textarea-align{
+                    grid-column: col-start 1 / col-end 2;
+                    margin-bottom: 1rem;
+                }
+                .first-name{
+                    grid-column: col-start 1 / col-end 1;
+                }
+            }
+        }
+    }
+    &__categories{
+        background-color: $color-grey;
+    }
+}

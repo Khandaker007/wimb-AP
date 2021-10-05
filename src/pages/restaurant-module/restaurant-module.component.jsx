@@ -31,6 +31,7 @@ const RestaurantModule = () => (
         <div className="restaurant-module__header">
             <RestaurantModuleHeader />
         </div>
+        <h1></h1>
         <div className="restaurant-module__logo">
             <img src={amazonicoLogo} alt="amazonico-logo" className="logo" />
         </div>

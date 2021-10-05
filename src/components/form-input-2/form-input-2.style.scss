@@ -1,0 +1,38 @@
+@import '../../sass/variables.scss';
+
+.form-input{
+    &:not(:last-child){
+        margin-bottom: 1rem;
+    }
+    display: flex;
+    flex-direction: column;
+    &__input{
+        padding: .7rem .5rem .5rem .5rem;
+        display: block;
+        font-family: inherit;
+        color: black;
+        font-size: 1.3rem;
+        border-radius: 1px;
+        border: none;
+        border-bottom: 2px solid transparent;
+
+        &:focus{
+            outline: none;
+            border-bottom: 2px solid $color-primary ;
+            box-shadow: 0 1rem 2rem rgba(black, .1);
+        }
+
+        &:focus:invalid{
+            border-bottom: 2px solid $color-orange ;
+        }
+
+        &::-webkit-input-placeholder{
+            color: rgba($color: gray, $alpha: .7);
+        }
+    }
+    &__label{
+        font-size: 1.4rem;
+        display: inline-block;
+        margin-left: .5rem;
+    }
+}

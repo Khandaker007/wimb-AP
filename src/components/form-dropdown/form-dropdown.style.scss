@@ -1,0 +1,45 @@
+@import '../../sass/variables.scss';
+
+.dropdown-form{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    position: relative;
+
+    &__label{
+        font-size: 1.4rem;
+        display: inline-block;
+        margin-left: .5rem;
+    }
+    &__select{
+        padding: .7rem .5rem .5rem .5rem;
+        color: rgba($color: gray, $alpha: .7);
+        border: none;
+        cursor: pointer;
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;   
+                
+    }
+    &__option{
+        color: $color-dark;
+    }
+    &__option:hover{
+        background-color: $color-primary;
+        color: $color-white;
+    }
+    &__arrow{
+        position: absolute;
+        right: .5rem;
+        top: 3rem;
+
+        pointer-events: none;
+    }
+    
+}

@@ -2,6 +2,7 @@ import React from 'react'
 
 // COMPONENTS
 import TeamMember from '../../components/team-member/team-member.component';
+import CustomCalendar from '../../components/calendar/calendar.component';
 
 // LOGO
 import wimb from '../../assets/logo/wimb-logo.svg'
@@ -67,7 +68,7 @@ const Dashboard = () => (
         </div>
         <div className="dashboard__calendar">
             <div className="calendar-area">
-                calendar
+                <CustomCalendar/>
             </div>
         </div>
         <div className="dashboard__info">

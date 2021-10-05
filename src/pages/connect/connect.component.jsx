@@ -5,6 +5,7 @@ import "./connect.style.scss";
 // COMPONENTS
 import SearchBox from '../../components/search-box/search-box.component';
 import ItemWrapper from '../../components/item-wrapper/item-wrapper.component';
+import CustomCalendar from '../../components/calendar/calendar.component';
 
 // IMAGES
 import CliveJackson from '../../assets/image/clive-jackson.png';
@@ -24,8 +25,8 @@ const Connect = () => (
             </div>
         </div>
         <div className="connect__calendar">
-            <div className="calendar-component">
-                calendar
+            <div className="calendar-area">
+                <CustomCalendar/>
             </div>
         </div>
     </div>

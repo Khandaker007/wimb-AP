@@ -1,0 +1,14 @@
+@import '../../sass/variables.scss';
+
+.simple-header{
+    display: flex;
+    justify-content: space-between;
+
+    .btn-done{
+        background-color: $color-primary;
+        border: none;
+        color: $color-white;
+        padding: 0 .5rem;
+        cursor: pointer;
+    }
+}

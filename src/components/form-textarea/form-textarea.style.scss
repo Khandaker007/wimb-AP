@@ -1,0 +1,28 @@
+@import '../../sass/variables.scss';
+
+.form-textarea{
+    margin-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    &__input{
+        padding: .7rem .5rem .5rem .5rem;
+        display: block;
+        font-family: inherit;
+        color: black;
+        height: 6rem;
+        font-size: 1.3rem;
+        border-radius: 1px;
+        border: none;
+        border-bottom: 2px solid transparent;
+
+        &::-webkit-input-placeholder{
+            color: rgba($color: gray, $alpha: .7);
+        }
+    }
+    &__label{
+        font-size: 1.4rem;
+        display: inline-block;
+        margin-left: .5rem;
+    }
+}

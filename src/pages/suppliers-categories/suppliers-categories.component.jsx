@@ -3,6 +3,7 @@ import React from 'react'
 // COMPONENT
 import SearchBox from '../../components/search-box/search-box.component'
 import Categorie from '../../components/categorie/categorie.component'
+import CustomCalendar from '../../components/calendar/calendar.component'
 
 // IMAGE
 import dining from '../../assets/image/dining.png'
@@ -67,9 +68,9 @@ const SuppliersCategories = () => (
         </div>
         <div className="suppliers-categories__calendar">
             <div className="calendar-area">
-                calendar
+                <CustomCalendar/>
             </div>
-            <h4 className="heading-4">Title</h4>
+            <h4 className="heading-4 pb-1">Title</h4>
             <p className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed vehicula erat, nec malesuada lorem. Ut rutrum vulputate arcu quis commodo. Donec finibus metus vel metus sollicitudin, a pellentesque ante auctor. Curabitur non blandit tellus.<br/><br/>Ut rutrum vulputate arcu quis commodo. Donec finibus metus vel metus sollicitudin, a pellentesque ante auctor. Curabitur non blandit tellus.</p>
         </div>
     </div>

@@ -4,6 +4,7 @@ import "./lifestyle-managers.style.scss";
 
 // COPONENETS
 import UserRequestItem from "../../components/user-request-item/user-request-item.component";
+import CustomCalendar from '../../components/calendar/calendar.component';
 
 // ICONS
 import dropdown from "../../assets/icon/icon-dropdown-green.svg";
@@ -36,7 +37,9 @@ const LifeStyleManagers = () => (
                 </div>
             </div>
         </div>
-        <div className="calendar-small card">calendar</div>
+        <div className="calendar-small card">
+            <CustomCalendar/>
+        </div>
         <div className="lifestyle-managers-body card">
             <div className="sort-by">
                 Sort by: Most Recent

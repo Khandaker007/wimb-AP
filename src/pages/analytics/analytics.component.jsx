@@ -2,6 +2,7 @@ import React from 'react'
 
 // COIMPONENT
 import Dropdown from '../../components/drop-down/drop-down.component'
+import CustomCalendar from '../../components/calendar/calendar.component'
 
 import './analytics.style.scss'
 import '../../sass/typography.scss'
@@ -91,7 +92,7 @@ const Analytics = () => (
         </div>
         <div className="calendar">
             <div className="calendar-area">
-                calendar
+                <CustomCalendar/>
             </div>
         </div>
         <div className="top-eatery">
