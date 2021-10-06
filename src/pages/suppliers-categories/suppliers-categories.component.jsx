@@ -2,7 +2,7 @@ import React from 'react'
 
 // COMPONENT
 import SearchBox from '../../components/search-box/search-box.component'
-import Categorie from '../../components/categorie/categorie.component'
+import Categorie from '../../components/category/category.component'
 import CustomCalendar from '../../components/calendar/calendar.component'
 
 // IMAGE

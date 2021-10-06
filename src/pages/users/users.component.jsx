@@ -1,9 +1,9 @@
 import React from 'react'
 
 // ICON
-import star2 from '../../assets/icon/Icon-star2.svg'
-import money from '../../assets/icon/Icon-money.svg'
-import chair from '../../assets/icon/Icon-chair.svg'
+import star2 from '../../assets/icon/icon-star.svg'
+import money from '../../assets/icon/icon-money.svg'
+import chair from '../../assets/icon/icon-chair.svg'
 
 // COMPONENT
 import User from '../../components/user/user.component'

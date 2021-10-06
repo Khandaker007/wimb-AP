@@ -2,9 +2,6 @@ import React from 'react';
 
 import "./item.style.scss";
 
-// IMAGES
-import SushiMasterClass from '../../assets/image/shushi-masterclass.png';
-
 const Item = ({itemName, image}) => (
     <div className="item">
         <img src={image} alt="sushi-master-class" className="item__image" />

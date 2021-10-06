@@ -8,7 +8,7 @@ import amazonicoLogo from "../../assets/logo/logo-amazonico.svg";
 import dropdown from "../../assets/icon/icon-dropdown.svg";
 import calendar from '../../assets/icon/icon-calendar.svg';
 import option from '../../assets/icon/icon-option.svg';
-import parkerBenefit from '../../assets/icon/Icon-parker-benefit.svg'
+import parkerBenefit from '../../assets/icon/icon-parker-benefit.svg'
 
 // COMPONENTS
 import RestaurantModuleHeader from "../../components/restaurant-module-header/restaurant-module-header.component";
@@ -102,6 +102,11 @@ const RestaurantModule = () => (
                     <h3 className='heading-3 pb-1'>Declined</h3>
                     <DeclinedItem/>
                     <DeclinedItem/>
+                </div>
+                <div className="restaurant-module__body--main-confirmed section">
+                    <h3 className='heading-3 pb-1'>Cancelled</h3>
+                    <CancelledItem/>
+                    <CancelledItem/>
                 </div>
             </div>
         </div>

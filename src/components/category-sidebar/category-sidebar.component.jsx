@@ -3,9 +3,9 @@ import React from "react";
 // ICON
 import arrow from '../../assets/icon/icon-arrow-left.svg'
 
-import './categorie-sidebar.style.scss'
+import './category-sidebar.style.scss'
 
-const CategorieSidebar = () => (
+const CategorySidebar = () => (
     <div className="categorie-sidebar">
         <div className="categorie-sidebar__header">
                 <img src={arrow} alt="arrow icon" />
@@ -49,4 +49,4 @@ const CategorieSidebar = () => (
     </div>
 )
 
-export default CategorieSidebar;
+export default CategorySidebar;

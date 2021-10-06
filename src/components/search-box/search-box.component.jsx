@@ -1,7 +1,7 @@
 import React from 'react'
 
 // ICON
-import search from '../../assets/icon/Icon-search.jpg'
+import search from '../../assets/icon/icon-search.svg'
 
 import './search-box.style.scss'
 

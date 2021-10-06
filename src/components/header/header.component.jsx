@@ -1,9 +1,9 @@
 import React from 'react'
 
 // ICON
-import search from '../../assets/icon/Icon-search.svg'
-import mail from '../../assets/icon/Icon-mail-outline.svg'
-import notification from '../../assets/icon/Icon-notifications-none.svg'
+import search from '../../assets/icon/icon-search.svg'
+import mail from '../../assets/icon/icon-mail.svg'
+import notification from '../../assets/icon/icon-notification.svg'
 
 // IMAGE
 import user from '../../assets/image/Alex.jpg'
