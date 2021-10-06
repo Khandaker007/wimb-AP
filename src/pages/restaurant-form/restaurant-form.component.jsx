@@ -7,6 +7,7 @@ import CategorySidebar from "../../components/category-sidebar/category-sidebar.
 import FormInput from "../../components/form-input-2/form-input-2.component";
 import DropdownForm from "../../components/form-dropdown/form-dropdown.component";
 import FormTextarea from "../../components/form-textarea/form-textarea.component";
+import FormTag from "../../components/form-tag/form-tag.component";
 
 import './restaurant-form.style.scss'
 
@@ -33,9 +34,15 @@ const RestaurantForm = () => (
                     <div className="textarea-align">
                         <FormTextarea id='description' label='Description' placeholder='Description..'/>
                     </div>
-                    <FormInput id='title' label='Date' placeholder='Wed 24th June 2022'/>
-                    <FormInput id='title' label='Time' placeholder='20:00 - 21:30'/>
-                    <FormInput id='title' label='Tags' placeholder='Search'/>
+                    <FormInput id='date' label='Date' type='date'/>
+                    <FormInput id='time' label='Time' type='time'/>
+                    <FormInput id='tags' label='Tags' placeholder='Search' type='search'/>
+                </div>
+                <div className="tag-display">
+                    <FormTag tagName='Motivational Talk'/>
+                    <FormTag tagName='Motivational Talk'/>
+                    <FormTag tagName='Motivational Talk'/>
+                    <FormTag tagName='Motivational Talk'/>
                 </div>
             </div>
         </div>
