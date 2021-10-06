@@ -12,12 +12,20 @@
         outline: none;
         border: 2px solid $color-primary;
     }
-    &__icon{
-        height: 1.5rem;
+    &__button{
+        height: 3rem;
+        width: 3rem;
+        cursor: pointer;
+        background-color: $color-white;
+        // border: ;
 
         position: absolute;
-        right: 8px;
-        top: 8px;
+        right: 0px;
+        top: 0px;
+
+        &--icon{
+            height: 1.5rem;
+        }
     }
 
 }

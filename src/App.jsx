@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Route, Switch } from "react-router";
+import { useState, useEffect } from "react";
+import { Route, Switch, useLocation } from "react-router";
 
 import Dashboard from "./pages/dashboard/dashboard.component";
 import MainSidebar from "./components/main-sidebar/main-sidebar.component";
@@ -29,13 +29,37 @@ import Report from "./pages/report/report.component";
 import "./App.scss";
 
 function App() {
+
+  const location = useLocation()
+  const [title, setTitle] = useState('Dashboard')
+
+  useEffect(() => {
+    
+    if (location.pathname == '/'){
+      setTitle('Dashboard')
+    }
+    else if (location.pathname == '/user'){
+      setTitle('Users')
+    }
+    // else if (location.pathname == '/'){
+    //   setTitle('Dashboard')
+    // }
+    // else if (location.pathname == '/'){
+    //   setTitle('Dashboard')
+    // }
+    // else if (location.pathname == '/'){
+    //   setTitle('Dashboard')
+    // }
+
+  }, [location.pathname])
+
   return (
     <div className="admin-panel">
       <div className="admin-panel__sidebar">
         <MainSidebar />
       </div>
       <div className="admin-panel__body">
-        <Header />
+        <Header title={title}/>
         <Switch>
           <Route exact path="/" component={Dashboard} />
           <Route path="/user" component={Users} />
