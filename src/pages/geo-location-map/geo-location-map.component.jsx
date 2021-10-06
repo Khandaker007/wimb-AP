@@ -1,11 +1,12 @@
 import React from 'react';
 
+import GoogleMapComponent from '../../components/google-map/google-map.component';
+
 import "./geo-location-map.style.scss";
-import "../../sass/typography.scss";
 
 const GeoLocationMap = () => (
     <div className="geo-location-map">
-        <p>Geo Location Map</p>
+        <GoogleMapComponent />
     </div>
 )
 

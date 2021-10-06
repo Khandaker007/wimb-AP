@@ -1,5 +1,7 @@
 import React from 'react';
 
+import GoogleMapComponent from '../../components/google-map/google-map.component';
+
 import "./geo-location-map-subregion.style.scss";
 
 // COMPONENTS
@@ -9,7 +11,7 @@ import LocationItem from '../../components/location-item/location-item.component
 const GeoLocationMapRegion = () => (
     <div className="geo-location-map-region">
         <div className="geo-location-map-region__main">
-            <p>Geo Location Map Region</p>
+            <GoogleMapComponent />
         </div>
         <div className="geo-location-map-region__details">
             <div className="region">
@@ -33,7 +35,7 @@ const GeoLocationMapRegion = () => (
                 </div>
             </div>
             <div className="map-small">
-                &nbsp;
+                <GoogleMapComponent />
             </div>
             <div className="most-popular-locations">
                 <p className="most-popular-locations-title">
