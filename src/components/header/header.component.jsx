@@ -12,7 +12,10 @@ import './header.style.scss'
 
 const Header = () => (
     <div className="header">
-        <h1 className='header__heading'>Dashboard</h1>
+        <div className="header__nav">
+            <span className="nav-icon">&nbsp;</span>
+            <h1 className='header__heading'>Dashboard</h1>
+        </div>
         <div className="header__status">
             <div className="header__status--notification">
                 <img src={search} alt="search-icon" className='icon icon-search' />

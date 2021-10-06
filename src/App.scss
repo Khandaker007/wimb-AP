@@ -12,6 +12,10 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @include response (tab-land){
+        font-size: 50%;
+    }
 }
 
 body{
@@ -27,11 +31,19 @@ body{
     background-color: $color-dark;
 
     display: grid;
-    grid-template-columns: [sidebar-start] 20% [sidebar-end body-start] 1fr [body-end];
+    grid-template-columns: [sidebar-start] minmax(min-content, max-content) [sidebar-end body-start] 1fr [body-end];
     grid-gap: 3rem;
+
+    @include response (tab-port){
+        display: grid;
+        grid-template-columns: [body-start] 1fr [body-end];
+    }
 
     &__sidebar{
         grid-column: sidebar-start / sidebar-end;
+        @include response (tab-port){
+            display: none;
+        }
     }
     &__body{
         grid-column: body-start / body-end;

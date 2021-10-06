@@ -1,0 +1,29 @@
+@import '../../sass/variables.scss';
+
+.form-tag{
+    font-size: 1.2rem;
+    padding: .5rem;
+    border: 1px solid $color-primary;
+    line-height: .7;
+    display: inline-block;
+    &:not(:last-child){
+        margin-right: .8rem;
+    }
+
+    position: relative;
+
+    .delete{
+        font-size: 1rem;
+        background-color: red;
+        display: block;
+        height: 1rem;
+        width: 1rem;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+
+        position: absolute;
+        top: -6px;
+        right: -6px;
+    }
+}

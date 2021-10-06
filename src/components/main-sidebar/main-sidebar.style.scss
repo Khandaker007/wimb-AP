@@ -1,6 +1,11 @@
 @import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
 
 .sidebar{
+    padding: 0 2rem;
+    // width: 25rem;
+    background-color: blue;
+
     &__header{
         height: 6rem;
 
@@ -10,9 +15,11 @@
         
         .logo{
             height: 4rem;
+            // display: none;
         }
     }
     &__nav-icon{
+        cursor: pointer;
         &,
         &::before,
         &::after{
@@ -22,7 +29,12 @@
             display: inline-block;
             position: relative;
             border-radius: 50rem;
-            // transition: all .3s;
+            // display: none;
+            // visibility: hidden;
+
+            @include response (tab-land){
+                visibility: visible;
+            }
         }
 
         &::before,
@@ -39,6 +51,8 @@
 
     &__nav{
         margin-top: 4.6rem;
+        background-color: aqua;
+        padding-left: 1rem;
 
         .side-nav{
             &__item{
@@ -46,8 +60,7 @@
                 &:not(:last-child){
                     margin-bottom: 1.5rem;
                 }
-            }
-            
+            }            
             
             &__link{
                 color: $color-white;

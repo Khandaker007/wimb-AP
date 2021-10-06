@@ -25,7 +25,9 @@ import "./main-sidebar.style.scss";
 const MainSidebar = () => (
   <div className="sidebar">
     <div className="sidebar__header">
-      <img src={logo} alt="logo" className="logo" />
+      <Link to='/'>
+        <img src={logo} alt="logo" className="logo" />
+      </Link>
       <span className="sidebar__nav-icon">&nbsp;</span>
     </div>
     <nav className="sidebar__nav">

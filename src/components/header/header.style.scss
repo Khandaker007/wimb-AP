@@ -1,9 +1,27 @@
+@import '../../sass/mixins.scss';
+
 .header{
     height: 6rem;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &__nav{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .nav-icon{
+            
+            @include response (tab-port){
+                display: inline-block;
+            }
+            @include response (tab-land){
+                display: none;
+            }
+        }
+    }
 
     &__heading{
         font-size: 3rem;

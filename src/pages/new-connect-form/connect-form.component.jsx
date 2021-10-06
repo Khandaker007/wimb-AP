@@ -7,6 +7,7 @@ import CategorieSidebar from "../../components/categorie-sidebar/categorie-sideb
 import FormInput from "../../components/form-input-2/form-input-2.component";
 import DropdownForm from "../../components/form-dropdown/form-dropdown.component";
 import FormTextarea from "../../components/form-textarea/form-textarea.component";
+import FormTag from "../../components/form-tag/form-tag.component";
 
 import './connect-form.style.scss'
 
@@ -36,9 +37,15 @@ const ConnectForm = () => (
                     <div className="textarea-align">
                         <FormTextarea id='description' label='Description' placeholder='Description..'/>
                     </div>
-                    <FormInput id='title' label='Title' placeholder='Sustainability Take Off'/>
-                    <FormInput id='title' label='Title' placeholder='Sustainability Take Off'/>
-                    <FormInput id='title' label='Title' placeholder='Sustainability Take Off'/>
+                    <FormInput id='date' label='Date' type='date'/>
+                    <FormInput id='time' label='Time' type='time'/>
+                    <FormInput id='tags' label='Tags' placeholder='Search' type='search'/>
+                </div>
+                <div className="tag-display">
+                    <FormTag tagName='Motivational Talk'/>
+                    <FormTag tagName='Motivational Talk'/>
+                    <FormTag tagName='Motivational Talk'/>
+                    <FormTag tagName='Motivational Talk'/>
                 </div>
             </div>
         </div>

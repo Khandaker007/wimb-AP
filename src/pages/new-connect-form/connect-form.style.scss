@@ -7,6 +7,7 @@
 
     &__sidebar{
         background-color: $color-grey;
+        padding: 2rem;
     }
     &__main{
         background-color: $color-grey;
@@ -21,6 +22,8 @@
                 display: grid;
                 grid-template-columns: repeat(2, [col-start] 1fr [col-end]);
                 grid-column-gap: 7rem;
+
+                margin-bottom: 1.5rem;
 
                 .title-align{
                     grid-column: col-start 1 / col-end 2;
