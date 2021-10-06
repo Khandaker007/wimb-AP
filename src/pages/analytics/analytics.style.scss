@@ -69,13 +69,10 @@
         }
         .body{
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
-
-            border: 2px solid $color-white;
             height: 20rem;
             font-size: 2rem;
-
         }
     }
     &__tracking-header{

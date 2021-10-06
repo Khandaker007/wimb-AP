@@ -3,6 +3,7 @@ import React from 'react'
 // COIMPONENT
 import Dropdown from '../../components/drop-down/drop-down.component'
 import CustomCalendar from '../../components/calendar/calendar.component'
+import Graph from "../../components/graph/graph.component";
 
 import './analytics.style.scss'
 import '../../sass/typography.scss'
@@ -47,7 +48,7 @@ const Analytics = () => (
                     <Dropdown option1='last 30 days' value1='last-30-days' option2='last 7 days' value2='last-7-days'/>
                 </div>
                 <div className="body">
-                    graph
+                    <Graph />
                 </div>
             </div>
             <div className="traffic__header">
