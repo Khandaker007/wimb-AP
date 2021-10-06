@@ -41,15 +41,57 @@ function App() {
     else if (location.pathname == '/user'){
       setTitle('Users')
     }
-    // else if (location.pathname == '/'){
-    //   setTitle('Dashboard')
-    // }
-    // else if (location.pathname == '/'){
-    //   setTitle('Dashboard')
-    // }
-    // else if (location.pathname == '/'){
-    //   setTitle('Dashboard')
-    // }
+    else if (location.pathname == '/analytics'){
+      setTitle('Analytics')
+    }
+    else if (location.pathname == '/suppliers-categories'){
+      setTitle('Suppliers')
+    }
+    else if (location.pathname == '/suppliers-dining'){
+      setTitle('Suppliers')
+    }
+    else if (location.pathname == '/supplier-restaurant'){
+      setTitle('Suppliers')
+    }
+    else if (location.pathname == '/requests'){
+      setTitle('Requests')
+    }
+    else if (location.pathname == '/lifestyle-managers'){
+      setTitle('Lifestyle Managers')
+    }
+    else if (location.pathname == '/events'){
+      setTitle('Events')
+    }
+    else if (location.pathname == '/events-sushi-masterclass'){
+      setTitle('Events')
+    }
+    else if (location.pathname == '/connect'){
+      setTitle('Connect')
+    }
+    else if (location.pathname == '/connect-clive-jackson'){
+      setTitle('Connect')
+    }
+    else if (location.pathname == '/perks-or-benefits'){
+      setTitle('Perks/ Benefits')
+    }
+    else if (location.pathname == '/perks-or-benefits-personal-shopping'){
+      setTitle('Perks/ Benefits')
+    }
+    else if (location.pathname == '/geo-location-map'){
+      setTitle('Geo Location Map')
+    }
+    else if (location.pathname == '/geo-location-map-region'){
+      setTitle('Geo Location Map')
+    }
+    else if (location.pathname == '/connect-form'){
+      setTitle('Connect')
+    }
+    else if (location.pathname == '/restaurant-form'){
+      setTitle('Restaurant')
+    }
+    else if (location.pathname == '/report'){
+      setTitle('Reports')
+    }
 
   }, [location.pathname])
 
@@ -68,7 +110,6 @@ function App() {
           <Route path="/suppliers-dining" component={SuppliersDining} />
           <Route path="/supplier-restaurant" component={SupplierRestaurant} />
           <Route path="/requests" component={Requests} />
-          <Route path="/restaurant" component={RestaurantModule} />
           <Route path="/lifestyle-managers" component={LifeStyleManagers} />
           <Route path="/events" component={Events} />
           <Route path="/events-sushi-masterclass" component={EventsSushiMasterClass} />
