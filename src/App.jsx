@@ -13,7 +13,7 @@ import RestaurantModule from "./pages/restaurant-module/restaurant-module.compon
 import LifeStyleManagers from "./pages/lifestyle-managers/lifestyle-managers.component";
 import Events from "./pages/events/events.component";
 import EventsSushiMasterClass from "./pages/events-sushi-masterclass/events-sushi-masterclass.component";
-import SupplierRestaurent from "./pages/supplier-restaurent/supplier-restaurent.component";
+import SupplierRestaurant from "./pages/supplier-restaurant/supplier-restaurant.component";
 import Connect from "./pages/connect/connect.component";
 import ConnectCliveJackson from "./pages/connect-clive-jackson/connect-clive-jackson.component";
 import PerksOrBenefits from "./pages/perks-or-benefits/perks-or-benefits.component";
@@ -23,6 +23,7 @@ import GeoLocationMapRegion from "./pages/geo-location-map-region/geo-location-m
 import GeoLocationMapSubRegion from "./pages/geo-location-map-subregion/geo-location-map-subregion.component";
 import Login from "./pages/login/login.component";
 import ConnectForm from "./pages/new-connect-form/connect-form.component";
+import RestaurantForm from "./pages/restaurant-form/restaurant-form.component";
 import Report from "./pages/report/report.component";
 
 import "./App.scss";
@@ -41,7 +42,7 @@ function App() {
           <Route path="/analytics" component={Analytics} />
           <Route path="/suppliers-categories" component={SuppliersCategories} />
           <Route path="/suppliers-dining" component={SuppliersDining} />
-          <Route path="/supplier-restaurent" component={SupplierRestaurent} />
+          <Route path="/supplier-restaurant" component={SupplierRestaurant} />
           <Route path="/requests" component={Requests} />
           <Route path="/restaurant" component={RestaurantModule} />
           <Route path="/lifestyle-managers" component={LifeStyleManagers} />
@@ -57,6 +58,7 @@ function App() {
           <Route path="/geo-location-map-subregion" component={GeoLocationMapSubRegion}/>
           <Route path="/login" component={Login} />
           <Route path="/connect-form" component={ConnectForm} />
+          <Route path="/restaurant-form" component={RestaurantForm} />
           <Route path="/report" component={Report} />
         </Switch>
       </div>

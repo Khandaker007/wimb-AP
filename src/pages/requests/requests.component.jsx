@@ -10,8 +10,8 @@ import ChatBoxSelf from "../../components/chat-box-self/chat-box-self.component"
 import ChatBoxOther from "../../components/chat-box-other/chat-box-other.component";
 
 // ICON
-import edit from '../../assets/icon/Icon-material-create.svg'
-import option from '../../assets/icon/Icon-option.svg'
+import edit from '../../assets/icon/icon-material-create.svg'
+import option from '../../assets/icon/icon-option.svg'
 import rightDirection from '../../assets/icon/right-direction.svg'
 
 import './requests.style.scss'

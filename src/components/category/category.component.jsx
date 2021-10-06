@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './categorie.style.scss'
+import './category.style.scss'
 
 // import image from '../../assets/image/Drake_O2@2x.png'
 

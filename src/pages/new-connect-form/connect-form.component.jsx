@@ -3,7 +3,7 @@ import React from "react";
 // COMPONENT
 import SimpleHeader from '../../components/simple-header/simple-header.component'
 import InsideSidebar from '../../components/inside-sidebar/inside-sidebar.component'
-import CategorieSidebar from "../../components/categorie-sidebar/categorie-sidebar.component";
+import CategorySidebar from "../../components/category-sidebar/category-sidebar.component";
 import FormInput from "../../components/form-input-2/form-input-2.component";
 import DropdownForm from "../../components/form-dropdown/form-dropdown.component";
 import FormTextarea from "../../components/form-textarea/form-textarea.component";
@@ -43,7 +43,7 @@ const ConnectForm = () => (
             </div>
         </div>
         <div className="connect-form__categories">
-            <CategorieSidebar/>
+            <CategorySidebar/>
         </div>
     </div>
 )

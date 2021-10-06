@@ -8,10 +8,10 @@ import CustomCalendar from '../../components/calendar/calendar.component';
 import wimb from '../../assets/logo/wimb-logo.svg'
 
 // ICON
-import option from '../../assets/icon/Icon-option.svg'
-import phone from '../../assets/icon/Icon-phone-alt.svg'
-import chat from '../../assets/icon/Icon-chat_bubble_outline.svg'
-import mail from '../../assets/icon/Icon-mail-outline.svg'
+import option from '../../assets/icon/icon-option.svg'
+import phone from '../../assets/icon/icon-phone.svg'
+import chat from '../../assets/icon/icon-chat.svg'
+import mail from '../../assets/icon/icon-mail.svg'
 
 // IMAGE
 import user from '../../assets/image/Alex.jpg'

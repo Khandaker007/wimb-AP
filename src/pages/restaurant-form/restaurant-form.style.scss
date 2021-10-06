@@ -1,0 +1,47 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+.restaurant-form{
+    display: grid;
+    grid-template-columns: [edit-start] 15% [edit-end body-start] 1fr [body-end categorie-start] 25% [categorie-end];
+    grid-gap: 2rem;
+
+    &__sidebar{
+        background-color: $color-grey;
+    }
+    &__main{
+        background-color: $color-grey;
+
+        &--header{
+            padding: 2rem;
+        }
+        &--form{
+            padding: 1rem 2rem;
+
+            .form-align{
+                display: grid;
+                grid-template-columns: repeat(2, [col-start] 1fr [col-end]);
+                grid-column-gap: 7rem;
+
+                div {
+                    background-color: indigo;
+                }
+
+                .title-align{
+                    grid-column: col-start 1 / col-end 2;
+                    margin-bottom: 1rem;
+                }
+                .dropdown-menu{
+                    margin-bottom: 1rem;
+                }
+                .textarea-align{
+                    grid-column: col-start 1 / col-end 2;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+    &__connections{
+        background-color: $color-grey;
+    }
+}

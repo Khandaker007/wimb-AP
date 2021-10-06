@@ -3,7 +3,7 @@ import React from "react";
 //COMPONENT
 import arrow from '../../assets/icon/icon-arrow-right.svg'
 import InsideSidebar from "../../components/inside-sidebar/inside-sidebar.component";
-import CategorieSidebar from "../../components/categorie-sidebar/categorie-sidebar.component";
+import CategorySidebar from "../../components/category-sidebar/category-sidebar.component";
 import ContactItem from "../../components/contact-item/contact-item.component";
 import ButtonModify from "../../components/button-modify/button-modify.component";
 
@@ -18,7 +18,7 @@ import food2 from '../../assets/image/supplier-restaurant/amazonico-food-2.png'
 import food3 from '../../assets/image/supplier-restaurant/amazonico-food-3.png'
 import menu from '../../assets/image/supplier-restaurant/amazonico-menu.png'
 
-import './supplier-restaurent.style.scss'
+import './supplier-restaurant.style.scss'
 
 const SupplierRestaurent = () => (
     <div className="supplier-restaurant">
@@ -88,7 +88,7 @@ const SupplierRestaurent = () => (
             </div>
         </div>
         <div className="supplier-restaurant__categories">
-            <CategorieSidebar/>
+            <CategorySidebar/>
         </div>
     </div>
 )

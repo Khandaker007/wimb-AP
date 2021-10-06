@@ -4,9 +4,9 @@ import React from 'react'
 import member from '../../assets/image/Alex.jpg'
 
 // ICON
-import phone from '../../assets/icon/Icon-phone-alt.svg'
-import mail from '../../assets/icon/Icon-mail-outline.svg'
-import chat from '../../assets/icon/Icon-chat_bubble_outline.svg'
+import phone from '../../assets/icon/icon-phone.svg'
+import mail from '../../assets/icon/icon-mail.svg'
+import chat from '../../assets/icon/icon-chat.svg'
 
 import './team-member.style.scss'
 

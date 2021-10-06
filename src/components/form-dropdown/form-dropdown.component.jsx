@@ -1,7 +1,7 @@
 import React from "react";
 
 // ICON
-import downArrow from '../../assets/icon/icon-down-arrow.svg'
+import downArrow from '../../assets/icon/icon-dropdown.svg'
 
 import './form-dropdown.style.scss'
 
@@ -23,7 +23,7 @@ const DropdownForm = ({label, option1, option2, option3, value1, value2, value3}
             </option>
         </select>
         <span className="dropdown-form__arrow">
-            <img src={downArrow} alt=" down arrow icon" />
+            <img src={downArrow} alt="down arrow icon" />
         </span>
     </div>
 )

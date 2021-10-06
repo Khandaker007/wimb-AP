@@ -2,14 +2,13 @@ import React from 'react'
 
 // COMPONENT
 import SearchBox from '../../components/search-box/search-box.component'
-import Categorie from '../../components/categorie/categorie.component'
+import Categorie from '../../components/category/category.component'
 
 // IMAGE
 import mnkyhouse from '../../assets/image/Mnkyhouse.png'
 import scallops from '../../assets/image/Scallops.png'
 import sushi from '../../assets/image/sushi.png'
 import prawn from '../../assets/image/10.png'
-
 import hakkasan from '../../assets/image/hakkasan.png'
 import train from '../../assets/image/le-train.png'
 import park from '../../assets/image/park.png'
@@ -18,7 +17,7 @@ import chotto from '../../assets/image/chotto.png'
 import zuma from '../../assets/image/zuma.png'
 
 // ICON
-import arrow from '../../assets/icon/less-than-arrow.svg'
+import arrow from '../../assets/icon/icon-dropdown.svg'
 
 import './suppliers-dining.style.scss'
 
