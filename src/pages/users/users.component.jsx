@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react'
+import React, {useState} from 'react'
 
 // REACT TABLE
 import { useTable } from 'react-table'
@@ -22,21 +22,7 @@ import './users.style.scss'
 
 const Users = () => {
 
-    const columns = useMemo(() => COLUMNS, [])
-    const data = useMemo(() => USERS_DATA, [])
-
-    const tableInstance = useTable({
-        columns,
-        data
-    })
-
-    const { 
-        getTableProps,
-        getTableBodyProps,
-        headerGroups,
-        rows,
-        prepareRow
-    } = tableInstance
+    const [users, setUsers] = useState(USERS_DATA)
 
     return (
     <div className="users">
@@ -68,37 +54,35 @@ const Users = () => {
                 </div>
             </div>
             <div className='list-body'>                
-                <table {...getTableProps}>
+                <table>
                     <thead>
-                        {
-                            headerGroups.map((headerGroup) => (
-                                <tr {...headerGroup.getHeaderGroupProps()}>
-                                    {
-                                        headerGroup.headers.map((column) => (
-                                            <th {...column.getHeaderProps()}>
-                                                {column.render('Header')}
-                                            </th>                                            
-                                        ))
-                                    }
-                                </tr>
-                            ))
-                        }                        
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Age</th>
+                            <th>Date Joined</th>
+                            <th>Email</th>
+                            <th></th>
+                        </tr>
                     </thead>
-                    <tbody {...getTableBodyProps}>
+                    <tbody>
                         {
-                            rows.map((row) => {
-                                prepareRow(row)
-                                return (
-                                    <tr {...row.getRowProps()}>
-                                        {
-                                            row.cells.map((cell) => (
-                                                <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
-                                            ))
-                                        }                                                                        
-                                    </tr>
-                                )
-                            })
-                        }                            
+                            USERS_DATA.map(user => (
+                            <tr className='tbody-row'>
+                                <td className='image-td'><img src={user.image} alt="user image" className='img'/></td>
+                                <td>{user.name}</td>
+                                <td>{user.gender}</td>
+                                <td>{user.age}</td>
+                                <td>{user.joinDate}</td>
+                                <td>{user.email}</td>
+                                <td>
+                                    <button >edit</button>
+                                    <button>X</button>
+                                </td>
+                            </tr>
+                            ))
+                        }
                     </tbody>
                 </table>
             </div>
