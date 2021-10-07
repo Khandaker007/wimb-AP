@@ -25,6 +25,7 @@ import Login from "./pages/login/login.component";
 import ConnectForm from "./pages/new-connect-form/connect-form.component";
 import RestaurantForm from "./pages/restaurant-form/restaurant-form.component";
 import Report from "./pages/report/report.component";
+// import EventCalendar from "./components/calendar-events/calendar-events.component";
 
 import "./App.scss";
 
@@ -125,9 +126,10 @@ function App() {
           <Route path="/connect-form" component={ConnectForm} />
           <Route path="/restaurant-form" component={RestaurantForm} />
           <Route path="/report" component={Report} />
+          {/* <Route path="/event-calendar" component={EventCalendar} /> */}
         </Switch>
       </div>
-    </div>
+    </div>    
   );
 }
 
