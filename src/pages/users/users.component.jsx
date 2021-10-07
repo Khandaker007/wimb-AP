@@ -1,4 +1,9 @@
-import React from 'react'
+import React, {useMemo} from 'react'
+
+// REACT TABLE
+import { useTable } from 'react-table'
+import { USERS_DATA } from './users_data'
+import { COLUMNS } from './columns'
 
 // ICON
 import star2 from '../../assets/icon/icon-star.svg'
@@ -15,7 +20,25 @@ import userPic from '../../assets/image/jone.png'
 
 import './users.style.scss'
 
-const Users = () => (
+const Users = () => {
+
+    const columns = useMemo(() => COLUMNS, [])
+    const data = useMemo(() => USERS_DATA, [])
+
+    const tableInstance = useTable({
+        columns,
+        data
+    })
+
+    const { 
+        getTableProps,
+        getTableBodyProps,
+        headerGroups,
+        rows,
+        prepareRow
+    } = tableInstance
+
+    return (
     <div className="users">
         <div className="users__summery">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/> Duis sed vehicula erat, nec malesuada lorem rutrum.<br/>Ut arcu quis commodo. Donec finibus metus vel metus<br/>Lorem ipsum dolor sit amet, consectetur.</p>
@@ -44,18 +67,40 @@ const Users = () => (
                     </select>
                 </div>
             </div>
-            <div className='list-body'>
-                <div className="list-body__header">
-                    <p>Name</p>
-                    <p>Gender</p>
-                    <p>Age</p>
-                    <p>Date Joined</p>
-                    <p>Email</p>
-                </div>
-                <User/>
-                <User/>
-                <User/>
-                <User/>
+            <div className='list-body'>                
+                <table {...getTableProps}>
+                    <thead>
+                        {
+                            headerGroups.map((headerGroup) => (
+                                <tr {...headerGroup.getHeaderGroupProps()}>
+                                    {
+                                        headerGroup.headers.map((column) => (
+                                            <th {...column.getHeaderProps()}>
+                                                {column.render('Header')}
+                                            </th>                                            
+                                        ))
+                                    }
+                                </tr>
+                            ))
+                        }                        
+                    </thead>
+                    <tbody {...getTableBodyProps}>
+                        {
+                            rows.map((row) => {
+                                prepareRow(row)
+                                return (
+                                    <tr {...row.getRowProps()}>
+                                        {
+                                            row.cells.map((cell) => (
+                                                <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                                            ))
+                                        }                                                                        
+                                    </tr>
+                                )
+                            })
+                        }                            
+                    </tbody>
+                </table>
             </div>
         </div>
         <div className="users__info">
@@ -104,6 +149,6 @@ const Users = () => (
             </div>
         </div>
     </div>
-)
+)}
 
 export default Users;
