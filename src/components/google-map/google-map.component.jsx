@@ -1,29 +1,30 @@
-// import React from 'react';
+import React from "react";
+import GoogleMapReact from 'google-map-react';
 
-// import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
+import './google-map.style.scss';
 
-// import './google-map.style.scss';
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-// function Map() {
-//     return (
-//         <GoogleMap 
-//             defaultZoom={10} 
-//             defaultCenter={{ lat: 51.507351, lng: -0.127758 }}
-//         />
-//     );
-// }
+export default function SimpleMap(){
+  const defaultProps = {
+    center: {
+      lat: 51.507351,
+      lng: -0.127758
+    },
+    zoom: 10
+  };
 
-// const WrappedMap = withScriptjs(withGoogleMap(Map));
-
-// const GoogleMapComponent = () => (
-//     <div className="google-map-component">
-//         <WrappedMap 
-//             googleMapURL={'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places}'}
-//             loadingElement={<div style={{height: "100%"}} />}
-//             containerElement={<div style={{height: "100%"}} />}
-//             mapElement={<div style={{height: "100%"}} />} 
-//         />
-//     </div>
-// )
-
-// export default GoogleMapComponent;
+  return (
+    // Important! Always set the container height explicitly
+    <div style={{ height: '100%', width: '100%' }}>
+      <GoogleMapReact
+        bootstrapURLKeys={{ key: "AIzaSyAk3fkU6PFHBSbd-7SrSyKgMTC0J6jIhUQ" }}
+        defaultCenter={defaultProps.center}
+        defaultZoom={defaultProps.zoom}
+        yesIWantToUseGoogleMapApiInternals
+        onGoogleApiLoaded={({ map, maps }) => handleApiLoaded(map, maps)}
+      >
+     </GoogleMapReact>
+    </div>
+  );
+}
