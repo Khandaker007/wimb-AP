@@ -1,15 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
+
+import { USERS_DATA } from './lifestyle_managers_data'
 
 import "./lifestyle-managers.style.scss";
 
 // COPONENETS
-import UserRequestItem from "../../components/user-request-item/user-request-item.component";
+// import UserRequestItem from "../../components/user-request-item/user-request-item.component";
 import CustomCalendar from '../../components/calendar/calendar.component';
 
 // ICONS
 import dropdown from "../../assets/icon/icon-dropdown-green.svg";
 
-const LifeStyleManagers = () => (
+const LifeStyleManagers = () => {
+    const [users, setUsers] = useState(USERS_DATA)
+    return (
     <div className="lifestyle-managers">
         <div className="lifestyle-managers-summary card">
             <div className="summary-content">
@@ -45,7 +49,7 @@ const LifeStyleManagers = () => (
                 Sort by: Most Recent
                 <img src={dropdown} alt="dropdown-green-icon" className="dropdown-green-icon" />
             </div>
-            <div className="lifestyle-managers-body-content">
+            {/* <div className="lifestyle-managers-body-content">
                 <div className="lifestyle-managers-body-title">
                     <div>&nbsp;</div>
                     <div className="name">
@@ -62,7 +66,33 @@ const LifeStyleManagers = () => (
                 <UserRequestItem />
                 <UserRequestItem />
                 <UserRequestItem />
-            </div>
+            </div> */}
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Active Requests</th>
+                        <th>Completed Requests (last 30 days)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        USERS_DATA.map(user => (
+                        <tr className='tbody-row'>
+                            <td className='image-td'><img src={user.image} alt="user image" className='img'/></td>
+                            <td>{user.name}</td>
+                            <td className='active-requests'>{user.activeRequests}</td>
+                            <td className='completed-requests'>{user.completedRequests}</td>
+                            <td>
+                                <button >edit</button>
+                                <button>X</button>
+                            </td>
+                        </tr>
+                        ))
+                    }
+                </tbody>
+            </table>
         </div>
         <div className="users-count card">
             <div className="users-count-content">
@@ -85,6 +115,6 @@ const LifeStyleManagers = () => (
             </div>
         </div>
     </div>
-)
+)}
 
 export default LifeStyleManagers;
