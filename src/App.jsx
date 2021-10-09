@@ -101,8 +101,10 @@ function App() {
       <div className="admin-panel__sidebar">
         <MainSidebar />
       </div>
-      <div className="admin-panel__body">
+      <div className="admin-panel__header">
         <Header title={title}/>
+      </div>
+      <div className="admin-panel__body">
         <Switch>
           <Route exact path="/" component={Dashboard} />
           <Route path="/user" component={Users} />

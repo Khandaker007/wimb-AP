@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../../assets/logo/wimb-logo.svg";
@@ -22,14 +22,27 @@ import arrow from '../../assets/icon/icon-arrow-right.svg'
 
 import "./main-sidebar.style.scss";
 
-const MainSidebar = () => (
+const MainSidebar = () => {
+
+  const [ active, setActive] = useState(false)
+
+  const handleNav = () => {
+    setActive(!active)
+  }
+  
+  return (
+
+  //funtion{
+
+  //}
+
   <div className="sidebar">
-    <div className="sidebar__header">
+    {/* <div className="sidebar__header">
       <Link to='/'>
         <img src={logo} alt="logo" className="logo" />
       </Link>
-      <span className="sidebar__nav-icon">&nbsp;</span>
-    </div>
+      <span onClick={handleNav} className={ active ? "sidebar__nav-icon" : "sidebar__nav-icon active"}>&nbsp;</span>
+    </div> */}
     <nav className="sidebar__nav">
       <ul className="side-nav">
         <li className="side-nav__item">
@@ -149,6 +162,6 @@ const MainSidebar = () => (
       </ul>
     </nav>
   </div>
-);
+)};
 
 export default MainSidebar;

@@ -28,19 +28,23 @@ const Users = () => {
     return (
     <div className="users">
         <div className="users__summery">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/> Duis sed vehicula erat, nec malesuada lorem rutrum.<br/>Ut arcu quis commodo. Donec finibus metus vel metus<br/>Lorem ipsum dolor sit amet, consectetur.</p>
-            <div className="user-data">
-                <p>Total Users</p>
-                <span className='user-number'>142,117</span>
+            <div className="users__summery--description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed vehicula erat, nec malesuada lorem rutrum. Ut arcu quis commodo. Donec finibus metus vel metus Lorem ipsum dolor sit amet, consectetur.</p>
             </div>
-            <div className="user-data">
-                <p>New Users This Month</p>
-                <span className='user-number'>11,815</span>
-            </div>
-            <div className="user-data">
-                <p>New Users</p>
-                <span className='user-number'>11.8K</span>
-                <p><span className='increment'>+22.4%</span>mo/mo</p>
+            <div className="users__summery--data">
+                <div className="user-data">
+                    <p>Total Users</p>
+                    <span className='user-number'>142,117</span>
+                </div>
+                <div className="user-data">
+                    <p>New Users This Month</p>
+                    <span className='user-number'>11,815</span>
+                </div>
+                <div className="user-data">
+                    <p>New Users</p>
+                    <span className='user-number'>11.8K</span>
+                    <p><span className='increment'>+22.4%</span>mo/mo</p>
+                </div>
             </div>
         </div>
         <div className="users__list">
