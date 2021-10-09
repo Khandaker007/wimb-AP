@@ -13,7 +13,7 @@ import './header.style.scss'
 const Header = ({title}) => (
     <div className="header">
         <div className="header__nav">
-            <span className="nav-icon">&nbsp;</span>
+            <span className="nav-icon">&nbsp</span>
             <h1 className='header__heading'>{title}</h1>
         </div>
         <div className="header__status">

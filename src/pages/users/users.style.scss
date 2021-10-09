@@ -1,4 +1,5 @@
 @import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
 
 .users{
     display: grid;
@@ -6,12 +7,27 @@
     grid-template-columns: [lcol-start] 1fr [lcol-end scol-start] 25% [scol-start];
     grid-gap: 2rem;
 
+    @include response(phone){
+        display: grid;
+        grid-template-rows: repeat(3, [row-start] min-content [row-end]);
+        grid-template-columns: [col-start] 1fr [col-end];
+        grid-gap: 2rem;
+
+        padding: 0 1rem;
+    }
+
     &__summery{
         grid-column: lcol-start / lcol-end;
+        
+        @include response(phone){
+            grid-column: col-start / col-end;
+            grid-row: row-start 1 / row-end 1;
+            padding: 2rem 4rem;
+        }
+        
         background-color: $color-grey;
-
-        padding: 2rem;
         font-size: 1.2rem;
+        padding: 2rem;
 
         display: flex;
         justify-content: space-between;
@@ -30,8 +46,14 @@
     }
     &__list{
         grid-column: lcol-start / lcol-end;
+        
+        @include response(phone){
+            grid-column: col-start / col-end;
+            grid-row: row-start 2 / row-end 2;
+            padding: 2rem 4rem;
+        }
+        
         background-color: $color-grey;
-
         padding: 2rem;
 
         .list-header{
@@ -96,10 +118,15 @@
     &__info{
         grid-column: scol-start / scol-end;
         grid-row: row-start / row-end;
+
+        @include response(phone){
+            grid-column: col-start / col-end;
+            grid-row: row-start 3 / row-end 3;
+            padding: 2rem 4rem;
+        }
         
-        background-color: $color-grey;
         padding: 2rem;
-        // letter-spacing: .5px;
+        background-color: $color-grey;
 
         &--user{
             display: flex;

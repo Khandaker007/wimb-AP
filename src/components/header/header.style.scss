@@ -7,6 +7,10 @@
     justify-content: space-between;
     align-items: center;
 
+    @include response(phone){
+        padding: 0 1rem;
+    }
+
     &__nav{
         display: flex;
         align-items: center;
@@ -14,11 +18,14 @@
 
         .nav-icon{
             
-            @include response (tab-port){
-                display: inline-block;
-            }
-            @include response (tab-land){
+            @include response (desktop){
                 display: none;
+            }
+            @include response (tab-port){
+                display: inline;
+            }
+            @include response(phone){
+                display: inline;
             }
         }
     }
@@ -26,7 +33,7 @@
     &__heading{
         font-size: 3rem;
         font-weight: 300;
-        margin-left: 1rem;
+        // margin-left: 1rem;
     }
 
     &__status{
