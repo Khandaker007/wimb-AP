@@ -9,6 +9,7 @@ import { COLUMNS } from './columns'
 import star2 from '../../assets/icon/icon-star.svg'
 import money from '../../assets/icon/icon-money.svg'
 import chair from '../../assets/icon/icon-chair.svg'
+// import * as FaIcons from "react-icons/fa";
 
 // COMPONENT
 import User from '../../components/user/user.component'
@@ -78,7 +79,7 @@ const Users = () => {
                                 <td>{user.email}</td>
                                 <td>
                                     <button >edit</button>
-                                    <button>X</button>
+                                    {/* <button className='delete-btn'><FaIcons.MdDeleteForever/></button> */}
                                 </td>
                             </tr>
                             ))

@@ -34,17 +34,33 @@ const MainSidebar = () => (
       <ul className="side-nav">
         <li className="side-nav__item">
           <Link to='/' className="side-nav__link">
-            <img src={dashboard} alt="" className="side-nav__icon" />
+            <span>
+              <img src={dashboard} alt="" className="side-nav__icon" />            
+            </span>
             <span>Dashboard</span>
-            <img src={arrow} alt="" className="arrow" />
+            <span>
+              <img src={arrow} alt="" className="arrow" />
+            </span>
           </Link>
         </li>
         <li className="side-nav__item">
           <Link to='/user' className="side-nav__link">
             <img src={users} alt="" className="side-nav__icon" />
-            <span>Users</span>
+            Users
             <img src={arrow} alt="" className="arrow" />
           </Link>
+          <ul className='side-nav__sub-nav'>
+            <li className='side-nav__sub-item'>
+              <Link to='#' className='side-nav__sub-link'>
+                user 1
+              </Link>
+            </li>
+            <li className='side-nav__sub-item'>
+              <Link to='#' className='side-nav__sub-link'>
+                user 2
+              </Link>
+            </li>
+          </ul>
         </li>
         <li className="side-nav__item">
           <Link to='/lifestyle-managers' className="side-nav__link">

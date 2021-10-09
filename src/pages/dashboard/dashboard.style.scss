@@ -1,4 +1,5 @@
 @import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
 
 
 .dashboard{
@@ -7,9 +8,21 @@
     grid-template-columns: [full-start] repeat(2, [col-start] 1fr [col-end]) [last-col-start] 25% [last-col-end full-end];
     grid-gap: 2rem;
 
+    @include response (phone){
+        display: grid;
+        grid-template-rows: repeat(4, [row-start] min-content [row-end]);
+        grid-template-columns: [col-start] 1fr [col-end];
+        grid-gap: 2rem;
+    }
+
     &__schedule{            
         grid-column: col-start 1 / col-end 1;
         grid-row: 1 / -1;
+
+        @include response(phone){
+            grid-column: col-start / col-end;
+            grid-row: row-start 1 / row-end 1;
+        }
 
         background-color:$color-primary;
         padding: 2rem;
@@ -56,6 +69,11 @@
         grid-column: col-start 2 / col-end 2;
         grid-row: 1 / -1;
 
+        @include response(phone){
+            grid-column: col-start / col-end;
+            grid-row: row-start 2 / row-end 2;
+        }
+
         background-color: $color-grey;
         padding: 2rem;
         overflow: auto;
@@ -63,6 +81,11 @@
     &__calendar{        
         grid-column: last-col-start / full-end;
         grid-row: 1 / row-end 1;
+
+        @include response(phone){
+            grid-column: col-start / col-end;
+            grid-row: row-start 3 / row-end 3;
+        }
         
         background-color: $color-grey;
 
@@ -73,6 +96,11 @@
     &__info{
         grid-column: last-col-start / full-end;
         grid-row: row-start 2 / row-end 2;
+
+        @include response(phone){
+            grid-column: col-start / col-end;
+            grid-row: row-start 4 / row-end 4;
+        }
 
         background-color: $color-grey;
         padding: 2rem;
