@@ -36,7 +36,7 @@ function App() {
   const [title, setTitle] = useState('Dashboard')
   const [active, setActive] = useState(false)
 
-  const hangleSidebar = () => {
+  const handleSidebar = () => {
     setActive(!active)
 
   }
@@ -109,7 +109,7 @@ function App() {
         <MainSidebar active={active}/>
       </div>
       <div className="admin-panel__header">
-        <Header title={title} sidebarStatus={hangleSidebar}/>
+        <Header title={title} sidebarStatus={handleSidebar}/>
       </div>
       <div className="admin-panel__body">
         <Switch>
