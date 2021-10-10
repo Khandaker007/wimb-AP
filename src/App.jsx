@@ -32,7 +32,14 @@ import "./App.scss";
 function App() {
 
   const location = useLocation()
+
   const [title, setTitle] = useState('Dashboard')
+  const [active, setActive] = useState(false)
+
+  const hangleSidebar = () => {
+    setActive(!active)
+
+  }
 
   useEffect(() => {
     
@@ -99,10 +106,10 @@ function App() {
   return (
     <div className="admin-panel">
       <div className="admin-panel__sidebar">
-        <MainSidebar />
+        <MainSidebar active={active}/>
       </div>
       <div className="admin-panel__header">
-        <Header title={title}/>
+        <Header title={title} sidebarStatus={hangleSidebar}/>
       </div>
       <div className="admin-panel__body">
         <Switch>

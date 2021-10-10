@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import search from '../../assets/icon/icon-search.svg'
 import mail from '../../assets/icon/icon-mail.svg'
 import notification from '../../assets/icon/icon-notification.svg'
+import menu from '../../assets/icon/icon-feather-menu.svg'
 
 //LOGO
 import logo from '../../assets/logo/wimb-logo.svg'
@@ -14,15 +15,12 @@ import user from '../../assets/image/Alex.jpg'
 
 import './header.style.scss'
 
-const Header = ({title}) => (
+const Header = ({title, sidebarStatus}) => (
     <div className="header">
         <div className="header__nav">
-            <div className="sidebar__header">
-                <Link to='/'>
-                    <img src={logo} alt="logo" className="logo" />
-                </Link>
-                <span className='sidebar__nav-icon'>&nbsp;</span>
-            </div>
+            <button onClick={sidebarStatus} className='nav-btn'>
+                <img src={menu} alt="menu icon" className='menu-icon'/>
+            </button>
             <h1 className='header__heading'>{title}</h1>
         </div>
         <div className="header__status">

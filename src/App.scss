@@ -32,13 +32,13 @@ body{
 
     display: grid;
     grid-template-columns: [full-start sidebar-start] min-content [sidebar-end body-start] 1fr [body-end full-end];
-    grid-template-rows: repeat(2, [row-start] min-content [row-end]);
+    grid-template-rows: [header-start] 6rem [header-end row-start] min-content [row-end];
     grid-gap: 3rem;
 
     @include response (tab-port){
         display: grid;
         grid-template-columns: [full-start] 1fr [full-end];
-        grid-template-rows: repeat(2, [row-start] min-content [row-end]);
+        grid-template-rows: [header-start] 6rem [header-end row-start] min-content [row-end];
         grid-gap: 3rem;
     }
 
@@ -47,14 +47,21 @@ body{
     }
 
     &__header{
-        grid-column: full-start / full-end;
-        grid-row: row-start 1 / row-end 1;
+        grid-column: body-start / body-end;
+        grid-row: header-start / header-end;
+
+        @include response(tab-port){
+            grid-column: full-start / full-end;
+            grid-row: header-start / header-end;
+        }
 
     }
 
     &__sidebar{
         grid-column: sidebar-start / sidebar-end;
-        grid-row: row-start 2 / row-end 2;
+        grid-row: header-start / -1;
+
+        // background-color: coral;
 
         @include response (tab-port){
             display: none;
@@ -62,7 +69,7 @@ body{
     }
     &__body{
         grid-column: body-start / body-end;
-        grid-row: row-start 2 / row-start 2;
+        grid-row: row-start / -1;
 
         @include response(tab-port){
             grid-column: full-start / full-end;
