@@ -66,7 +66,7 @@ const MainSidebar = ({active}) => (
           <Link to='/lifestyle-managers' className="side-nav__link">
             <img src={star} alt="" className="side-nav__icon" />
             <div className={active ? "link-content" : "link-content display-none"}>
-              Lifestyle Managers
+              <span className='text'>Lifestyle Managers</span>
               <img src={arrow} alt="" className="arrow" />
             </div>
           </Link>
@@ -75,7 +75,7 @@ const MainSidebar = ({active}) => (
           <Link to='' className="side-nav__link">
             <img src={onboarding} alt="" className="side-nav__icon" />
             <div className={active ? "link-content" : "link-content display-none"}>
-              Onboarding
+              <span className='text'>Onboarding</span>
               <img src={arrow} alt="" className="arrow" />
             </div>
           </Link>
