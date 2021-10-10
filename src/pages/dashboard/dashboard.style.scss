@@ -177,13 +177,20 @@
                 width: 2.151rem;
             }
         }
-        .qualification{
+        .details{
             display: flex;
             gap: 2.5rem;
 
             margin-top: 5rem;
             font-size: 1.2rem;
             line-height: 2.6;
+
+            &__infos{
+
+                .info{
+                    white-space: nowrap;
+                }
+            }
         }
     }
 

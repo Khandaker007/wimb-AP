@@ -84,7 +84,9 @@ const MainSidebar = ({active}) => (
           <Link to='/suppliers-categories' className="side-nav__link">
             <img src={suppliers} alt="" className="side-nav__icon" />
             <div className={active ? "link-content" : "link-content display-none"}>
-              Suppliers
+              <span className='text'>
+                Suppliers
+              </span>
               <img src={arrow} alt="" className="arrow" />
             </div>
           </Link>
@@ -93,7 +95,9 @@ const MainSidebar = ({active}) => (
           <Link to='' className="side-nav__link">
             <img src={categorie} alt="" className="side-nav__icon" />
             <div className={active ? "link-content" : "link-content display-none"}>
-              Categories
+              <span className='text'>
+                Categories
+              </span>
               <img src={arrow} alt="" className="arrow" />
             </div>
           </Link>
@@ -102,7 +106,9 @@ const MainSidebar = ({active}) => (
           <Link to='/analytics' className="side-nav__link">
             <img src={analytic} alt="" className="side-nav__icon" />
             <div className={active ? "link-content" : "link-content display-none"}>
-              Analytics
+              <span className='text'>
+                Analytics
+              </span>
               <img src={arrow} alt="" className="arrow" />
             </div>
           </Link>
@@ -111,7 +117,9 @@ const MainSidebar = ({active}) => (
           <Link to='' className="side-nav__link">
             <img src={report} alt="" className="side-nav__icon" />
             <div className={active ? "link-content" : "link-content display-none"}>
-              Reports
+              <span className='text'>
+                Reports
+              </span>
               <img src={arrow} alt="" className="arrow" />
             </div>
           </Link>
@@ -120,7 +128,9 @@ const MainSidebar = ({active}) => (
           <Link to='/requests' className="side-nav__link">
             <img src={request} alt="" className="side-nav__icon" />
             <div className={active ? "link-content" : "link-content display-none"}>
-              Requests
+              <span className='text'>
+                Requests
+              </span>
               <img src={arrow} alt="" className="arrow" />
             </div>
           </Link>
@@ -129,7 +139,9 @@ const MainSidebar = ({active}) => (
           <Link to='/perks-or-benefits' className="side-nav__link">
             <img src={wplus} alt="" className="side-nav__icon" />
             <div className={active ? "link-content" : "link-content display-none"}>
-              Perks/Benefits
+              <span className='text'>
+                Perks/Benefits
+              </span>
               <img src={arrow} alt="" className="arrow" />
             </div>
           </Link>
@@ -138,7 +150,9 @@ const MainSidebar = ({active}) => (
           <Link to='/events' className="side-nav__link">
             <img src={event} alt="" className="side-nav__icon" />
             <div className={active ? "link-content" : "link-content display-none"}>
-              Events
+              <span className='text'>
+                Events
+              </span>
               <img src={arrow} alt="" className="arrow" />
             </div>
           </Link>
@@ -147,7 +161,9 @@ const MainSidebar = ({active}) => (
           <Link to='/connect' className="side-nav__link">
             <img src={connect} alt="" className="side-nav__icon" />
             <div className={active ? "link-content" : "link-content display-none"}>
-              Connect
+              <span className='text'>
+                Connect
+              </span>
               <img src={arrow} alt="" className="arrow" />
             </div>
           </Link>
@@ -156,7 +172,9 @@ const MainSidebar = ({active}) => (
           <Link to='/geo-location-map-region' className="side-nav__link">
             <img src={navigation} alt="" className="side-nav__icon" />
             <div className={active ? "link-content" : "link-content display-none"}>
-              Geo Location Map
+              <span className='text'>
+                Geo Location Map
+              </span>
               <img src={arrow} alt="" className="arrow" />
             </div>
           </Link>
@@ -165,7 +183,9 @@ const MainSidebar = ({active}) => (
           <Link to='' className="side-nav__link">
             <img src={system} alt="" className="side-nav__icon" />
             <div className={active ? "link-content" : "link-content display-none"}>
-              System
+              <span className='text'>
+                System
+              </span>
               <img src={arrow} alt="" className="arrow" />
             </div>
           </Link>

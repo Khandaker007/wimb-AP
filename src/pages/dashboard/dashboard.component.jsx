@@ -93,16 +93,16 @@ const Dashboard = () => (
                     <img src={option} alt="option icon"/>
                 </button>
             </div>
-            <div className="qualification">
+            <div className="details">
                 <div>
                     <p>Company: </p>
                     <p>Joining Date: </p>
                     <p>Projects: </p>
                 </div>
-                <div>
-                    <p>WIMB Ltd.</p>
-                    <p>January 17th 2020</p>
-                    <p>22 Active, 1 Overdue</p>
+                <div className='details__infos'>
+                    <span className='info'>WIMB Ltd.</span>
+                    <span className='info'>January 17th 2020</span>
+                    <span className='info'>22 Active, 1 Overdue</span>
                 </div>
             </div>
         </div>
