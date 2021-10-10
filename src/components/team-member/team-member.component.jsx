@@ -10,24 +10,24 @@ import chat from '../../assets/icon/icon-chat.svg'
 
 import './team-member.style.scss'
 
-const TeamMember = () => (
+const TeamMember = ({name, position}) => (
     <div className="member">
         <div className='member__name-image'>
             <img src={member} alt="team member image" className='image' />
-            <p className='name'>Grace Kelly</p>
+            <p className='name'>{name}</p>
         </div>
         <div className='member__info'>
-            <p>marketing assitant</p>
+            <p className='position'>{position}</p>
             <div className="contact">
-                <a href="">
+                <button className='contact__btn'>
                     <img src={phone} alt="phone icon" className='icon phone-icon'/>
-                </a>
-                <a href="">
+                </button>
+                <button className='contact__btn'>
                     <img src={chat} alt="chat icon" className='icon chat-icon'/>
-                </a>
-                <a href="">
+                </button>
+                <button className='contact__btn'>
                     <img src={mail} alt="mail icon" className='icon mail-icon'/>
-                </a>
+                </button>
             </div>
         </div>
     </div>

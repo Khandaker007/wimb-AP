@@ -24,47 +24,47 @@ const Dashboard = () => (
         <div className="dashboard__schedule">
             <img src={wimb} alt="logo-decoration" className='decoration'/>
             <div className="dashboard__schedule--heading">
-                <h1 className='heading-1'>Hey Alexander!</h1>
+                <h1 className='heading-1'>Hey <span>Alexander</span>!</h1>
                 <p className='text'>Here's your schedule for today,</p>
             </div>
             <div className="dashboard__schedule--meeting">
-                <h2 className='heading-3 heading'>4 Meetings</h2>
+                <h2 className='heading-3 heading'><span>4</span> Meetings</h2>
                 <div className="meetings">
                     <div className="meetings__time">
-                        <p>9:30 - 10:30</p>
-                        <p>9:30 - 10:30</p>
-                        <p>9:30 - 10:30</p>
-                        <p>9:30 - 10:30</p>
+                        <span>9:30 - 10:30</span>
+                        <span>9:30 - 10:30</span>
+                        <span>9:30 - 10:30</span>
+                        <span>9:30 - 10:30</span>
                     </div>
                     <div className="meetings__type">
-                        <p>StaffMeeting</p>
-                        <p>Marketing Strategy</p>
-                        <p>Brook Morris (Interview)</p>
-                        <p>Update Review</p>
+                        <span>StaffMeeting</span>
+                        <span>Marketing Strategy</span>
+                        <span>Brook Morris (Interview)</span>
+                        <span>Update Review</span>
                     </div>
                 </div>
             </div>
             <div className="dashboard__schedule--upcoming-deadline">
-                <h3 className='heading-3 heading'>2 Upcoming Deadlines</h3>
+                <h3 className='heading-3 heading'><span>2</span> Upcoming Deadlines</h3>
                 <div className="events">
                     <div className="event">
-                        <p>Summer Campaign</p>     
-                        <p>New User Boost</p>
+                        <span>Summer Campaign</span>     
+                        <span>New User Boost</span>
                     </div>
                     <div className="time">
-                        <p>26/06/20</p>
-                        <p>28/06/20</p>
+                        <span>26/06/20</span>
+                        <span>28/06/20</span>
                     </div>
                 </div>
             </div>
-            <h3 className='heading-3'>22 Active Project</h3>
+            <h3 className='heading-3'><span>22</span> Active Project</h3>
 
         </div>
         <div className="dashboard__team">
-            <h2 className='heading-4'>Team</h2>
-            <TeamMember/>
-            <TeamMember/>
-            <TeamMember/>
+            <h3 className='heading-3'>Team</h3>
+            <TeamMember name='Grace Kelly' position='Marketing Manager'/>
+            <TeamMember name='Ainsley Nelson' position='CEO'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
         </div>
         <div className="dashboard__calendar">
             <div className="calendar-area">
@@ -75,24 +75,23 @@ const Dashboard = () => (
             <div className='info'>
                 <img src={user} alt="" className='image'/>
                 <div className='identity'>
-                    <p>
-                        Alexandra Pratt <br /> Marketing Manager
-                    </p>
+                    <span className='identity__name'>Alexandra Pratt</span>
+                    <span className='identity__position'>Marketing Manager</span>
+                    <div className="contact">
+                        <a href="">
+                            <img src={phone} alt="phone icon" className='phone-icon'/>
+                        </a>
+                        <a href="">
+                            <img src={chat} alt="chat icon" className='chat-icon'/>
+                        </a>
+                        <a href="">
+                            <img src={mail} alt="mail icon" className='mail-icon'/>
+                        </a>
+                    </div>
                 </div>
-                <a href="">
-                <img src={option} alt="option icon"/>
-                </a>
-            </div>
-            <div className="contact">
-                <a href="">
-                    <img src={phone} alt="phone icon" className='phone-icon'/>
-                </a>
-                <a href="">
-                    <img src={chat} alt="chat icon" className='chat-icon'/>
-                </a>
-                <a href="">
-                    <img src={mail} alt="mail icon" className='mail-icon'/>
-                </a>
+                <button className='option-btn'>
+                    <img src={option} alt="option icon"/>
+                </button>
             </div>
             <div className="qualification">
                 <div>
