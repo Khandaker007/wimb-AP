@@ -25,9 +25,24 @@ const Header = ({title, sidebarStatus}) => (
         </div>
         <div className="header__status">
             <div className="header__status--notification">
-                <img src={search} alt="search-icon" className='icon icon-search' />
-                <img src={mail} alt="mail-icon" className='icon icon-mail' />
-                <img src={notification} alt="notification-icon" className='icon icon-notif' />
+                <div className="search-bar">
+                    <input type="text" className="search-bar__input" placeholder='Search..' aria-label='search'/>
+                    <button className="search-bar__submit" aria-label='submit search'>
+                        <img src={search} alt="search-icon" className='icon icon-search' />
+                    </button>
+                </div>
+                <div className="btn-container">
+                    <button className="notifi-btn">
+                        <img src={mail} alt="mail-icon" className='icon icon-mail' />
+                    </button>
+                    <span className='counter'>2</span>
+                </div>
+                <div className="btn-container">
+                    <button className="notifi-btn">
+                        <img src={notification} alt="notification-icon" className='icon icon-notifi' />
+                    </button>
+                    <span className='counter'>2</span>
+                </div>
             </div>
             <div className="header__status--profile">
                 <h3 className='name'>Alexandra Pratt</h3>

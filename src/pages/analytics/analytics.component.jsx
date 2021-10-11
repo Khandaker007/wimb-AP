@@ -92,9 +92,7 @@ const Analytics = () => (
             </div>
         </div>
         <div className="calendar">
-            <div className="calendar-area">
-                <CustomCalendar/>
-            </div>
+            <CustomCalendar/>
         </div>
         <div className="top-eatery">
             <div className="top-category">
