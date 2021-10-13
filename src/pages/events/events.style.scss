@@ -5,9 +5,22 @@
     display: grid;
     grid-template-columns: [main-start] 1fr [main-end calendar-start] 25% [calendar-end];
     grid-gap: 2rem;
+
+    @include response (phone){
+        display: grid;
+        grid-template-columns: [col-start] 1fr [col-end];
+        grid-template-rows: repeat(4, [row-start] min-content [row-end]);
+        grid-gap: 0;
+
+        padding: 0 1rem;
+    }
     
     &__main {
         grid-column: main-start / main-end;
+
+        @include response (phone){
+            margin-bottom: 1.0rem;
+        }
 
         padding: 2rem;
         background: $color-grey;
