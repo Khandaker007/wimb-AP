@@ -1,7 +1,7 @@
 @import '../../sass/variables.scss';
 @import "../../sass/mixins.scss";
 
-.geo-location-map-region {
+.geo-location-map-subregion {
     display: grid;
     grid-template-columns: [lcol-start] 1fr [lcol-end scol-start] 25% [scol-end];
     grid-gap: 2rem;

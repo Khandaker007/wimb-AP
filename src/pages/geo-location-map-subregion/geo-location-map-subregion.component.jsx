@@ -9,11 +9,11 @@ import Dropdown from '../../components/drop-down/drop-down.component';
 import LocationItem from '../../components/location-item/location-item.component';
 
 const GeoLocationMapRegion = () => (
-    <div className="geo-location-map-region">
-        <div className="geo-location-map-region__main">
+    <div className="geo-location-map-subregion">
+        <div className="geo-location-map-subregion__main">
             <GoogleMapComponent />
         </div>
-        <div className="geo-location-map-region__details">
+        <div className="geo-location-map-subregion__details">
             <div className="region">
                 <div className="city">
                     <p className="city-name">
