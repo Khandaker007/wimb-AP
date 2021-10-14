@@ -16,6 +16,7 @@ import privateCharterWindow from '../../assets/image/connect-clive-jackson/priva
 import jetInterior from '../../assets/image/connect-clive-jackson/jet-interior.png'
 
 import './connect-clive-jackson.style.scss'
+import '../../sass/typography.scss'
 
 const ConnectCliveJackson = () => (
     <div className="connect-clive-jackson">
@@ -35,45 +36,41 @@ const ConnectCliveJackson = () => (
                 <button className='btn-done'>Done</button>
             </div>
             <div className="connect-clive-jackson__main--content">
-                <div className="restaurant-info">
-                    <div className="tags-wrapper">
-                        <div className="tag">
-                            <p className="tag-item">Cooking Class</p>
-                            <p className="tag-item">PrivateJet</p>
-                            <p className="tag-item">London</p>
-                            <ButtonModify buttonName='Add/Remove'/>
+                <div className="tags-wrapper">
+                    <p className="tag-item">Cooking Class</p>
+                    <p className="tag-item">PrivateJet</p>
+                    <p className="tag-item">London</p>
+                    <ButtonModify buttonName='Add/Remove'/>
+                </div>
+                <div className="connect-content-wrapper">
+                    <div className="connect-content">
+                        <p>
+                            A fantastic inspirational talk from none 
+                            other than Victor CEO, Clive Jackson. Hear 
+                            him talk through the moves he’s making to 
+                            bring Private Travel up to and beyond 
+                            sustainability standards.
+                        </p>
+                        <ButtonModify buttonName='Edit' marginBottom/>
+
+                        <p>Cost per person: <span>£150</span></p>
+                        <ButtonModify buttonName='Edit' inline/>
+
+                        <div className="group-btn">
+                            <button className='btn btn-perk'>
+                                {/* <img src={parkerBenefit} alt="icon" /> */}
+                                Perks
+                            </button>
+                            <button className='btn'>Service Level Agreement</button>
                         </div>
                     </div>
-                    <div className="connect-content-wrapper">
-                        <div className="connect-content">
-                            <p>
-                                A fantastic inspirational talk from none 
-                                other than Victor CEO, Clive Jackson. Hear 
-                                him talk through the moves he’s making to 
-                                bring Private Travel up to and beyond 
-                                sustainability standards.
-                            </p>
-                            <ButtonModify buttonName='Edit' marginBottom/>
-
-                            <p>Cost per person: <span>£150</span></p>
-                            <ButtonModify buttonName='Edit' inline/>
-
-                            <div className="group-btn">
-                                <button className='btn btn-perk'>
-                                    {/* <img src={parkerBenefit} alt="icon" /> */}
-                                    Perks
-                                </button>
-                                <button className='btn'>Service Level Agreement</button>
-                            </div>
-                        </div>
-                        <div className="connect-date-time">
-                            <span className="connect-date">
-                                Wed 24th June
-                            </span>
-                            <span className="connect-time">
-                                20:00
-                            </span>
-                        </div>
+                    <div className="connect-date-time">
+                        <span className="connect-date prevent-line-break">
+                            Wed 24th June
+                        </span>
+                        <span className="connect-time prevent-line-break">
+                            20:00
+                        </span>
                     </div>
                 </div>
             </div>
@@ -93,7 +90,7 @@ const ConnectCliveJackson = () => (
                 </div>
             </div>
             <div className="connect-clive-jackson__main--reservations">
-                <h3 className='heading-3'>Reservations</h3>
+                <h3 className='heading-3 mb-1'>Reservations</h3>
                 <span className="reservation-no">1432</span>
                 <p className="reservation-info">
                     reserved attendees for virtual lecture

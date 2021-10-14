@@ -83,65 +83,57 @@
 
         &--content{
             padding: 1rem 2rem;
+            font-size: 1.2rem;
 
-            .restaurant-info{
-                // background-color: orange;
-                font-size: 1.2rem;
+            .tags-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
 
-                .tags-wrapper {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-gap: 3rem;
+                color: $color-primary;
+                margin-bottom: 3rem;
 
-                    .tag {
-                        color: $color-primary;
-                        margin-bottom: 3rem;
-
-                        display: grid;
-                        grid-template-columns: repeat(4, min-content);
-                        grid-gap: 1rem;
-
-                        .tag-item {
-                            border: 1px solid $color-primary;
-                            padding: 0 0.75rem;
-                            white-space: nowrap;
-                        }
-                    }
-                }
-
-                .connect-content-wrapper {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-gap: 3rem;
-                    // background-color: yellow;
-                    
-                    .connect-content {
-                        .group-btn{
-                            margin-top: 3rem;
-                            .btn {
-                                color: $color-white;
-                                background-color: $color-primary;
-                                text-decoration: none;
-                                border: none;
-                                padding: .3rem .7rem;
-    
-                                &:not(:last-child){
-                                    margin-right: 1rem;
-                                }
-                            }
-                        }
-                    }
-        
-                    .connect-date-time {
-                        font-size: 1.5rem;
-                        text-align: right;
-                        // background: indigo;
-                        display: flex;
-                        flex-direction: column;
-                    }
+                .tag-item {
+                    border: 1px solid $color-primary;
+                    padding: 0 0.75rem;
+                    white-space: nowrap;
                 }
             }
 
+            .connect-content-wrapper {
+                display: grid;
+                grid-template-columns: [content-start] 1fr [content-end date-start] min-content [date-end];
+                grid-gap: 3rem;                    
+                .connect-content {
+                    grid-column: content-start / content-end;
+
+                    .group-btn{
+                        margin-top: 3rem;
+                        .btn {
+                            color: $color-white;
+                            background-color: $color-primary;
+                            text-decoration: none;
+                            border: none;
+                            padding: .3rem .7rem;
+
+                            &:not(:last-child){
+                                margin-right: 1rem;
+                            }
+                        }
+                    }
+                }        
+                .connect-date-time {
+                    grid-column: date-start / date-end;
+
+                    font-size: 1.5rem;
+                    text-align: right;
+                    display: flex;
+                    flex-direction: column;
+                }
+                .prevent-line-break{
+                    white-space: nowrap;
+                }
+            }
         }
         &--image-upload{
             padding: 1rem 2rem;
@@ -180,17 +172,14 @@
         }
         &--reservations{
             padding: 1rem 2rem;
-            
-            .heading-3 {
-                margin-bottom: 1.0rem;
-            }
+
             .reservation-no {
                 font-size: 2.0rem;
                 color: $color-primary;
             }
 
             .reservation-info {
-                font-size: 1.2rem;
+                font-size: 1.3rem;
             }
             
         }
