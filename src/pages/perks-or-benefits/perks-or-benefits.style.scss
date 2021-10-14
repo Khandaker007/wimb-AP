@@ -44,6 +44,14 @@
 
         background: $color-grey;
         padding: 2rem;
+
+        .calendar-area{
+            @include response(phone){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
     }
 
 }

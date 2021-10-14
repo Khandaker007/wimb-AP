@@ -41,9 +41,17 @@
     }
     &__calendar{
         grid-column: calendar-start / calendar-end;
-
+        
         background: $color-grey;
         padding: 2rem;
+
+        &--area{
+            @include response(phone){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
     }
 
 }

@@ -25,7 +25,7 @@ const Events = () => (
             </div>
         </div>
         <div className="events__calendar">
-            <div className="calendar-component">
+            <div className="events__calendar--area">
                 <CustomCalendar/>
             </div>
         </div>
