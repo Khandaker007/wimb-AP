@@ -1,4 +1,5 @@
 @import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
 
 .inside-sidebar{
 
@@ -6,6 +7,12 @@
         margin-bottom: 3rem;
     }
     .side-nav{
+
+        @include response(phone){
+            display: flex;
+            gap: 1rem;
+            justify-content: space-between;
+        }
 
         &__item{
             list-style-type: none;
