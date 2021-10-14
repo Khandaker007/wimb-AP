@@ -23,6 +23,10 @@
                 list-style-type: none;
                 position: static;
             }
+
+            .display-none{
+                display: none;
+            }
             
             &__icon{
                 height: 2.5rem;
@@ -33,7 +37,8 @@
                 justify-content: center;
             }
             
-            &__link{
+            &__link,
+            &__sub-link{
                 color: $color-white;
                 text-decoration: none;
                 font-size: 1.4rem;
@@ -53,16 +58,12 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-
-                    transition: all .2s;
-
-
                 }
                 .text{
                     white-space: nowrap;
                 }
                 .display-none{
-                    opacity: 0;
+                    display: none;
                 }
 
                 .arrow{

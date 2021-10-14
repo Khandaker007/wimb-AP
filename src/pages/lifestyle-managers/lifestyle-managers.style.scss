@@ -12,6 +12,8 @@
     @include response(phone){
         grid-template-columns: [full-start] 1fr [full-end];
         grid-row: repeat(4, min-content);
+
+        padding: 0 1rem;
     }
 
     .card {

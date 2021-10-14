@@ -40,7 +40,9 @@ const SuppliersCategories = () => (
             <div className="suppliers-categories__categories--header">
                 <h3 className='heading-3'>Categories</h3>
                 <div className='group'>
-                    <SearchBox/>
+                    <div className="search-container">
+                        <SearchBox/>
+                    </div>
                     <button className='btn'>Add</button>
                     <button className='btn'>Manage</button>
                 </div>

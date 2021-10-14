@@ -45,6 +45,12 @@
         background: $color-grey;
         padding: 2rem;
 
+        @include response(phone){
+            display: flex;
+            justify-content: center;
+            align-items: center;        
+        }
+
     }
 
 }
