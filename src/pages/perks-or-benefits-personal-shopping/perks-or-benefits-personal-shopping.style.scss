@@ -81,65 +81,60 @@
 
         &--content{
             padding: 1rem 2rem;
+            font-size: 1.2rem;
 
-            .restaurant-info{
-                // background-color: orange;
-                font-size: 1.2rem;
+            .tags-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
 
-                .tags-wrapper {
+                .tag {
+                    color: $color-primary;
+                    margin-bottom: 3rem;
+
                     display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-gap: 3rem;
+                    grid-template-columns: repeat(4, min-content);
+                    grid-gap: 1rem;
 
-                    .tag {
-                        color: $color-primary;
-                        margin-bottom: 3rem;
-
-                        display: grid;
-                        grid-template-columns: repeat(4, min-content);
-                        grid-gap: 1rem;
-
-                        .tag-item {
-                            border: 1px solid $color-primary;
-                            padding: 0 0.75rem;
-                            white-space: nowrap;
-                        }
-                    }
-                }
-
-                .perks-or-benefits-content-wrapper {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-gap: 3rem;
-                    // background-color: yellow;
-                    
-                    .perks-or-benefits-content {
-                        .group-btn{
-                            margin-top: 3rem;
-                            .btn {
-                                color: $color-white;
-                                background-color: $color-primary;
-                                text-decoration: none;
-                                border: none;
-                                padding: .3rem .7rem;
-    
-                                &:not(:last-child){
-                                    margin-right: 1rem;
-                                }
-                            }
-                        }
-                    }
-        
-                    .perks-or-benefits-duration {
-                        font-size: 1.5rem;
-                        text-align: right;
-                        // background: indigo;
-                        display: flex;
-                        flex-direction: column;
+                    .tag-item {
+                        border: 1px solid $color-primary;
+                        padding: 0 0.75rem;
+                        white-space: nowrap;
                     }
                 }
             }
 
+            .perks-or-benefits-content-wrapper {
+                display: grid;
+                grid-template-columns: [content-start] 1fr [content-end date-start] min-content [date-end];
+                grid-gap: 3rem;
+                
+                .perks-or-benefits-content {
+                    grid-column: content-start / content-end;
+
+                    .group-btn{
+                        margin-top: 3rem;
+                        .btn {
+                            color: $color-white;
+                            background-color: $color-primary;
+                            text-decoration: none;
+                            border: none;
+                            padding: .3rem .7rem;
+
+                            &:not(:last-child){
+                                margin-right: 1rem;
+                            }
+                        }
+                    }
+                }
+    
+                .perks-or-benefits-duration {
+                    font-size: 1.5rem;
+                    text-align: right;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
         }
         &--image-upload{
             padding: 1rem 2rem;
@@ -172,7 +167,6 @@
                 }
                 .upload-btn:hover{
                     border: 2px solid $color-primary;
-                    // color: $color-primary;
                 }
             }
         }

@@ -38,46 +38,44 @@ const PerksOrBenefitsPersonalShopping = () => (
                 <button className='btn-done'>Done</button>
             </div>
             <div className="perks-or-benefits-personal-shopping__main--content">
-                <div className="restaurant-info">
-                    <div className="tags-wrapper">
-                        <div className="tag">
-                            <p className="tag-item">Cooking Class</p>
-                            <p className="tag-item">PrivateJet</p>
-                            <p className="tag-item">London</p>
-                            <ButtonModify buttonName='Add/Remove'/>
-                        </div>
-                    </div>
-                    <div className="perks-or-benefits-content-wrapper">
-                        <div className="perks-or-benefits-content">
-                            <p>
-                                Experience a personal shopping experience at 
-                                London’s world famous Selfridges with one of 
-                                the top stylists. WIMB members will enjoy 10% 
-                                off their purchase.
-                            </p>
-                            <ButtonModify buttonName='Edit' marginBottom/>
+              <div className="tags-wrapper">
+                  <div className="tag">
+                      <p className="tag-item">Cooking Class</p>
+                      <p className="tag-item">PrivateJet</p>
+                      <p className="tag-item">London</p>
+                      <ButtonModify buttonName='Add/Remove'/>
+                  </div>
+              </div>
+              <div className="perks-or-benefits-content-wrapper">
+                  <div className="perks-or-benefits-content">
+                      <p>
+                          Experience a personal shopping experience at 
+                          London’s world famous Selfridges with one of 
+                          the top stylists. WIMB members will enjoy 10% 
+                          off their purchase.
+                      </p>
+                      <ButtonModify buttonName='Edit' marginBottom/>
 
-                            <p>Morning, Afternoon and Evening sessions available.</p>
-                            <ButtonModify buttonName='Edit' inline/>
+                      <p>Morning, Afternoon and Evening sessions available.</p>
+                      <ButtonModify buttonName='Edit' inline/>
 
-                            <div className="group-btn">
-                                <button className='btn btn-perk'>
-                                    {/* <img src={parkerBenefit} alt="icon" /> */}
-                                    Perks
-                                </button>
-                                <button className='btn'>Service Level Agreement</button>
-                            </div>
-                        </div>
-                        <div className="perks-or-benefits-duration">
-                            <span className="perks-or-benefits-duration-start">
-                                June 1st -
-                            </span>
-                            <span className="perks-or-benefits-duration-end">
-                                December 1st
-                            </span>
-                        </div>
-                    </div>
-                </div>
+                      <div className="group-btn">
+                          <button className='btn btn-perk'>
+                              {/* <img src={parkerBenefit} alt="icon" /> */}
+                              Perks
+                          </button>
+                          <button className='btn'>Service Level Agreement</button>
+                      </div>
+                  </div>
+                  <div className="perks-or-benefits-duration">
+                      <span className="perks-or-benefits-duration-start">
+                          June 1st -
+                      </span>
+                      <span className="perks-or-benefits-duration-end">
+                          December 1st
+                      </span>
+                  </div>
+              </div>
             </div>
             <div className="perks-or-benefits-personal-shopping__main--image-upload">
                 <div className="image-group">
@@ -95,7 +93,7 @@ const PerksOrBenefitsPersonalShopping = () => (
                 </div>
             </div>
             <div className="perks-or-benefits-personal-shopping__main--reservations">
-                <h3 className='heading-3'>Reservations</h3>
+                <h3 className='heading-3 mb-1'>Reservations</h3>
                 <span className="reservation-no">749</span>
             </div>
         </div>
