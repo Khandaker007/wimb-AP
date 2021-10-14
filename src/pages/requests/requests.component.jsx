@@ -23,7 +23,7 @@ const Requests = () => (
                 <div className="search-area">
                     <SearchBox/>
                     <button className='edit-btn'>
-                        <img src={edit} alt="edit icon" />
+                        <img src={edit} alt="edit icon" className='edit-btn__icon' />
                     </button>
                 </div>
                 <div className="chatted-with">
