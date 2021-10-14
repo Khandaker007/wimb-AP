@@ -2,8 +2,11 @@
 @import "../../sass/mixins.scss";
 
 .geo-location-map {
-    background-color: $color-grey;
     font-size: 1.8rem;
     width: 100%;
     height: 100vh;
+
+    @include response(phone){
+        padding: 0 1rem;
+    }
 }
