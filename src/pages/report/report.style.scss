@@ -7,11 +7,27 @@
     grid-template-columns: [live-start] 1fr [live-end calendar-start] 25% [calendar-end];
     grid-gap: 2rem;
 
-    &--main {
+    @include response(phone){
+        display: grid;
+        grid-template-columns: [full-start] 1fr [full-end];
+        grid-template-rows: repeat(2, [row-start] min-content [row-end]);
+        grid-gap: 2rem;
+
+        padding: 0 1rem;
+    }
+
+    &__main {
+        grid-column: live-start / live-end;
+
+        @include response(phone){
+            grid-column: full-start / full-end;
+            grid-row: row-start 1 / row-end 1;
+        }
+
         background-color: $color-grey;
         padding: 2rem;
         
-        &__header {
+        &--header {
             @include horizontal-flex-space-between;
             margin-bottom: 2rem;
             .live {
@@ -19,7 +35,7 @@
             }
         }
 
-        &__body {
+        &--body {
             height: 50rem;
             // background-color: black;
             display: flex;
@@ -49,7 +65,22 @@
         }
     }
 
-    &--sidebar {
+    &__sidebar {
+        grid-column: calendar-start / calendar-end;
+
+        @include response(phone){
+            grid-column: full-start / full-end;
+            grid-row: row-start 2 / row-end 2;
+        }
+
+        &--calendar-area{
+            @include response(phone){
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
         background-color: $color-grey;
         padding: 2rem;
     }

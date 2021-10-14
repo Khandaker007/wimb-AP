@@ -133,7 +133,7 @@ const MainSidebar = ({active}) => {
             </Link>
           </li>
           <li className="side-nav__item">
-            <Link to='' className="side-nav__link">
+            <Link to='/report' className="side-nav__link">
               <img src={report} alt="" className="side-nav__icon" />
               <div className={active ? "link-content" : "link-content display-none"}>
                 <span className='text'>

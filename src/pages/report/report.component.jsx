@@ -8,12 +8,12 @@ import Calendar from '../../components/calendar/calendar.component';
 
 const Report = () => (
     <div className="report">
-        <div className="report--main">
-            <div className="report--main__header">
+        <div className="report__main">
+            <div className="report__main--header">
                 <p className="live">Live</p>
                 <SearchBox />
             </div>
-            <div className="report--main__body">
+            <div className="report__main--body">
                 <div className="live-reports">
                     <div className="report-block first-block">
                         &nbsp;
@@ -33,8 +33,10 @@ const Report = () => (
                 </div>
             </div>
         </div>
-        <div className="report--sidebar">
-            <Calendar />
+        <div className="report__sidebar">
+            <div className="report__sidebar--calendar-area">
+                <Calendar/>
+            </div>
         </div>
     </div>
 )
