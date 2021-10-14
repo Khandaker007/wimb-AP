@@ -6,6 +6,12 @@
 
     .nav{
         font-size: 1.3rem;
+
+        @include response(phone){
+            display: flex;
+            justify-content: space-between;
+        }
+
         &__item{
             list-style-type: none;
             &:not(:last-child){
@@ -14,6 +20,11 @@
 
             display: flex;
             justify-content: space-between;
+
+            @include response(phone){
+                display: flex;
+                gap: 2rem;
+            }
         }
         &__link{
             text-decoration: none;
