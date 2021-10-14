@@ -3,25 +3,46 @@
 
 .geo-location-map-subregion {
     display: grid;
-    grid-template-columns: [lcol-start] 1fr [lcol-end scol-start] 25% [scol-end];
+    grid-template-columns: [main-start] 1fr [main-end details-start] 25% [details-end];
     grid-gap: 2rem;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
+
+    @include response(phone){
+        display: grid;
+        grid-template-columns: [full-start] 1fr [full-end];
+        grid-template-rows: repeat(2, [row-start] min-content [row-end]);
+        grid-gap: 2rem;
+
+        padding: 0 1rem;
+    }
 
     &__main {
-        background-color: $color-grey;
+        grid-column: main-start / main-end;
+
+        @include response(phone){
+            grid-column: full-start / full-end;
+            grid-row: row-start 1 / row-end 1;
+
+            height: 100vh;
+        }
     }
 
     &__details {
+        grid-column: details-start / details-end;
+
+        @include response(phone){
+            grid-column: full-start / full-end;
+            grid-row: row-start 2 / row-end 2;
+        }
+
         background-color: $color-grey;
         padding: 2rem;
 
         .region {
             @include horizontal-flex-space-between;
             margin-bottom: 1.5rem;
-            // background-color: violet;
 
             .city {
-                // background-color: indigo;
 
                 .active-guests {
                     font-size: 1.4rem;
@@ -29,7 +50,6 @@
             }
 
             .time-period {
-                // background-color: indigo;
                 text-align: right;
                 .last-updated {
                     font-size: 1.4rem;
@@ -45,7 +65,6 @@
         }
 
         .most-popular-locations {
-            // background-color: violet;
 
             .attraction-type {
                 margin-top: 1.5rem;
