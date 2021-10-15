@@ -74,7 +74,7 @@ const Users = () => {
                     <tbody>
                         {
                             USERS_DATA.map(user => (
-                            <tr className='tbody-row'>
+                            <tr key={user.id} className='tbody-row'>
                                 <td className='image-td'><img src={user.image} alt="user image" className='img'/></td>
                                 <td>{user.name}</td>
                                 <td>{user.gender}</td>
