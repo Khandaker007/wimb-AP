@@ -44,10 +44,10 @@ const Header = ({title, sidebarStatus}) => (
                     <span className='counter'>2</span>
                 </div>
             </div>
-            <div className="header__status--profile">
-                <h3 className='name'>Alexandra Pratt</h3>
+            <button className="header__status--profile-btn">
+                <p className='name'>Alexandra Pratt</p>
                 <img src={user} alt="user-image" className='image'/>
-            </div>
+            </button>
         </div>
     </div>
 )

@@ -61,10 +61,19 @@ body{
         grid-column: sidebar-start / sidebar-end;
         grid-row: header-start / -1;
 
-        // background-color: coral;
+        background-color: $color-dark;
 
         @include response (tab-port){
-            display: none;
+            padding: 0 2rem;
+            position: absolute;
+            top: 11rem;
+            left: -6.4rem;
+            z-index: 1000;
+        }
+
+        @include response (phone){
+            top: 8.8rem;
+            left: -8.4rem;
         }
     }
     &__body{

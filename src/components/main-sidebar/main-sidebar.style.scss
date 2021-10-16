@@ -9,10 +9,18 @@
     &__header{
         .logo{
             width: 5rem;
+
+            @include response(tab-port){
+                display: none;
+            }
         }
     }
     &__nav{
         padding-top: 4rem;
+
+        @include response(tab-port){
+            padding-top: 2rem;
+        }
         .side-nav{
             
             &__item{
@@ -39,6 +47,10 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                @include response(tab-port){
+                    width: 3.5rem;
+                }
             }
             
             &__link,
@@ -82,11 +94,22 @@
                 }
             }
 
+            &__link{
+                @include response(tab-port){
+                    display: flex;
+                    gap: 5rem;
+                }
+            }
+
             &__sub-link{
                 color: $color-white;
                 text-decoration: none;
                 margin-left: 4.5rem;
                 border-bottom: 1px solid $color-primary;
+
+                @include response(tab-port){
+                    padding-left: 6.5rem;
+                }
 
             }
         }
