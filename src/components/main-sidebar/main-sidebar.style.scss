@@ -14,10 +14,6 @@
     &__nav{
         padding-top: 4rem;
         .side-nav{
-
-            &__sub-nav{
-                // transition: all .2s;
-            }
             
             &__item{
                 list-style-type: none;
@@ -26,6 +22,10 @@
             &__sub-item{
                 list-style-type: none;
                 position: static;
+
+                &:not(:last-child){
+                    margin-bottom: .5rem;
+                }
             }
 
             .display-none{
@@ -81,10 +81,12 @@
                     transform: rotate(90deg);
                 }
             }
+
             &__sub-link{
                 color: $color-white;
                 text-decoration: none;
                 margin-left: 4.5rem;
+                border-bottom: 1px solid $color-primary;
 
             }
         }
