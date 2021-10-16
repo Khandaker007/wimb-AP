@@ -44,46 +44,46 @@ const MainSidebar = ({ active }) => {
     switch (props) {
       case "dashboard":
         setActiveDropdownDashboard(!activeDropdownDashboard);
-        break
+        break;
       case "users":
         setActiveDropdownUser(!activeDropdownUser);
-        break
+        break;
       case "lifestyle":
         setActiveDropdownLifestyle(!activeDropdownLifestyle);
-        break
+        break;
       case "onboard":
         setActiveDropdownOnboarding(!activeDropdownOnboarding);
-        break
+        break;
       case "supplier":
         setActiveDropdownSuppliers(!activeDropdownSuppliers);
-        break
+        break;
       case "categorie":
         setActiveDropdownCategorie(!activeDropdownCategorie);
-        break
+        break;
       case "analytic":
         setActiveDropdownAnalytics(!activeDropdownAnalytics);
-        break
+        break;
       case "report":
         setActiveDropdownReports(!activeDropdownReports);
-        break
+        break;
       case "request":
         setActiveDropdownRequests(!activeDropdownRequests);
-        break
+        break;
       case "perks":
         setActiveDropdownPerks(!activeDropdownPerks);
-        break
+        break;
       case "events":
         setActiveDropdownEvents(!activeDropdownEvents);
-        break
+        break;
       case "connect":
         setActiveDropdownConnect(!activeDropdownConnect);
-        break
+        break;
       case "map":
         setActiveDropdownMap(!activeDropdownMap);
-        break
+        break;
       case "system":
         setActiveDropdownSystem(!activeDropdownSystem);
-        break
+        break;
     }
   };
 
@@ -97,7 +97,13 @@ const MainSidebar = ({ active }) => {
       <nav className="sidebar__nav">
         <ul className="side-nav">
           <li className="side-nav__item">
-            <Link to="/" className="side-nav__link" onClick={ () => {if (active) handleDropdown('dashboard')}}>
+            <Link
+              to="/"
+              className="side-nav__link"
+              onClick={() => {
+                if (active) handleDropdown("dashboard");
+              }}
+            >
               <img src={dashboard} alt="" className="side-nav__icon" />
               <div
                 className={
@@ -105,12 +111,12 @@ const MainSidebar = ({ active }) => {
                 }
               >
                 Dashboard
-                <img src={arrow} alt="" className="arrow" />
+                <img src={arrow} alt="" className={!activeDropdownDashboard ? "arrow" : "arrow arrow-rotate"} />
               </div>
             </Link>
             <ul
               className={
-                activeDropdownDashboard
+                activeDropdownDashboard && active
                   ? "side-nav__sub-nav"
                   : "side-nav__sub-nav  display-none"
               }
@@ -142,12 +148,12 @@ const MainSidebar = ({ active }) => {
                 }
               >
                 Users
-                <img src={arrow} alt="" className="arrow" />
+                <img src={arrow} alt="" className={!activeDropdownUser ? "arrow" : "arrow arrow-rotate"} />
               </div>
             </Link>
             <ul
               className={
-                activeDropdownUser
+                activeDropdownUser && active
                   ? "side-nav__sub-nav"
                   : "side-nav__sub-nav  display-none"
               }
@@ -165,7 +171,13 @@ const MainSidebar = ({ active }) => {
             </ul>
           </li>
           <li className="side-nav__item">
-            <Link to="/lifestyle-managers" className="side-nav__link" onClick={() => {if(active) handleDropdown('lifestyle')}}>
+            <Link
+              to="/lifestyle-managers"
+              className="side-nav__link"
+              onClick={() => {
+                if (active) handleDropdown("lifestyle");
+              }}
+            >
               <img src={star} alt="" className="side-nav__icon" />
               <div
                 className={
@@ -173,12 +185,12 @@ const MainSidebar = ({ active }) => {
                 }
               >
                 <span className="text">Lifestyle Managers</span>
-                <img src={arrow} alt="" className="arrow" />
+                <img src={arrow} alt="" className={!activeDropdownLifestyle ? "arrow" : "arrow arrow-rotate"} />
               </div>
             </Link>
             <ul
               className={
-                activeDropdownLifestyle
+                activeDropdownLifestyle && active
                   ? "side-nav__sub-nav"
                   : "side-nav__sub-nav  display-none"
               }
@@ -196,7 +208,13 @@ const MainSidebar = ({ active }) => {
             </ul>
           </li>
           <li className="side-nav__item">
-            <Link to="" className="side-nav__link" onClick={() => {if (active) handleDropdown('onboard')}}>
+            <Link
+              to=""
+              className="side-nav__link"
+              onClick={() => {
+                if (active) handleDropdown("onboard");
+              }}
+            >
               <img src={onboarding} alt="" className="side-nav__icon" />
               <div
                 className={
@@ -204,12 +222,12 @@ const MainSidebar = ({ active }) => {
                 }
               >
                 <span className="text">Onboarding</span>
-                <img src={arrow} alt="" className="arrow" />
+                <img src={arrow} alt="" className={!activeDropdownOnboarding ? "arrow" : "arrow arrow-rotate"} />
               </div>
             </Link>
             <ul
               className={
-                activeDropdownOnboarding
+                activeDropdownOnboarding && active
                   ? "side-nav__sub-nav"
                   : "side-nav__sub-nav  display-none"
               }
@@ -227,7 +245,13 @@ const MainSidebar = ({ active }) => {
             </ul>
           </li>
           <li className="side-nav__item">
-            <Link to="/suppliers-categories" className="side-nav__link" onClick={() => {if (active) handleDropdown('supplier')}}>
+            <Link
+              to="/suppliers-categories"
+              className="side-nav__link"
+              onClick={() => {
+                if (active) handleDropdown("supplier");
+              }}
+            >
               <img src={suppliers} alt="" className="side-nav__icon" />
               <div
                 className={
@@ -235,12 +259,12 @@ const MainSidebar = ({ active }) => {
                 }
               >
                 <span className="text">Suppliers</span>
-                <img src={arrow} alt="" className="arrow" />
+                <img src={arrow} alt="" className={!activeDropdownSuppliers ? "arrow" : "arrow arrow-rotate"} />
               </div>
             </Link>
             <ul
               className={
-                activeDropdownSuppliers
+                activeDropdownSuppliers && active
                   ? "side-nav__sub-nav"
                   : "side-nav__sub-nav  display-none"
               }
@@ -258,7 +282,13 @@ const MainSidebar = ({ active }) => {
             </ul>
           </li>
           <li className="side-nav__item">
-            <Link to="" className="side-nav__link" onClick={() => {if (active) handleDropdown('categorie')}}>
+            <Link
+              to=""
+              className="side-nav__link"
+              onClick={() => {
+                if (active) handleDropdown("categorie");
+              }}
+            >
               <img src={categorie} alt="" className="side-nav__icon" />
               <div
                 className={
@@ -266,12 +296,12 @@ const MainSidebar = ({ active }) => {
                 }
               >
                 <span className="text">Categories</span>
-                <img src={arrow} alt="" className="arrow" />
+                <img src={arrow} alt="" className={!activeDropdownCategorie ? "arrow" : "arrow arrow-rotate"} />
               </div>
             </Link>
             <ul
               className={
-                activeDropdownCategorie
+                activeDropdownCategorie && active
                   ? "side-nav__sub-nav"
                   : "side-nav__sub-nav  display-none"
               }
@@ -289,7 +319,13 @@ const MainSidebar = ({ active }) => {
             </ul>
           </li>
           <li className="side-nav__item">
-            <Link to="/analytics" className="side-nav__link" onClick={() => {if (active) handleDropdown('analytic')}}>
+            <Link
+              to="/analytics"
+              className="side-nav__link"
+              onClick={() => {
+                if (active) handleDropdown("analytic");
+              }}
+            >
               <img src={analytic} alt="" className="side-nav__icon" />
               <div
                 className={
@@ -297,12 +333,12 @@ const MainSidebar = ({ active }) => {
                 }
               >
                 <span className="text">Analytics</span>
-                <img src={arrow} alt="" className="arrow" />
+                <img src={arrow} alt="" className={!activeDropdownAnalytics ? "arrow" : "arrow arrow-rotate"} />
               </div>
             </Link>
             <ul
               className={
-                activeDropdownAnalytics
+                activeDropdownAnalytics && active
                   ? "side-nav__sub-nav"
                   : "side-nav__sub-nav  display-none"
               }
@@ -320,7 +356,13 @@ const MainSidebar = ({ active }) => {
             </ul>
           </li>
           <li className="side-nav__item">
-            <Link to="/report" className="side-nav__link" onClick={() => {if(active) handleDropdown('report')}}>
+            <Link
+              to="/report"
+              className="side-nav__link"
+              onClick={() => {
+                if (active) handleDropdown("report");
+              }}
+            >
               <img src={report} alt="" className="side-nav__icon" />
               <div
                 className={
@@ -328,12 +370,12 @@ const MainSidebar = ({ active }) => {
                 }
               >
                 <span className="text">Reports</span>
-                <img src={arrow} alt="" className="arrow" />
+                <img src={arrow} alt="" className={!activeDropdownReports ? "arrow" : "arrow arrow-rotate"} />
               </div>
             </Link>
             <ul
               className={
-                activeDropdownReports
+                activeDropdownReports && active
                   ? "side-nav__sub-nav"
                   : "side-nav__sub-nav  display-none"
               }
@@ -351,7 +393,13 @@ const MainSidebar = ({ active }) => {
             </ul>
           </li>
           <li className="side-nav__item">
-            <Link to="/requests" className="side-nav__link" onClick={() => {if (active) handleDropdown('request')}}>
+            <Link
+              to="/requests"
+              className="side-nav__link"
+              onClick={() => {
+                if (active) handleDropdown("request");
+              }}
+            >
               <img src={request} alt="" className="side-nav__icon" />
               <div
                 className={
@@ -359,12 +407,12 @@ const MainSidebar = ({ active }) => {
                 }
               >
                 <span className="text">Requests</span>
-                <img src={arrow} alt="" className="arrow" />
+                <img src={arrow} alt="" className={!activeDropdownRequests ? "arrow" : "arrow arrow-rotate"} />
               </div>
             </Link>
             <ul
               className={
-                activeDropdownRequests
+                activeDropdownRequests && active
                   ? "side-nav__sub-nav"
                   : "side-nav__sub-nav  display-none"
               }
@@ -382,7 +430,13 @@ const MainSidebar = ({ active }) => {
             </ul>
           </li>
           <li className="side-nav__item">
-            <Link to="/perks-or-benefits" className="side-nav__link" onClick={() => {if(active) handleDropdown('perks')}}>
+            <Link
+              to="/perks-or-benefits"
+              className="side-nav__link"
+              onClick={() => {
+                if (active) handleDropdown("perks");
+              }}
+            >
               <img src={wplus} alt="" className="side-nav__icon" />
               <div
                 className={
@@ -390,12 +444,12 @@ const MainSidebar = ({ active }) => {
                 }
               >
                 <span className="text">Perks/Benefits</span>
-                <img src={arrow} alt="" className="arrow" />
+                <img src={arrow} alt="" className={!activeDropdownPerks ? "arrow" : "arrow arrow-rotate"} />
               </div>
             </Link>
             <ul
               className={
-                activeDropdownPerks
+                activeDropdownPerks && active
                   ? "side-nav__sub-nav"
                   : "side-nav__sub-nav  display-none"
               }
@@ -413,7 +467,13 @@ const MainSidebar = ({ active }) => {
             </ul>
           </li>
           <li className="side-nav__item">
-            <Link to="/events" className="side-nav__link" onClick={() => {if(active) handleDropdown('events')}}>
+            <Link
+              to="/events"
+              className="side-nav__link"
+              onClick={() => {
+                if (active) handleDropdown("events");
+              }}
+            >
               <img src={event} alt="" className="side-nav__icon" />
               <div
                 className={
@@ -421,12 +481,12 @@ const MainSidebar = ({ active }) => {
                 }
               >
                 <span className="text">Events</span>
-                <img src={arrow} alt="" className="arrow" />
+                <img src={arrow} alt="" className={!activeDropdownEvents ? "arrow" : "arrow arrow-rotate"} />
               </div>
             </Link>
             <ul
               className={
-                activeDropdownEvents
+                activeDropdownEvents && active
                   ? "side-nav__sub-nav"
                   : "side-nav__sub-nav  display-none"
               }
@@ -444,7 +504,13 @@ const MainSidebar = ({ active }) => {
             </ul>
           </li>
           <li className="side-nav__item">
-            <Link to="/connect" className="side-nav__link" onClick={() => {if(active) handleDropdown('connect')}}>
+            <Link
+              to="/connect"
+              className="side-nav__link"
+              onClick={() => {
+                if (active) handleDropdown("connect");
+              }}
+            >
               <img src={connect} alt="" className="side-nav__icon" />
               <div
                 className={
@@ -452,12 +518,12 @@ const MainSidebar = ({ active }) => {
                 }
               >
                 <span className="text">Connect</span>
-                <img src={arrow} alt="" className="arrow" />
+                <img src={arrow} alt="" className={!activeDropdownConnect ? "arrow" : "arrow arrow-rotate"} />
               </div>
             </Link>
             <ul
               className={
-                activeDropdownConnect
+                activeDropdownConnect && active
                   ? "side-nav__sub-nav"
                   : "side-nav__sub-nav  display-none"
               }
@@ -475,7 +541,13 @@ const MainSidebar = ({ active }) => {
             </ul>
           </li>
           <li className="side-nav__item">
-            <Link to="/geo-location-map-region" className="side-nav__link" onClick={() => {if(active) handleDropdown('map')}}>
+            <Link
+              to="/geo-location-map-region"
+              className="side-nav__link"
+              onClick={() => {
+                if (active) handleDropdown("map");
+              }}
+            >
               <img src={navigation} alt="" className="side-nav__icon" />
               <div
                 className={
@@ -483,12 +555,12 @@ const MainSidebar = ({ active }) => {
                 }
               >
                 <span className="text">Geo Location Map</span>
-                <img src={arrow} alt="" className="arrow" />
+                <img src={arrow} alt="" className={!activeDropdownMap ? "arrow" : "arrow arrow-rotate"} />
               </div>
             </Link>
             <ul
               className={
-                activeDropdownMap
+                activeDropdownMap && active
                   ? "side-nav__sub-nav"
                   : "side-nav__sub-nav  display-none"
               }
@@ -506,7 +578,13 @@ const MainSidebar = ({ active }) => {
             </ul>
           </li>
           <li className="side-nav__item">
-            <Link to="" className="side-nav__link" onClick={() => {if(active) handleDropdown('system')}}>
+            <Link
+              to=""
+              className="side-nav__link"
+              onClick={() => {
+                if (active) handleDropdown("system");
+              }}
+            >
               <img src={system} alt="" className="side-nav__icon" />
               <div
                 className={
@@ -514,12 +592,12 @@ const MainSidebar = ({ active }) => {
                 }
               >
                 <span className="text">System</span>
-                <img src={arrow} alt="" className="arrow" />
+                <img src={arrow} alt="" className={!activeDropdownSystem ? "arrow" : "arrow arrow-rotate"} />
               </div>
             </Link>
             <ul
               className={
-                activeDropdownSystem
+                activeDropdownSystem && active
                   ? "side-nav__sub-nav"
                   : "side-nav__sub-nav  display-none"
               }
