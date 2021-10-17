@@ -1,11 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
+
+// COMPONENT
+import ProfileDropdown from '../profile-dropdown/profile-dropdown.component'
 
 // ICON
 import search from '../../assets/icon/icon-search.svg'
 import mail from '../../assets/icon/icon-mail.svg'
 import notification from '../../assets/icon/icon-notification.svg'
 import menu from '../../assets/icon/icon-feather-menu.svg'
+import { FaUserAlt } from "react-icons/fa";
+import { FaCog } from "react-icons/fa";
+import { FaSignOutAlt } from "react-icons/fa";
 
 //LOGO
 import logo from '../../assets/logo/wimb-logo.svg'
@@ -14,8 +20,19 @@ import logo from '../../assets/logo/wimb-logo.svg'
 import user from '../../assets/image/Alex.jpg'
 
 import './header.style.scss'
+import '../../sass/typography.scss'
 
-const Header = ({title, sidebarStatus}) => (
+const Header = ({title, sidebarStatus}) => {
+    
+    const [profileDropdown, setProfileDropdown] = useState(true)
+
+    const handleProfileDropdown = () => {
+        setProfileDropdown(!profileDropdown)
+
+        console.log(profileDropdown)
+    }
+
+    return (
     <div className="header">
         <div className="header__nav">
             <button onClick={sidebarStatus} className='nav-btn'>
@@ -34,22 +51,46 @@ const Header = ({title, sidebarStatus}) => (
                 <div className="btn-container">
                     <button className="notifi-btn">
                         <img src={mail} alt="mail-icon" className='icon icon-mail' />
-                    </button>
                     <span className='counter'>2</span>
+                    </button>
                 </div>
                 <div className="btn-container">
                     <button className="notifi-btn">
                         <img src={notification} alt="notification-icon" className='icon icon-notifi' />
-                    </button>
                     <span className='counter'>2</span>
+                    </button>
                 </div>
             </div>
-            <button className="header__status--profile-btn">
-                <p className='name'>Alexandra Pratt</p>
-                <img src={user} alt="user-image" className='image'/>
-            </button>
+            <div className="header__status--profile">
+                <button className="header__status--profile-btn" onClick={handleProfileDropdown}>
+                    <p className='name'>Alexandra Pratt</p>
+                    <img src={user} alt="user-image" className='image'/>
+                </button>
+                <div className={ profileDropdown ? "header__status--profile-dd" : "header__status--profile-dd visible"}>
+                    <ul className="header__status--profile-dd-item">
+                        <li className="header__status--profile-dd-list">
+                            <Link to='#' className='header__status--profile-dd-link'>
+                                <span className='profile-icon'><FaUserAlt/></span>
+                                <span>Profile</span>
+                            </Link>
+                        </li>
+                        <li className="header__status--profile-dd-list">
+                            <Link to='#' className='header__status--profile-dd-link'>
+                                <span className='profile-icon'><FaCog/></span>
+                                <span>Setting</span>
+                            </Link>
+                        </li>
+                        <li className="header__status--profile-dd-list">
+                            <Link to='#' className='header__status--profile-dd-link sign-out'>
+                                <span className='profile-icon'><FaSignOutAlt/></span>
+                                <span>Logout</span>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-)
+)}
 
 export default Header;

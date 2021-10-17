@@ -66,14 +66,14 @@ body{
         @include response (tab-port){
             padding: 0 2rem;
             position: absolute;
-            top: 11rem;
-            left: -6.4rem;
+            top: 10.5rem;
+            left: -6.5rem;
             z-index: 1000;
         }
 
         @include response (phone){
             top: 8.8rem;
-            left: -8.4rem;
+            left: -8.5rem;
         }
     }
     &__body{
