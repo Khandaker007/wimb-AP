@@ -114,7 +114,7 @@
             }
 
             .btn-container{
-                cursor: pointer;
+                // cursor: pointer;
 
                 position: relative;
 
@@ -161,16 +161,75 @@
 
             }
 
+            .message-dd{
+                background-color: rgba($color: $color-primary, $alpha: .95);
+                padding: 1.5rem;
+                margin-top: 1rem;
+                width: 33rem;
+                border: 1px solid $color-primary;
+                
+                position: absolute;
+                right: 0;
+                z-index: 10000;
+
+                display: none;
+            }
+
+            .notification-dd{
+                background-color: rgba($color: $color-primary, $alpha: .95);
+                padding: 1.5rem;
+                margin-top: 1rem;
+                width: 25rem;
+                border: 1px solid $color-primary;
+                
+                position: absolute;
+                right: 0;
+                z-index: 10000;
+
+                display: none;
+
+                
+                &__item{
+                    font-size: 1.2rem;
+                    padding: 1rem 0;
+                    
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    cursor: pointer;
+                    
+                    &:hover{
+                        background-color: $color-primary;
+                    }
+
+                    &:not(:last-child){
+                        border-bottom: 1px solid $color-dark;
+                    }
+
+                    .notif-icon{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+
+            .horizontal-line{
+                height: 1px;
+                border: none;
+                background-color: $color-dark
+            }
+
+
+        }
+
+        .visible{
+            display: inline;
         }
 
         &--profile{
             position: relative;
 
-            .visible{
-                display: inline;
-            }
         }
-
+        
         &--profile-btn{
             border-radius: 3rem;
             border: 1px solid transparent;

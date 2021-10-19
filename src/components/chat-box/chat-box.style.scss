@@ -2,9 +2,10 @@
 
 .chat-box{
     padding: 1rem 1.5rem;
-    border-bottom: 1px solid $color-grey-light;
+    &:not(:last-child){
+        border-bottom: 1px solid $color-grey-light;        
+    }
     cursor: pointer;
-
     
     display: flex;
     gap: 1rem;
@@ -45,5 +46,28 @@
     &:hover > &__info > .counter{
         background-color: $color-white;
         color: $color-dark;
+    }
+}
+
+.modify-chat-box{
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    &:not(:last-child){
+        border-bottom: 1px solid $color-dark;
+    }
+
+    align-items: center;
+
+    .modify-counter{
+        background-color: $color-white;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 50%;
+            color: $color-dark;
+            text-align: center;
+
+            position: absolute;
+            top: 0;
+            right: 0;
     }
 }
