@@ -128,11 +128,20 @@
                     border-radius: 50%;
                 }
             }
-            .delete-btn{
-                height: 2rem;
-                width: 2rem;
 
+            .btn{
+                font-size: 1.7rem;
                 background-color: transparent;
+                border: none;
+                cursor: pointer;
+
+            }
+            .edit-btn{
+                color: $color-green;
+            }
+            .delete-btn{
+                color: $color-red-light;
+                margin-left: 1rem;
             }
         }
     }
