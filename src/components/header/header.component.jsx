@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import { Link } from 'react-router-dom'
 
 // COMPONENT
@@ -23,27 +23,60 @@ import user from '../../assets/image/Alex.jpg'
 import './header.style.scss'
 import '../../sass/typography.scss'
 
+const useOutSideClick = (ref, callback, when) => {
+
+    const savedCallback = useRef(callback)
+
+    useEffect(() => {
+        savedCallback.current = callback;
+    })
+
+    const handler = (event) => {
+        if(ref.current && !ref.current.contains(event.target)){
+            savedCallback.current();
+        }
+    }
+
+    useEffect(() => {
+        if (when) {
+            document.addEventListener('click', handler);
+            return () => document.removeEventListener('click', handler)
+        }
+    }, [when])
+}
+
 const Header = ({title, sidebarStatus}) => {
     
-    const [profileDropdown, setProfileDropdown] = useState(true)
-    const [notifDropdown, setNotifDropdown] = useState(true)
-    const [messageDropdown, setMessageDropdown] = useState(true)
+    const [profileDropdown, setProfileDropdown] = useState(false)
+    const [messageDropdown, setMessageDropdown] = useState(false)
+    const [notifDropdown, setNotifDropdown] = useState(false)
+    const profileRef = useRef();
+    const messageRef = useRef();
+    const notificationRef = useRef();
 
-    const handleDropdown = (props) => {
-        switch (props) {
-            case 'profile':
-                setProfileDropdown(!profileDropdown)                
-                break;
-            case 'notification':
-                setNotifDropdown(!notifDropdown)
-                break;
-            case 'message':
-                setMessageDropdown(!messageDropdown)
-                break;
-        }
-
-        console.log(notifDropdown)
+    const showProfileDropdown = () => {
+        setProfileDropdown(true)
     }
+    const showMessageDropdown = () => {
+        setMessageDropdown(true)
+    }
+    const showNotificationDropdown = () => {
+        setNotifDropdown(true)
+    }
+
+    const hideProfileDropdown = () => {
+        setProfileDropdown(false)
+    }
+    const hideMessageDropdown = () => {
+        setMessageDropdown(false)
+    }
+    const hideNotificationDropdown = () => {
+        setNotifDropdown(false)
+    }
+
+    useOutSideClick(profileRef, hideProfileDropdown, profileDropdown)
+    useOutSideClick(messageRef, hideMessageDropdown, messageDropdown)
+    useOutSideClick(notificationRef, hideNotificationDropdown, notifDropdown)
 
     return (
     <div className="header">
@@ -62,11 +95,11 @@ const Header = ({title, sidebarStatus}) => {
                     </button>
                 </div>
                 <div className="btn-container">
-                    <button className="notifi-btn" onClick={() => handleDropdown('message')}>
+                    <button className="notifi-btn" onClick={messageDropdown ? hideMessageDropdown : showMessageDropdown}>
                         <img src={mail} alt="mail-icon" className='icon icon-mail' />
                         <span className='counter'>2</span>
                     </button>
-                    <div className={ messageDropdown ? "message-dd" : "message-dd visible"}>
+                    <div ref={messageRef} className={ messageDropdown ? "message-dd visible" : "message-dd"}>
                         <h3 className='heading-3 mb-1'>Messages</h3>
                         <hr className='horizontal-line'/>
                         <div className="message-item">
@@ -77,11 +110,11 @@ const Header = ({title, sidebarStatus}) => {
                     </div>
                 </div>
                 <div className="btn-container">
-                    <button className="notifi-btn" onClick={() => handleDropdown('notification')}>
+                    <button className="notifi-btn" onClick={notifDropdown ? hideNotificationDropdown : showNotificationDropdown}>
                         <img src={notification} alt="notification-icon" className='icon icon-notifi' />
                         <span className='counter'>2</span>
                     </button>
-                    <div className={ notifDropdown ? "notification-dd" : "notification-dd visible"}>
+                    <div ref={notificationRef} className={ notifDropdown ? "notification-dd visible" : "notification-dd"}>
                         <h3 className='heading-3 mb-1'>Notification</h3>
                         <hr className='horizontal-line'/>
                         <div className="notification-dd__item">
@@ -96,11 +129,11 @@ const Header = ({title, sidebarStatus}) => {
                 </div>
             </div>
             <div className="header__status--profile">
-                <button className="header__status--profile-btn" onClick={() => handleDropdown('profile')}>
+                <button className="header__status--profile-btn" onClick={profileDropdown ? hideProfileDropdown : showProfileDropdown}>
                     <p className='name'>Alexandra Pratt</p>
                     <img src={user} alt="user-image" className='image'/>
                 </button>
-                <div className={ profileDropdown ? "header__status--profile-dd" : "header__status--profile-dd visible"}>
+                <div ref={profileRef} className={ profileDropdown ? "header__status--profile-dd visible" : "header__status--profile-dd"}>
                     <ul className="header__status--profile-dd-item">
                         <li className="header__status--profile-dd-list">
                             <Link to='#' className='header__status--profile-dd-link'>
