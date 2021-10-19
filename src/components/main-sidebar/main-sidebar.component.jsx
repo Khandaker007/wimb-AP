@@ -111,10 +111,10 @@ const MainSidebar = ({ active }) => {
                 }
               >
                 Dashboard
-                <img src={arrow} alt="" className={!activeDropdownDashboard ? "arrow" : "arrow arrow-rotate"} />
+                <img src={arrow} alt="" className="arrow" />
               </div>
             </Link>
-            <ul
+            {/* <ul
               className={
                 activeDropdownDashboard && active
                   ? "side-nav__sub-nav"
@@ -131,7 +131,7 @@ const MainSidebar = ({ active }) => {
                   dashboard 2
                 </Link>
               </li>
-            </ul>
+            </ul> */}
           </li>
           <li className="side-nav__item">
             <Link
@@ -148,10 +148,10 @@ const MainSidebar = ({ active }) => {
                 }
               >
                 Users
-                <img src={arrow} alt="" className={!activeDropdownUser ? "arrow" : "arrow arrow-rotate"} />
+                <img src={arrow} alt="" className="arrow" />
               </div>
             </Link>
-            <ul
+            {/* <ul
               className={
                 activeDropdownUser && active
                   ? "side-nav__sub-nav"
@@ -168,11 +168,11 @@ const MainSidebar = ({ active }) => {
                   user 2
                 </Link>
               </li>
-            </ul>
+            </ul> */}
           </li>
           <li className="side-nav__item">
             <Link
-              to="/lifestyle-managers"
+              to="#"
               className="side-nav__link"
               onClick={() => {
                 if (active) handleDropdown("lifestyle");
@@ -196,8 +196,8 @@ const MainSidebar = ({ active }) => {
               }
             >
               <li className="side-nav__sub-item">
-                <Link to="#" className="side-nav__sub-link">
-                  lifestyle 1
+                <Link to="/lifestyle-managers" className="side-nav__sub-link">
+                  Lifestyle Managers
                 </Link>
               </li>
               <li className="side-nav__sub-item">
@@ -209,7 +209,7 @@ const MainSidebar = ({ active }) => {
           </li>
           <li className="side-nav__item">
             <Link
-              to=""
+              to="#"
               className="side-nav__link"
               onClick={() => {
                 if (active) handleDropdown("onboard");
@@ -246,7 +246,7 @@ const MainSidebar = ({ active }) => {
           </li>
           <li className="side-nav__item">
             <Link
-              to="/suppliers-categories"
+              to="#"
               className="side-nav__link"
               onClick={() => {
                 if (active) handleDropdown("supplier");
@@ -270,20 +270,25 @@ const MainSidebar = ({ active }) => {
               }
             >
               <li className="side-nav__sub-item">
-                <Link to="#" className="side-nav__sub-link">
-                  supplier 1
+                <Link to="/suppliers-categories" className="side-nav__sub-link">
+                  Suppliers Categories
                 </Link>
               </li>
               <li className="side-nav__sub-item">
-                <Link to="#" className="side-nav__sub-link">
-                  sipplier 2
+                <Link to="/suppliers-dining" className="side-nav__sub-link">
+                  Supplier Dining
+                </Link>
+              </li>
+              <li className="side-nav__sub-item">
+                <Link to="/supplier-restaurant" className="side-nav__sub-link">
+                  Supplier Restaurent
                 </Link>
               </li>
             </ul>
           </li>
           <li className="side-nav__item">
             <Link
-              to=""
+              to="#"
               className="side-nav__link"
               onClick={() => {
                 if (active) handleDropdown("categorie");
@@ -320,7 +325,7 @@ const MainSidebar = ({ active }) => {
           </li>
           <li className="side-nav__item">
             <Link
-              to="/analytics"
+              to="#"
               className="side-nav__link"
               onClick={() => {
                 if (active) handleDropdown("analytic");
@@ -344,8 +349,8 @@ const MainSidebar = ({ active }) => {
               }
             >
               <li className="side-nav__sub-item">
-                <Link to="#" className="side-nav__sub-link">
-                  analytics 1
+                <Link to="/analytics" className="side-nav__sub-link">
+                  Analytics
                 </Link>
               </li>
               <li className="side-nav__sub-item">
@@ -357,7 +362,7 @@ const MainSidebar = ({ active }) => {
           </li>
           <li className="side-nav__item">
             <Link
-              to="/report"
+              to="#"
               className="side-nav__link"
               onClick={() => {
                 if (active) handleDropdown("report");
@@ -381,8 +386,8 @@ const MainSidebar = ({ active }) => {
               }
             >
               <li className="side-nav__sub-item">
-                <Link to="#" className="side-nav__sub-link">
-                  report 1
+                <Link to="/report" className="side-nav__sub-link">
+                  Report
                 </Link>
               </li>
               <li className="side-nav__sub-item">
@@ -394,7 +399,7 @@ const MainSidebar = ({ active }) => {
           </li>
           <li className="side-nav__item">
             <Link
-              to="/requests"
+              to="#"
               className="side-nav__link"
               onClick={() => {
                 if (active) handleDropdown("request");
@@ -418,8 +423,8 @@ const MainSidebar = ({ active }) => {
               }
             >
               <li className="side-nav__sub-item">
-                <Link to="#" className="side-nav__sub-link">
-                  request 1
+                <Link to="/requests" className="side-nav__sub-link">
+                  Requests
                 </Link>
               </li>
               <li className="side-nav__sub-item">
@@ -431,7 +436,7 @@ const MainSidebar = ({ active }) => {
           </li>
           <li className="side-nav__item">
             <Link
-              to="/perks-or-benefits"
+              to="#"
               className="side-nav__link"
               onClick={() => {
                 if (active) handleDropdown("perks");
@@ -455,20 +460,20 @@ const MainSidebar = ({ active }) => {
               }
             >
               <li className="side-nav__sub-item">
-                <Link to="#" className="side-nav__sub-link">
-                  perks 1
+                <Link to="/perks-or-benefits" className="side-nav__sub-link">
+                  Perks/ Benefits
                 </Link>
               </li>
               <li className="side-nav__sub-item">
-                <Link to="#" className="side-nav__sub-link">
-                  perks 2
+                <Link to="/perks-or-benefits-personal-shopping" className="side-nav__sub-link">
+                Perks/ Benefits
                 </Link>
               </li>
             </ul>
           </li>
           <li className="side-nav__item">
             <Link
-              to="/events"
+              to="#"
               className="side-nav__link"
               onClick={() => {
                 if (active) handleDropdown("events");
@@ -492,20 +497,20 @@ const MainSidebar = ({ active }) => {
               }
             >
               <li className="side-nav__sub-item">
-                <Link to="#" className="side-nav__sub-link">
-                  events 1
+                <Link to="/events" className="side-nav__sub-link">
+                  Events
                 </Link>
               </li>
               <li className="side-nav__sub-item">
-                <Link to="#" className="side-nav__sub-link">
-                  events 2
+                <Link to="/events-sushi-masterclass" className="side-nav__sub-link">
+                  Events Masterclass
                 </Link>
               </li>
             </ul>
           </li>
           <li className="side-nav__item">
             <Link
-              to="/connect"
+              to="#"
               className="side-nav__link"
               onClick={() => {
                 if (active) handleDropdown("connect");
@@ -529,20 +534,20 @@ const MainSidebar = ({ active }) => {
               }
             >
               <li className="side-nav__sub-item">
-                <Link to="#" className="side-nav__sub-link">
-                  connect 1
+                <Link to="/connect" className="side-nav__sub-link">
+                  Connect
                 </Link>
               </li>
               <li className="side-nav__sub-item">
-                <Link to="#" className="side-nav__sub-link">
-                  connect 2
+                <Link to="/connect-clive-jackson" className="side-nav__sub-link">
+                  Connect clive jackson
                 </Link>
               </li>
             </ul>
           </li>
           <li className="side-nav__item">
             <Link
-              to="/geo-location-map-region"
+              to="#"
               className="side-nav__link"
               onClick={() => {
                 if (active) handleDropdown("map");
@@ -566,20 +571,25 @@ const MainSidebar = ({ active }) => {
               }
             >
               <li className="side-nav__sub-item">
-                <Link to="#" className="side-nav__sub-link">
-                  map 1
+                <Link to="/geo-location-map" className="side-nav__sub-link">
+                  Map
                 </Link>
               </li>
               <li className="side-nav__sub-item">
-                <Link to="#" className="side-nav__sub-link">
-                  map 2
+                <Link to="/geo-location-map-region" className="side-nav__sub-link">
+                  Map Region
+                </Link>
+              </li>
+              <li className="side-nav__sub-item">
+                <Link to="/geo-location-map-subregion" className="side-nav__sub-link">
+                  Map Subregion
                 </Link>
               </li>
             </ul>
           </li>
           <li className="side-nav__item">
             <Link
-              to=""
+              to="#"
               className="side-nav__link"
               onClick={() => {
                 if (active) handleDropdown("system");

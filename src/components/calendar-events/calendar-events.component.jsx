@@ -1,14 +1,19 @@
-// import React from "react";
+import React from 'react'
+import FullCalendar from '@fullcalendar/react' // must go before plugins
+import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
 
-// import FullCalendar from '@fullcalendar/react' // must go before plugins
-// import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
-
-// import './calendar-events.style.scss'
-
-// const EventCalendar = () => (
-//     <div className="event-calendar">
-//         <FullCalendar defaultView="dayGridMonth" plugins={[ dayGridPlugin ]} />
-//     </div>
-// )
-
-// export default EventCalendar;
+export default class EventCalendar extends React.Component {
+  render() {
+    return (
+        <FullCalendar
+        plugins={[ dayGridPlugin ]}
+        initialView="dayGridMonth"
+        weekends={false}
+        events={[
+          { title: 'event 1', date: '2019-04-01' },
+          { title: 'event 2', date: '2019-04-02' }
+        ]}
+      />
+    )
+  }
+}
