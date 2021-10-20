@@ -64,12 +64,27 @@
         grid-column: col-2-start / col-2-end;
         grid-row: row-start 3 / row-end 3;
 
+        position: relative;
+
         @include response(phone){
             grid-column: col-1-start / col-2-end;
             grid-row: row-start 4 / row-end 4;
         }
         
         background-color: $color-grey;
+
+        .event-calendar-container{
+            position: absolute;
+            top: 6rem;
+            left: 2rem;
+            width: 70rem;
+
+            display: none;
+            
+        }
+        .visible{
+            display: block;
+        }
 
         &--main{
 
@@ -96,6 +111,12 @@
                 display: flex;
                 align-items: center;
                 gap: 2rem;
+
+                button{
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                }
             }
         }
         &--main-content{

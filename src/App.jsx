@@ -25,7 +25,7 @@ import Login from "./pages/login/login.component";
 import ConnectForm from "./pages/new-connect-form/connect-form.component";
 import RestaurantForm from "./pages/restaurant-form/restaurant-form.component";
 import Report from "./pages/report/report.component";
-import EventCalendar from "./components/calendar-events/calendar-events.component";
+import EventCalendar from './components/calendar-events/calendar-events.component'
 
 import "./App.scss";
 
@@ -104,14 +104,14 @@ function App() {
   }, [location.pathname])
 
   return (
-    <div className="admin-panel">
-      <div className="admin-panel__sidebar">
-        <MainSidebar active={active}/>
-      </div>
-      <div className="admin-panel__header">
-        <Header title={title} sidebarStatus={handleSidebar}/>
-      </div>
-      <div className="admin-panel__body">
+    // <div className="admin-panel">
+    //   <div className="admin-panel__sidebar">
+    //     <MainSidebar active={active}/>
+    //   </div>
+    //   <div className="admin-panel__header">
+    //     <Header title={title} sidebarStatus={handleSidebar}/>
+    //   </div>
+    //   <div className="admin-panel__body">
         <Switch>
           <Route exact path="/" component={Dashboard} />
           <Route path="/user" component={Users} />
@@ -137,8 +137,8 @@ function App() {
           <Route path="/report" component={Report} />
           <Route path="/event-calendar" component={EventCalendar} />
         </Switch>
-      </div>
-    </div>    
+    //   </div>
+    // </div>    
   );
 }
 

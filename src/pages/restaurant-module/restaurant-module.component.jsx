@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 
 // LOGO
@@ -22,97 +22,109 @@ import NewItem from '../../components/new-item/new-item.component'
 import ConfirmedItem from '../../components/confirmed-item/confirmed-item.component'
 import DeclinedItem from '../../components/declined-item/declined-item.component'
 import CancelledItem from '../../components/cancelled-item/cancelled-item.component'
+import EventCalendar from '../../components/calendar-events/calendar-events.component';
 
 import "./restaurant-module.style.scss";
 import '../../sass/typography.scss'
 
-const RestaurantModule = () => (
-    <div className="restaurant-module">
-        <div className="restaurant-module__header">
-            <RestaurantModuleHeader />
-        </div>
-        <h1></h1>
-        <div className="restaurant-module__logo">
-            <img src={amazonicoLogo} alt="amazonico-logo" className="logo" />
-        </div>
-        <div className="restaurant-module__sub-header">
-            <h1 className='heading-1'>Amazonico</h1>
-            <Dropdown option1='London' value1='london'/>
-        </div>
-        <div className="restaurant-module__side-bar">
-            <RestaurantModuleStatus />
-        </div>
-        <div className="restaurant-module__body">
-            {/* <RestaurantModuleStatusBody /> */}
-            <div className="restaurant-module__body--main">
-                <div className="restaurant-module__body--main-header">
-                    <p className='active-status'>
-                        <span className='active-status__color'>&nbsp;</span>
-                        Online
-                    </p>
-                    <div className="group">
-                        <a href="#">
-                            <img src={option} alt="option icon" className='icon option-icon'/>
-                        </a>
-                        <a href="#">
-                            <img src={calendar} alt="calendar icon" className='icon calendar-icon'/>
-                        </a>
-                    </div>
+const RestaurantModule = () => {
+
+    const [calendarVisible, setCalendarVisible] = useState(false)
+
+    const handleCalendarVisible = () => {
+        setCalendarVisible(!calendarVisible)
+    }
+
+    return (
+        <div className="restaurant-module">
+            <div className="restaurant-module__header">
+                <RestaurantModuleHeader />
+            </div>
+            <h1></h1>
+            <div className="restaurant-module__logo">
+                <img src={amazonicoLogo} alt="amazonico-logo" className="logo" />
+            </div>
+            <div className="restaurant-module__sub-header">
+                <h1 className='heading-1'>Amazonico</h1>
+                <Dropdown option1='London' value1='london'/>
+            </div>
+            <div className="restaurant-module__side-bar">
+                <RestaurantModuleStatus />
+            </div>
+            <div className="restaurant-module__body">
+                {/* <RestaurantModuleStatusBody /> */}
+                <div className={calendarVisible ? 'event-calendar-container visible' : 'event-calendar-container'}>
+                    <EventCalendar/>
                 </div>
-                <div className="restaurant-module__body--main-content section">
-                    <div className="restaurant-info">
-                        <div className="tag">
-                            <p className="tag-item">Restaurant</p>
-                            <p className="tag-item">Latin</p>
-                            <p className="tag-item">Shushi</p>
-                            <p className="tag-item">London</p>
-                        </div>
-                        <p className='pb-1'>Luxe rainforest-themed restaurant 
-                            for Latin American flavours & sushi, 
-                            with a glass-fronted kitchen.
+                <div className="restaurant-module__body--main">
+                    <div className="restaurant-module__body--main-header">
+                        <p className='active-status'>
+                            <span className='active-status__color'>&nbsp;</span>
+                            Online
                         </p>
-                        <p>Average Main: <span>£28</span></p>
-                        <div className="group-btn">
-                            <button className='btn'>Menu</button>
-                            <button className='btn btn-perk'>
-                                {/* <img src={parkerBenefit} alt="icon" /> */}
-                                Perks
+                        <div className="group">
+                            <button>
+                                <img src={option} alt="option icon" className='icon option-icon'/>
                             </button>
-                            <button className='btn'>Service Level Agreement</button>
+                            <button onClick={handleCalendarVisible}>
+                                <img src={calendar} alt="calendar icon" className='icon calendar-icon'/>
+                            </button>
                         </div>
                     </div>
-                    <div className="contact">
-                        <h3 className='heading-3 pb-2'>Contact</h3>
-                        <ContactItem/>
-                        <ContactItem/>
-                        <ContactItem/>
+                    <div className="restaurant-module__body--main-content section">
+                        <div className="restaurant-info">
+                            <div className="tag">
+                                <p className="tag-item">Restaurant</p>
+                                <p className="tag-item">Latin</p>
+                                <p className="tag-item">Shushi</p>
+                                <p className="tag-item">London</p>
+                            </div>
+                            <p className='pb-1'>Luxe rainforest-themed restaurant 
+                                for Latin American flavours & sushi, 
+                                with a glass-fronted kitchen.
+                            </p>
+                            <p>Average Main: <span>£28</span></p>
+                            <div className="group-btn">
+                                <button className='btn'>Menu</button>
+                                <button className='btn btn-perk'>
+                                    {/* <img src={parkerBenefit} alt="icon" /> */}
+                                    Perks
+                                </button>
+                                <button className='btn'>Service Level Agreement</button>
+                            </div>
+                        </div>
+                        <div className="contact">
+                            <h3 className='heading-3 pb-2'>Contact</h3>
+                            <ContactItem/>
+                            <ContactItem/>
+                            <ContactItem/>
+                        </div>
                     </div>
-                </div>
-                <div className="restaurant-module__body--main-new section">
-                    <h3 className='heading-3 pb-1'>New</h3>
-                    <NewItem/>
-                    <NewItem/>
-                </div>
-                <div className="restaurant-module__body--main-confirmed section">
-                    <h3 className='heading-3 pb-1'>Confirmed</h3>
-                    <ConfirmedItem/>
-                    <ConfirmedItem/>
-                </div>
-                <div className="restaurant-module__body--main-declined section">
-                    <h3 className='heading-3 pb-1'>Declined</h3>
-                    <DeclinedItem/>
-                    <DeclinedItem/>
-                </div>
-                <div className="restaurant-module__body--main-confirmed section">
-                    <h3 className='heading-3 pb-1'>Cancelled</h3>
-                    <CancelledItem/>
-                    <CancelledItem/>
+                    <div className="restaurant-module__body--main-new section">
+                        <h3 className='heading-3 pb-1'>New</h3>
+                        <NewItem/>
+                        <NewItem/>
+                    </div>
+                    <div className="restaurant-module__body--main-confirmed section">
+                        <h3 className='heading-3 pb-1'>Confirmed</h3>
+                        <ConfirmedItem/>
+                        <ConfirmedItem/>
+                    </div>
+                    <div className="restaurant-module__body--main-declined section">
+                        <h3 className='heading-3 pb-1'>Declined</h3>
+                        <DeclinedItem/>
+                        <DeclinedItem/>
+                    </div>
+                    <div className="restaurant-module__body--main-confirmed section">
+                        <h3 className='heading-3 pb-1'>Cancelled</h3>
+                        <CancelledItem/>
+                        <CancelledItem/>
+                    </div>
                 </div>
             </div>
+            {/* <ProposePopop/>
+            <CalendarLarge/> */}
         </div>
-        {/* <ProposePopop/>
-        <CalendarLarge/> */}
-    </div>
-)
+)}
 
 export default RestaurantModule;

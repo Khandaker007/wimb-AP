@@ -1,0 +1,64 @@
+@import '../../sass/variables.scss';
+
+.rbc-event {
+  background-color: $color-primary;
+  color: $color-white;
+}
+.rbc-toolbar {
+  
+    & button {
+      color: $color-white;
+      display: inline-block;
+      margin: 0;
+      text-align: center;
+      vertical-align: middle;
+      background: none;
+      background-image: none;
+      border: 1px solid $color-white;
+      padding: .375rem 1rem;
+      border-radius: 4px;
+      line-height: normal;
+      white-space: nowrap;
+  
+      &:active,
+      &.rbc-active {
+        background-image: none;
+        box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+        background-color: $color-primary;
+        border-color: $color-primary;
+  
+        &:hover,
+        &:focus {
+          color: white;
+          background-color: rgba($color: $color-primary, $alpha: .8);
+          border-color: rgba($color: $color-primary, $alpha: .8);
+        }
+      }
+  
+      &:focus {
+        color:white;
+        background-color: rgba($color: $color-primary, $alpha: .8);
+        border-color: rgba($color: $color-primary, $alpha: .8);
+      }
+  
+      &:hover {
+        color:white;
+        background-color: $color-primary;
+            border-color: $color-primary;
+      }
+    }
+  }
+
+  .rbc-today {
+    background-color: rgba($color: black, $alpha: .5);
+  }
+
+  .rbc-off-range-bg {
+    background: rgba($color: white, $alpha: 1);
+  }
+
+
+.calendar-container{
+    background-color: $color-grey-light;
+    padding: 2rem;
+}
