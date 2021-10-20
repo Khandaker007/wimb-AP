@@ -167,12 +167,20 @@
                 margin-top: 1rem;
                 width: 33rem;
                 border: 1px solid $color-primary;
+
                 
                 position: absolute;
                 right: 0;
                 z-index: 10000;
-
+                
                 display: none;
+
+                @include response(phone){
+                    border: 1px solid $color-dark;
+                    width: 33rem;
+                    margin-top: 2rem;
+                    right: -8rem;
+                }
             }
 
             .notification-dd{
@@ -187,6 +195,10 @@
                 z-index: 10000;
 
                 display: none;
+
+                @include response(phone){
+                    border: 1px solid $color-dark;
+                }
 
                 
                 &__item{
@@ -264,6 +276,10 @@
             z-index: 10000;
 
             display: none;
+
+            @include response(phone){
+                border: 1px solid $color-dark;
+            }
             
         }
         &--profile-dd::before{

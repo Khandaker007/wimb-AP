@@ -15,7 +15,6 @@ import RestaurantModuleHeader from "../../components/restaurant-module-header/re
 import RestaurantModuleStatusBody from "../../components/restaurant-module-status-body/restaurant-module-status-body.component";
 import RestaurantModuleStatus from "../../components/restaurant-module-status/restaurant-module-status.component";
 import ProposePopop from '../../components/propose-popup/propose-popup.component'
-import CalendarLarge from '../../components/calendar-large/calendar-large.component'
 import Dropdown from '../../components/drop-down/drop-down.component';
 import ContactItem from '../../components/contact-item/contact-item.component'
 import NewItem from '../../components/new-item/new-item.component'
@@ -122,8 +121,7 @@ const RestaurantModule = () => {
                     </div>
                 </div>
             </div>
-            {/* <ProposePopop/>
-            <CalendarLarge/> */}
+            {/* <ProposePopop/>*/}
         </div>
 )}
 
