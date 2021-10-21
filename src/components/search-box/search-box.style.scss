@@ -1,4 +1,5 @@
 @import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
 
 .search{
     position: relative;
@@ -6,7 +7,11 @@
         height: 3rem;
         border: none;
         padding: 0 1rem;
-        border: 2px solid $color-white;                  
+        border: 2px solid $color-white;
+
+        @include response(phone){
+            width: 15rem;
+        }
     }
     &__input:focus{
         outline: none;
@@ -16,7 +21,7 @@
         height: 3rem;
         width: 3rem;
         cursor: pointer;
-        background-color: $color-white;
+        background-color: transparent;
         border: none;
 
         position: absolute;
