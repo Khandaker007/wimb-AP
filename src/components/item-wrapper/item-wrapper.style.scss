@@ -1,9 +1,45 @@
 @import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
 
 .item-wrapper{
     &:not(:last-child){
         margin-bottom: 2rem;
     }
+
+    position: relative;
+
+    @include response(phone){
+        width: 100%;
+    }
+
+    .rec-arrow-right{ //carousel right arrow
+        position: absolute;
+        right: 1.4rem;
+    }
+    .rec-arrow-left{ //carousel left arrow
+        position: absolute;
+        left: 1.4rem;
+        z-index: 1111;
+    }
+
+    .jRFJkP{ //arrow button
+        background-color: rgba($color: $color-white, $alpha: .1);
+
+    }
+    .jRFJkP:hover, //arrow button
+    .jRFJkP:focus{
+        background-color: $color-primary !important;
+    }
+    button:disabled{ //arrow button
+        background-color: rgba($color: $color-primary, $alpha: .1) !important;
+    }
+
+    .gZZBOx{ // pagination
+        display: none;
+    }
+
+
+    position: relative;
     .items{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
