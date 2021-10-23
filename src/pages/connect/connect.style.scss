@@ -9,7 +9,7 @@
     @include response (phone){
         display: grid;
         grid-template-columns: [col-start] 1fr [col-end];
-        grid-template-rows: repeat(4, [row-start] min-content [row-end]);
+        grid-template-rows: repeat(2, [row-start] min-content [row-end]);
         grid-gap: 0;
 
         padding: 0 1rem;
@@ -19,6 +19,8 @@
         grid-column: main-start / main-end;
 
         @include response (phone){
+            grid-column: col-start 1 / col-end;
+            grid-row: row-start 1 / row-end 1;
             margin-bottom: 1.0rem;
         }
 
@@ -46,6 +48,9 @@
         padding: 2rem;
 
         @include response(phone){
+            grid-column: col-start 1 / col-end;
+            grid-row: row-start 2 / row-end 2;
+
             display: flex;
             justify-content: center;
             align-items: center;        
