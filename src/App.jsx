@@ -10,6 +10,7 @@ import SuppliersCategories from "./pages/suppliers-categories/suppliers-categori
 import SuppliersDining from "./pages/suppliers-dining/suppliers-dining.component";
 import Requests from "./pages/requests/requests.component";
 import RestaurantModule from "./pages/restaurant-module/restaurant-module.component.jsx";
+import Suppliers from "./pages/suppliers/suppliers.component";
 import LifeStyleManagers from "./pages/lifestyle-managers/lifestyle-managers.component";
 import Events from "./pages/events/events.component";
 import EventsSushiMasterClass from "./pages/events-sushi-masterclass/events-sushi-masterclass.component";
@@ -127,6 +128,7 @@ function App() {
           <Route path="/connect-clive-jackson" component={ConnectCliveJackson} />
           <Route path="/perks-or-benefits" component={PerksOrBenefits} />
           <Route path="/perks-or-benefits-personal-shopping" component={PerksOrBenefitsPersonalShopping} />
+          <Route path="/suppliers" component={Suppliers} />
           <Route path="/restaurant-module" component={RestaurantModule} />
           <Route path="/geo-location-map" component={GeoLocationMap} />
           <Route path="/geo-location-map-region" component={GeoLocationMapRegion} />
@@ -135,6 +137,7 @@ function App() {
           <Route path="/connect-form" component={ConnectForm} />
           <Route path="/restaurant-form" component={RestaurantForm} />
           <Route path="/report" component={Report} />
+          <Route path="/event-calendar" component={EventCalendar} />
           <Route path="/event-calendar" component={EventCalendar} />
         </Switch>
       </div>

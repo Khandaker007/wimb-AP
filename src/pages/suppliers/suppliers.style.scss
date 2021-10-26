@@ -1,0 +1,25 @@
+@import '../../sass/variables.scss';
+@import "../../sass/mixins.scss";
+
+
+.suppliers {
+  background-color: orange;
+  display: grid;
+  grid-template-columns: [side-bar-start] 20% [side-bar-end main-body-start] 1fr [main-body-end list-start] 25% [list-end];
+  grid-gap: 2rem;
+
+  &__side-bar {
+    background-color: indigo;
+    grid-column: side-bar-start / side-bar-end;
+  }
+
+  &__body {
+    background-color: indigo;
+    grid-column: main-body-start / main-body-end;
+  }
+
+  &__list {
+    background-color: indigo;
+    grid-column: list-start / list-end;
+  }
+}
