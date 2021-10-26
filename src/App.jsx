@@ -101,6 +101,9 @@ function App() {
     else if (location.pathname == '/report'){
       setTitle('Reports')
     }
+    else if (location.pathname == '/suppliers'){
+      setTitle('Suppliers')
+    }
 
   }, [location.pathname])
 

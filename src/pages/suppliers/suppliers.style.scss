@@ -3,23 +3,134 @@
 
 
 .suppliers {
-  background-color: orange;
+  // background-color: orange;
   display: grid;
-  grid-template-columns: [side-bar-start] 20% [side-bar-end main-body-start] 1fr [main-body-end list-start] 25% [list-end];
+  grid-template-columns: [side-bar-start] 15% [side-bar-end main-body-start] 1fr [main-body-end list-start] 25% [list-end];
   grid-gap: 2rem;
 
   &__side-bar {
-    background-color: indigo;
+    background-color: $color-grey;
     grid-column: side-bar-start / side-bar-end;
   }
 
   &__body {
-    background-color: indigo;
+    background-color: $color-grey;
     grid-column: main-body-start / main-body-end;
+
+    position: relative;
+
+        @include response(phone){
+            grid-column: col-1-start / col-2-end;
+            grid-row: row-start 4 / row-end 4;
+        }
+        
+        background-color: $color-grey;
+
+        .event-calendar-container{
+            position: absolute;
+            top: 6rem;
+            left: 2rem;
+            width: 70rem;
+
+            display: none;
+            
+        }
+        .visible{
+            display: block;
+        }
+
+        &--main{
+
+        }
+        &--main-header{
+            font-size: 1.3rem;
+            padding: 2rem;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .active-status{
+                &__color{
+                    background-color: $color-primary;
+                    display: inline-block;
+                    height: .8rem;
+                    width: .8rem;
+                    border-radius: 50%;
+                    margin-right: .5rem;
+                }
+            }
+            .group{
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+
+                button{
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+        &--main-content{
+                        
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 3rem;
+
+            .restaurant-info{
+                font-size: 1.2rem;
+                .tag {
+                    color: $color-primary;
+                    margin-bottom: 3rem;
+
+                    display: flex;
+                    gap: 1rem;
+
+                    .tag-item {
+                        border: 1px solid $color-primary;
+                        padding: 0 0.75rem;
+                    }
+                }
+                .group-btn{
+                    margin-top: 3rem;
+                    .btn {
+                        color: $color-white;
+                        background-color: $color-primary;
+                        text-decoration: none;
+                        border: none;
+                        padding: .3rem .7rem;
+
+                        &:not(:last-child){
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+            .contact{
+
+            }
+
+        }
+        &--main-new{
+            font-size: 1.2rem;
+        }
+        &--main-confirmed{
+            font-size: 1.2rem;
+        }
+        &--main-declined{
+            font-size: 1.2rem;
+        }
+        .section{
+            padding: 2rem;
+            &:not(:last-child){
+                border-bottom: 1px solid $color-grey-light;
+            }
+        }
   }
 
   &__list {
-    background-color: indigo;
+    background-color: $color-grey;
     grid-column: list-start / list-end;
   }
 }
