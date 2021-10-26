@@ -4,6 +4,7 @@ import React from "react";
 import SearchBox from "../../components/search-box/search-box.component";
 import Categorie from "../../components/category/category.component";
 import CustomCalendar from "../../components/calendar/calendar.component";
+import Checkbox from "../../components/checkbox/checkbox.component";
 
 // IMAGE
 import dining from "../../assets/image/dining.png";
@@ -49,12 +50,10 @@ const SuppliersCategories = () => (
     <div className="suppliers-categories__categories">
       <div className="suppliers-categories__categories--header">
         <h3 className="heading-3">Categories</h3>
-        <div className="group">
-          <div className="search-container">
-            <SearchBox />
-          </div>
-          <button className="btn">Add</button>
-          <button className="btn">Manage</button>
+        <div className='group'>
+            <SearchBox/>
+            <button className='btn'>Add</button>
+            <button className='btn'>Manage</button>
         </div>
       </div>
       <div className="suppliers-categories__categories--recents">
@@ -80,7 +79,7 @@ const SuppliersCategories = () => (
     </div>
     <div className="suppliers-categories__calendar">
       <div className="calendar-area">
-        <CustomCalendar />
+        {/* <CustomCalendar /> */}
       </div>
       <h4 className="heading-4 pb-1">Title</h4>
       <p className="text">
@@ -93,6 +92,7 @@ const SuppliersCategories = () => (
         Ut rutrum vulputate arcu quis commodo. Donec finibus metus vel metus
         sollicitudin, a pellentesque ante auctor. Curabitur non blandit tellus.
       </p>
+      <Checkbox id='check' label='Hi'/>
     </div>
   </div>
 );

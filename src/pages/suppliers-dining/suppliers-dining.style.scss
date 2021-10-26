@@ -117,7 +117,7 @@
         grid-column: calendar-start / calendar-end;
 
         @include response(phone){
-          grid-column: full-start / full-end;
+          grid-column: full-start / full-end;   
           grid-row: row-start 3 / row-end 3;
         }
 

@@ -17,6 +17,10 @@
         align-items: center;
         gap: 3rem;
 
+        @include response(phone){
+            gap: 2rem;
+        }
+
         .nav-icon{
             
             @include response (desktop){
@@ -44,6 +48,10 @@
         font-size: 3rem;
         font-weight: 300;
         white-space: nowrap;
+
+        @include response(phone){
+            font-size: 2rem;
+        }
     }
 
     &__status{
@@ -52,10 +60,18 @@
         align-items: center;
         gap: 5rem;
 
+        @include response(phone){
+            gap: 1.5rem;
+        }
+
         &--notification{
             display: flex;
             align-items: center;
             gap: 2rem;
+
+            @include response(phone){
+                gap: 1rem;
+            }
 
             .search-bar{
                 border: 1.5px solid transparent;
