@@ -81,6 +81,61 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+
+                &__btn-container{
+                    position: relative;
+
+                    .option-btn{
+                        background-color: transparent;
+                        padding: 0 .5rem;
+                        height: 1.5rem;
+                        display: flex;
+                        align-items: center;
+                        border: none;
+                        cursor: pointer;
+
+                        &__icon{
+                            width: 2rem;
+                        }
+                    }
+                    .option-dd{
+                        background-color: $color-dark;
+                        padding: 1rem;
+
+                        position: absolute;
+                        right: 0;
+                        z-index: 1000000;
+
+                        display: none;
+
+                        &__item{
+                            width: 10rem;
+                        }
+                        &__list{
+                            list-style-type: none;
+                            text-align: center;
+
+                            &:not(:last-child){
+                                margin-bottom: 1rem;
+                            }
+                        }
+                        &__link{
+                            text-decoration: none;
+                            display: block;
+                            font-size: 1.4rem;
+                            color: $color-white;
+                            padding: .5rem;
+
+                            &:hover{
+                                background-color: $color-grey;
+                            }
+                        }
+                    }
+                }
+
+                .visible{
+                    display: inline;
+                }
             }
             .chat-area{
                 grid-row: chat-start / chat-end;
