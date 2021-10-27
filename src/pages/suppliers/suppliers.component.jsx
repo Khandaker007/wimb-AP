@@ -15,6 +15,7 @@ import ConfirmedItem from '../../components/confirmed-item/confirmed-item.compon
 import DeclinedItem from '../../components/declined-item/declined-item.component'
 import CancelledItem from '../../components/cancelled-item/cancelled-item.component'
 import EventCalendar from '../../components/calendar-events/calendar-events.component';
+import ButtonOption from '../../components/button-option/button-option.component';
 
 const Suppliers = () => {
   const [calendarVisible, setCalendarVisible] = useState(false)
@@ -38,9 +39,7 @@ const Suppliers = () => {
                     Online
                 </p>
                 <div className="group">
-                    <button>
-                        <img src={option} alt="option icon" className='icon option-icon'/>
-                    </button>
+                    <ButtonOption/>
                     <button onClick={handleCalendarVisible}>
                         <img src={calendar} alt="calendar icon" className='icon calendar-icon'/>
                     </button>

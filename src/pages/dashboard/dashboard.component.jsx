@@ -3,6 +3,7 @@ import React from 'react'
 // COMPONENTS
 import TeamMember from '../../components/team-member/team-member.component';
 import CustomCalendar from '../../components/calendar/calendar.component';
+import ButtonOption from '../../components/button-option/button-option.component';
 
 // LOGO
 import wimb from '../../assets/logo/wimb-logo.svg'
@@ -89,9 +90,7 @@ const Dashboard = () => (
                         </a>
                     </div>
                 </div>
-                <button className='option-btn'>
-                    <img src={option} alt="option icon"/>
-                </button>
+                <ButtonOption/>
             </div>
             <div className="details">
                 <div>
