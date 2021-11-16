@@ -622,6 +622,11 @@ decimal.js-light@^2.4.1:
   resolved "https://registry.npmjs.org/decimal.js-light/-/decimal.js-light-2.5.1.tgz"
   integrity sha512-qIMFpTMZmny+MMIitAB6D7iVPEorVw6YQRWkvarTkT4tBeSLLiHzcwj6q0MmYSFCiVpiqPJTJEYIrpcPzVEIvg==
 
+deepmerge@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.2.2.tgz#44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955"
+  integrity sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==
+
 dequal@^2.0.2:
   version "2.0.2"
   resolved "https://registry.npmjs.org/dequal/-/dequal-2.0.2.tgz"
@@ -997,6 +1002,13 @@ react-calendar@^3.4.0:
     get-user-locale "^1.2.0"
     merge-class-names "^1.1.1"
     prop-types "^15.6.0"
+
+react-data-table-component@^7.4.5:
+  version "7.4.5"
+  resolved "https://registry.yarnpkg.com/react-data-table-component/-/react-data-table-component-7.4.5.tgz#c7f90b967efad976ccabcf56dc7dc56a0fbca949"
+  integrity sha512-CnEbnnBuOj1twqbzZfdztIwgUMzt4k3MkikVWiTe1O6uf93sOoYAkKABJYYg1sWwcA3fI2Tuo6aq3XYE9Hscog==
+  dependencies:
+    deepmerge "^4.2.2"
 
 react-datepicker@^4.2.1:
   version "4.3.0"

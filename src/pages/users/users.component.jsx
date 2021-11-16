@@ -16,11 +16,67 @@ import { FaTrashAlt } from "react-icons/fa";
 import User from '../../components/user/user.component'
 import LiveReservation from '../../components/live-reservation/live-reservation.component'
 import SearchBox from '../../components/search-box/search-box.component'
+import DataTable from 'react-data-table-component'
 
 // IMAGE
 import userPic from '../../assets/image/jone.png'
 
 import './users.style.scss'
+
+const columns = [
+    {
+        name: 'Title',
+        selector: row => row.title,
+    },
+    {
+        name: 'Year',
+        selector: row => row.year,
+    },
+    {
+        name: 'First Name',
+        selector: row => row.firstName,
+    },
+    {
+        name: 'Last Name',
+        selector: row => row.lastName,
+    },
+    {
+        name: 'ID',
+        selector: row => row.ID,
+    },
+    {
+        name: 'ID',
+        selector: row => row.ID,
+    },
+    {
+        name: 'ID',
+        selector: row => row.ID,
+    },
+];
+
+const data = [
+    {
+        id: 1,
+        title: 'Beetlejuice',
+        year: '1988',
+        firstName: 'Khandaker',
+        lastName: 'Nabiul',
+        ID: '1610123',
+        ID: '1610123',
+        ID: '1610123',
+
+    },
+    {
+        id: 2,
+        title: 'Ghostbusters',
+        year: '1984',
+        firstName: 'Wakil',
+        lastName: 'Ahmed',
+        ID: '1805432',
+        ID: '1805432',
+        ID: '1805432',
+    },
+]
 
 const Users = () => {
 
@@ -59,7 +115,17 @@ const Users = () => {
                     </select>
                 </div>
             </div>
-            <div className='list-body'>                
+            <div className='list-body'>
+                <div className="table">
+                    <DataTable
+                        columns={columns}
+                        data={data}
+                        selectableRows
+                        responsive
+                        pointerOnHover
+                    />
+
+                </div>
                 <table>
                     <thead>
                         <tr>

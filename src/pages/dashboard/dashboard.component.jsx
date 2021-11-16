@@ -66,6 +66,30 @@ const Dashboard = () => (
             <TeamMember name='Grace Kelly' position='Marketing Manager'/>
             <TeamMember name='Ainsley Nelson' position='CEO'/>
             <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
+            <TeamMember name='Cara Dunlop' position='Senior Developer'/>
         </div>
         <div className="dashboard__calendar">
             <div className="calendar-area">

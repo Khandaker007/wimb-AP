@@ -46,6 +46,16 @@ const Requests = () => {
                     <div className="chat-area">
                         <ChatBoxSelf/>
                         <ChatBoxOther/>
+                        <ChatBoxSelf/>
+                        <ChatBoxOther/>
+                        <ChatBoxSelf/>
+                        <ChatBoxOther/>
+                        <ChatBoxOther/>
+                        <ChatBoxOther/>
+                        <ChatBoxOther/>
+                        <ChatBoxSelf/>
+                        <ChatBoxOther/>
+                        <ChatBoxOther/>
                     </div>
                     <div className="text-area">
                         <textarea className='text-box' placeholder='Say something...'/>

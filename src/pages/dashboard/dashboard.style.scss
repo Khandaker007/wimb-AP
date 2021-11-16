@@ -4,7 +4,7 @@
 
 .dashboard{
     display: grid;
-    grid-template-rows: repeat(2, [row-start] min-content [row-end]);
+    grid-template-rows: repeat(2, [row-start] 48vh [row-end]);
     grid-template-columns: [full-start] repeat(2, [col-start] 1fr [col-end]) [last-col-start] 25% [last-col-end full-end];
     grid-gap: 2rem;
 
@@ -95,11 +95,13 @@
             grid-column: col-start / col-end;
             grid-row: row-start 2 / row-end 2;
             padding: 2rem 4rem;
+
+            height: 45vh;
         }
 
         background-color: $color-grey;
         padding: 2rem;
-        overflow: auto;
+        overflow: scroll;
     }
     &__calendar{        
         grid-column: last-col-start / full-end;

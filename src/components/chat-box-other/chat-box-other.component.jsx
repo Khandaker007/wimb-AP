@@ -10,7 +10,7 @@ const ChatBoxOther = () => (
         <span className='pointer'></span>
         <img src={user} alt="user image" className='chat-box-other__image' />
         <div className="chat-box-other__message">
-            <p>hello wakil malksjdkasd daskjdksad sjakd askdj asdjas d</p>
+            <p>hello wakil malksjdkasd daskjdksad</p>
         </div>
     </div>
 )

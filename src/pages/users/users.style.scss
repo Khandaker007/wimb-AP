@@ -7,6 +7,19 @@
     grid-template-columns: [lcol-start] 1fr [lcol-end scol-start] 25% [scol-start];
     grid-gap: 2rem;
 
+    // @include response(desktop){
+    //     display: grid;
+    //     grid-template-rows: [row-start] min-content 1fr [row-end];
+    //     grid-template-columns: [lcol-start] 95rem [lcol-end scol-start] 25% [scol-start];
+    //     grid-gap: 2rem;
+    // }
+    
+    @include response(tab-port){
+        display: grid;
+        grid-template-rows: [row-start] min-content 1fr [row-end];
+        grid-template-columns: [lcol-start] 1fr [lcol-end scol-start] 25% [scol-start];
+        grid-gap: 2rem;
+    }
     @include response(phone){
         display: grid;
         grid-template-rows: repeat(3, [row-start] min-content [row-end]);
@@ -15,6 +28,24 @@
 
         padding: 0 1rem;
     }
+    
+    // @include response(M-phone){
+    //     display: grid;
+    //     grid-template-rows: repeat(3, [row-start] min-content [row-end]);
+    //     grid-template-columns: [col-start] 65em [col-end];
+    //     grid-gap: 2rem;
+        
+    //     padding: 0 1rem;
+    // }
+    // @include response(s-phone){
+    //     display: grid;
+    //     grid-template-rows: repeat(3, [row-start] min-content [row-end]);
+    //     grid-template-columns: [col-start] 60em [col-end];
+    //     grid-gap: 2rem;
+
+    //     padding: 0 1rem;
+    // }
+
 
     &__summery{
         grid-column: lcol-start / lcol-end;
@@ -99,6 +130,16 @@
         .list-body{
             font-size: 1.3rem;
             margin-top: 2rem;
+            // @include response(desktop){
+            //     max-width:100rem;
+            // }
+            // @include response(tab-port){
+            //     max-width: 20rem;
+            //     background-color: blue;
+            // }
+            .table{
+                overflow: scroll;
+            }
             
             table {
                 border-collapse: collapse;

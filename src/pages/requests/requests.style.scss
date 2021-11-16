@@ -142,7 +142,10 @@
 
                 padding: 2rem;
                 font-size: 1.3rem;
-            }
+                height: 71.7vh;
+                overflow: scroll;
+
+            }               
             .text-area{
                 grid-row: typing-start / typing-end;
 
